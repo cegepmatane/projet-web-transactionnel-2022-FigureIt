@@ -1,4 +1,8 @@
-<?php ?>
+<?php
+    $titre = "Accueil";
+    $pageActive = "accueil";
+    include "header.php";
+?>
 <div style="display: flex; justify-content: space-evenly">
     <div id="figurine1">
         <div id="img-figurine">
@@ -40,4 +44,7 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
