@@ -32,10 +32,23 @@
     <title><?php echo $title ?></title>
 </head>
 <body>
-    <div>
-        <a href="index.php?menu=accueil">Accueil</a>
-        <a href="index.php?menu=listeFigurine">Figurines</a>
+    <div id="header-div">
+        <h1>Figure It</h1>
+        <div class="navbar">
+            <a href="index.php?menu=accueil">Accueil</a>
+            <a href="index.php?menu=listeFigurine">Figurines</a>
+            <a href="index.php?menu=listeFigurine">Mission</a>
+            <a href="index.php?menu=listeFigurine">Admin</a>
+        </div>
+        <div>
+            <button id="boutonPanier">Panier</button>
+            <div>
+                <a href="#">Inscription</a>
+                <a href="#">Connextion</a>
+            </div>
+        </div>
     </div>
+    <br><br>
     <?php include $content?>
 </body>
 </html>
