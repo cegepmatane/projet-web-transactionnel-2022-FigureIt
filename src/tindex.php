@@ -35,10 +35,10 @@
     <div id="header-div">
         <h1>Figure It</h1>
         <div class="navbar">
-            <a href="index.php?menu=accueil">Accueil</a>
-            <a href="index.php?menu=listeFigurine">Figurines</a>
-            <a href="index.php?menu=listeFigurine">Mission</a>
-            <a href="index.php?menu=listeFigurine">Admin</a>
+            <a href="tindex.php?menu=accueil">Accueil</a>
+            <a href="tindex.php?menu=listeFigurine">Figurines</a>
+            <a href="tindex.php?menu=listeFigurine">Mission</a>
+            <a href="tindex.php?menu=listeFigurine">Admin</a>
         </div>
         <div>
             <button id="boutonPanier">Panier</button>

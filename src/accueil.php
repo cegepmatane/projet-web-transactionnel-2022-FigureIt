@@ -3,43 +3,77 @@
     $pageActive = "accueil";
     include "header.php";
 ?>
-<div style="display: flex; justify-content: space-evenly">
-    <div id="figurine1">
-        <div id="img-figurine">
-            <img src="" alt="placeholder">
-        </div>
-        <div id="donnees-figurines">
-            <div id="intitule">
-                <h3>Titre de la figurine</h3>
+<div class="container">
+    <div class="row row-col-3 g-4">
+
+        <div class="col-md-4">
+            <div class="card" id="figurine1">
+                <img src="./pages/Images/Placeholder_view_vector.svg" alt="Placeholder">
+
+                <div class="card-body">
+                    <div class="mb-3" id="titre-figurine">
+                        <h6 class="font-weigth-semibold">
+                            <a href="#" class="text-default" style="text-decoration: none !important;">Figurine 1/5 Iron Man</a>
+                        </h6>
+                    </div>
+
+                    <div id="prix">
+                        <h3 class="mb-2 font-weight-semibold">00,00$</h3>
+                    </div>
+
+                    <div class="mb-3 text-muted">Nom du vendeur</div>
+
+                    <div class="d-flex justify-content-end" id="bouton-ajouter-panier">
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
             </div>
-            <div id="prix">
-                <h2>00,00$</h2>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card" id="figurine2">
+                <img src="./pages/Images/Placeholder_view_vector.svg" alt="Placeholder">
+
+                <div class="card-body">
+                    <div class="mb-3" id="titre-figurine">
+                        <h6 class="font-weigth-semibold">
+                            <a href="#" class="text-default" style="text-decoration: none !important;">Figurine 1/5 Iron Man</a>
+                        </h6>
+                    </div>
+
+                    <div id="prix">
+                        <h3 class="mb-2 font-weight-semibold">00,00$</h3>
+                    </div>
+
+                    <div class="mb-3 text-muted">Nom du vendeur</div>
+
+                    <div class="d-flex justify-content-end" id="bouton-ajouter-panier">
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="figurine2">
-        <div id="img-figurine">
-            <img src="" alt="placeholder">
-        </div>
-        <div id="donnees-figurines">
-            <div id="intitule">
-                <h3>Titre de la figurine</h3>
-            </div>
-            <div id="prix">
-                <h2>00,00$</h2>
-            </div>
-        </div>
-    </div>
-    <div id="figurine3">
-        <div id="img-figurine">
-            <img src="" alt="placeholder">
-        </div>
-        <div id="donnees-figurines">
-            <div id="intitule">
-                <h3>Titre de la figurine</h3>
-            </div>
-            <div id="prix">
-                <h2>00,00$</h2>
+        <div class="col-md-4">
+            <div class="card" id="figurine3">
+                <img src="./pages/Images/Placeholder_view_vector.svg" alt="Placeholder">
+
+                <div class="card-body">
+                    <div class="mb-3" id="titre-figurine">
+                        <h6 class="font-weigth-semibold">
+                            <a href="#" class="text-default" style="text-decoration: none !important;">Figurine 1/5 Iron Man</a>
+                        </h6>
+                    </div>
+
+                    <div id="prix">
+                        <h3 class="mb-2 font-weight-semibold">00,00$</h3>
+                    </div>
+
+                    <div class="mb-3 text-muted" id="nom-vendeur">Nom du vendeur</div>
+
+                    <div class="d-flex justify-content-end" id="bouton-ajouter-panier">
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
