@@ -1,3 +1,7 @@
+:root{
+    --main-gray-color : #777777;
+}
+
 .nav-pills .nav-link.active {
     color : #000000;
     background-color: #a9a9a9;
@@ -7,5 +11,17 @@
 hr.navDivider {
     margin-top : 1px;
     margin-bottom: 1rem;
-    border-top: 3px solid #777777;
+    border-top: 3px solid var(--main-gray-color);
 }
+ .text-justify {
+     text-align: justify !important;
+ }
+
+ .border-secondary {
+     border-color: var(--main-gray-color);
+     border-width: 2px;
+ }
+
+ .figurine-img-border{
+     border-bottom: 2px solid var(--main-gray-color);
+ }

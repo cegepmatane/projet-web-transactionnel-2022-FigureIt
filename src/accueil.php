@@ -6,9 +6,9 @@
 <div class="container">
     <div class="row row-col-3 g-4">
 
-        <div class="col-md-4">
-            <div class="card" id="figurine1">
-                <img src="./pages/Images/Placeholder_view_vector.svg" alt="Placeholder">
+        <div class="col-lg-4">
+            <div class="card border-secondary" id="figurine1">
+                <img src="./pages/Images/Placeholder_view_vector.svg" class="card-img-top figurine-img-border" alt="Placeholder">
 
                 <div class="card-body">
                     <div class="mb-3" id="titre-figurine">
@@ -30,9 +30,9 @@
             </div>
         </div>
 
-        <div class="col-md-4">
-            <div class="card" id="figurine2">
-                <img src="./pages/Images/Placeholder_view_vector.svg" alt="Placeholder">
+        <div class="col-lg-4">
+            <div class="card border-secondary" id="figurine2">
+                <img src="./pages/Images/Placeholder_view_vector.svg" class="card-img-top figurine-img-border" alt="Placeholder">
 
                 <div class="card-body">
                     <div class="mb-3" id="titre-figurine">
@@ -53,9 +53,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card" id="figurine3">
-                <img src="./pages/Images/Placeholder_view_vector.svg" alt="Placeholder">
+        <div class="col-lg-4">
+            <div class="card border-secondary" id="figurine3">
+                <img src="./pages/Images/Placeholder_view_vector.svg" class="card-img-top figurine-img-border" alt="Placeholder">
 
                 <div class="card-body">
                     <div class="mb-3" id="titre-figurine">
