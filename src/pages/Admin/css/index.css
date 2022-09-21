@@ -11,6 +11,10 @@ h1{
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    overflow-x: auto;
+    @media screen and (max-width: 425px) {
+        font-size: x-large;
+    }
 }
 .addButton{
     width: 20%;
@@ -19,6 +23,9 @@ h1{
     align-self: flex-end;
     border-radius: 13px;
     border-width: thin;
+    @media screen and (max-width: 425px) {
+        font-size: x-large;
+    }
 }
 .liste{
     border-collapse: collapse;
