@@ -29,3 +29,7 @@ hr.navDivider {
  .liste-figurine-row .col{
      margin-bottom: 1rem;
  }
+
+ .description{
+    width: 60%;
+ }
