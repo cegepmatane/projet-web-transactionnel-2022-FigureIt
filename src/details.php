@@ -7,7 +7,10 @@
     <div class="mt-4 mx-sm-3 row">
         <div class="col-md-6 col-sm-12 me-sm-4">
             <div class="mb-md-4 mx-auto text-center">
-                <img src="./pages/Images/Placeholder_view_vector.svg" class="img-fluid"alt="Placeholder">
+                <img src="./pages/Images/Luffy.webp" class="img-fluid"alt="Placeholder">
+            </div>
+            <div class="d-grid gap-2 hide-button-sm">
+                <button type="button" class="btn btn-primary mt-md-6 mt-sm-3 mb-3">Ajouter au panier</button>
             </div>
             <div class="mb-md-4 ms-sm-3 me-sm-3">
                 <p class="text-justify">
@@ -18,12 +21,11 @@
 
         <div class="col-md-5 col-sm-12 ms-sm-4">
             <div class="mb-md-4 mx-auto text-center">
-                <h2 class="mt-md-6 mt-sm-3 mb-3">Figurine 1/5 Iron Man</h2>
-                <div class="mb-md-4 text-muted">Nom du Vendeur</div>
-                <div class="fs-1 mb-3">00,00$</div>
-                <div class="d-grid gap-2">
-                    <button type="button" class="btn btn-primary mt-md-6 mt-sm-3">Ajouter au panier</button>
-
+                <h2 class="mt-md-6 mt-sm-3 mb-3">Figurine 1/5 Luffy</h2>
+                <div class="mb-md-4 text-muted">Gold D. Roger</div>
+                <div class="fs-1 mb-3">3 160 000 000,00$</div>
+                <div class="d-grid gap-2 hide-button-lg">
+                    <button type="button" class="btn btn-primary mt-md-6 mt-sm-3 mb-3">Ajouter au panier</button>
                 </div>
             </div>
         </div>
