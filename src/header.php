@@ -19,7 +19,7 @@
                 <div class="collapse navbar-collapse" id="liensNavbar">
                     <ul class="nav navbar-nav nav-pills nav-justified mb-1 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link <?php echo ($pageActive == "accueil" ? "active" : "")?>" href="accueil.php">Accueil</a>
+                            <a class="nav-link <?php echo ($pageActive == "accueil" ? "active" : "")?>" href="index.php">Accueil</a>
                         </li>
                         <li>
                             <a class="nav-link <?php echo ($pageActive == "listeFigurine" ? "active" : "")?>" href="listeFigurine.php">Figurines</a>
