@@ -25,3 +25,7 @@ hr.navDivider {
  .figurine-img-border{
      border-bottom: 2px solid var(--main-gray-color);
  }
+
+ .liste-figurine-row .col{
+     margin-bottom: 1rem;
+ }

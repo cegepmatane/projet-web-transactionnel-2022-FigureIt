@@ -12,6 +12,7 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
+
 .addButton{
     width: 20%;
     display: flex;
@@ -20,9 +21,21 @@ h1{
     border-radius: 13px;
     border-width: thin;
 }
+@media screen and (max-width: 1440px) {
+    .content{
+        font-size: x-large;
+    }
+    .addButton{
+        font-size: x-large;
+    }
+}
+.overflower{
+    overflow-x: auto;
+}
 .liste{
     border-collapse: collapse;
     width: 100%;
+       
 }
 tbody{
     width: 100%;

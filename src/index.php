@@ -13,7 +13,7 @@
                 <div class="card-body">
                     <div class="mb-3" id="titre-figurine">
                         <h6 class="font-weigth-semibold">
-                            <a href="#" class="text-default" style="text-decoration: none !important;">Figurine 1/5 Iron Man</a>
+                            <a href="details.php" class="text-default" style="text-decoration: none !important;">Figurine 1/5 Iron Man</a>
                         </h6>
                     </div>
 
@@ -37,7 +37,7 @@
                 <div class="card-body">
                     <div class="mb-3" id="titre-figurine">
                         <h6 class="font-weigth-semibold">
-                            <a href="#" class="text-default" style="text-decoration: none !important;">Figurine 1/5 Iron Man</a>
+                            <a href="details.php" class="text-default" style="text-decoration: none !important;">Figurine 1/5 Iron Man</a>
                         </h6>
                     </div>
 
@@ -60,7 +60,7 @@
                 <div class="card-body">
                     <div class="mb-3" id="titre-figurine">
                         <h6 class="font-weigth-semibold">
-                            <a href="#" class="text-default" style="text-decoration: none !important;">Figurine 1/5 Iron Man</a>
+                            <a href="details.php" class="text-default" style="text-decoration: none !important;">Figurine 1/5 Iron Man</a>
                         </h6>
                     </div>
 
@@ -79,6 +79,9 @@
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<?php
+    include "footer.php";
+?>
 </body>
 </html>
 
