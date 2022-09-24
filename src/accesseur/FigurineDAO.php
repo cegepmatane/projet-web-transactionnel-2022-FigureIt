@@ -41,4 +41,15 @@
             $figurine = $demandeFigurine->fetch(PDO::FETCH_ASSOC);
             return $figurine;
         }
+
+        public static function afficher3PlusRecentesFigurines(){
+            $demandeFigurines = FigurineDAO::$bdd->prepare(FigurineDAO::SELECT_3_DERNIERES_FIGURINES);
+            $demandeFigurines->exectue();
+            $figurinesTab = $demandeFigurines->fetchAll(PDO::FETCH_ASSOC);
+
+            for ($i = 0, $size = count($figurinesTab); $i<$size; $i++){
+                $figurines[] = new Figurine($figurinesTab[$i]);
+            }
+            return $figurines;
+        }
     }
