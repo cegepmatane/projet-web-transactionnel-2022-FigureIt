@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="h-100">
 <head>
     <title><?php echo $titre; ?></title>
     <meta name="viewport"
@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
 </head>
-<body>
+<body class="d-flex flex-column h-100">
 <div class="container">
     <h1>Figure It</h1>
     <nav class="navbar navbar-expand-lg">

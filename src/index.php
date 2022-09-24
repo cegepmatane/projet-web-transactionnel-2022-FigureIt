@@ -8,7 +8,7 @@
 
         <div class="col-lg-4">
             <div class="card border-secondary" id="figurine1">
-                <img src="./pages/Images/IronMan.png" class="card-img-top figurine-img-border img-fluid" alt="Placeholder">
+                <img src="images/IronMan.png" class="card-img-top figurine-img-border img-fluid" alt="Placeholder">
 
                 <div class="card-body">
                     <div class="mb-3" id="titre-figurine">
@@ -32,7 +32,7 @@
 
         <div class="col-lg-4">
             <div class="card border-secondary" id="figurine2">
-                <img src="./pages/Images/Luffy.webp" class="card-img-top figurine-img-border" alt="Placeholder">
+                <img src="images/Luffy.webp" class="card-img-top figurine-img-border" alt="Placeholder">
 
                 <div class="card-body">
                     <div class="mb-3" id="titre-figurine">
@@ -56,7 +56,7 @@
 
         <div class="col-lg-4">
             <div class="card border-secondary" id="figurine3">
-                <img src="./pages/Images/Kodama.webp" class="card-img-top figurine-img-border" alt="Placeholder">
+                <img src="images/Kodama.webp" class="card-img-top figurine-img-border" alt="Placeholder">
 
                 <div class="card-body">
                     <div class="mb-3" id="titre-figurine">
@@ -79,10 +79,8 @@
         </div>
     </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 <?php
     include "footer.php";
 ?>
-</body>
-</html>
+
 
