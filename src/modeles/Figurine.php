@@ -4,13 +4,14 @@ class Figurine {
     public static $filtres = array(
         'id' => FILTER_VALIDATE_INT,
         'titre' => FILTER_SANITIZE_ENCODED,
-        'vendeur' => FILTER_SANITIZE_ENCODED,
+        'vendeur_id' => FILTER_VALIDATE_INT,
         'prix' => FILTER_VALIDATE_FLOAT,
         'description' => FILTER_SANITIZE_ENCODED
     );
 
+    protected $id;
     protected $titre;
-    protected $vendeur;
+    protected $vendeur_id;
     protected $prix;
     protected $description;
 
@@ -25,7 +26,7 @@ class Figurine {
 
         $this->id = $tableau['id'];
         $this->titre = $tableau['titre'];
-        $this->vendeur = $tableau['vendeur'];
+        $this->vendeur_id = $tableau['vendeur_id'];
         $this->prix = $tableau['prix'];
         $this->description = $tableau['description'];
     }
