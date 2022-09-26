@@ -16,6 +16,8 @@ interface FigurineSQL {
     public const INSERT_FIGURINE = "INSERT INTO figurine (titre, prix, description, image) VALUES (:titre, :prix, :description, :image)";
     
     public const UPDATE_FIGURINE = "UPDATE figurine SET titre = :titre, prix = :prix, quantite = :quantite, description = :description, image = :image WHERE id = :id";
+
+    public const DELETE_FIGURINE = "DELETE FROM figurine WHERE id = :id";
 }
 
 ?>
