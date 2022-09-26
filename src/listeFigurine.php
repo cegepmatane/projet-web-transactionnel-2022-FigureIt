@@ -9,11 +9,13 @@
 <div class="container-fluid px-5">
     <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 liste-figurine-row">
 
-        <?php foreach ($figurines as $figurine){ ?>
+        <?php
+            if ($figurines) foreach ($figurines as $figurine){
+        ?>
 
             <div class="col">
                 <div class="card border-secondary" id="figurine1">
-                    <img src="images/IronMan.png" class="card-img-top figurine-img-border" alt="Placeholder">
+                    <img src="images/<?= formater($figurine->image)?>" class="card-img-top figurine-img-border" alt="Placeholder">
 
                     <div class="card-body">
                         <div class="mb-3" id="titre-figurine">

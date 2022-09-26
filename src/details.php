@@ -11,7 +11,7 @@
     <div class="mt-4 mx-sm-3 row">
         <div class="col-md-6 col-sm-12 me-sm-4">
             <div class="mb-md-4 mx-auto text-center">
-                <img src="images/Luffy.webp" class="img-fluid" alt="Placeholder">
+                <img src="images/<?= formater($figurine->image) ?>" class="img-fluid" alt="Placeholder">
             </div>
             <div class="d-grid gap-2 hide-button-sm">
                 <button type="button" class="btn btn-primary mt-md-6 mt-sm-3 mb-3">Ajouter au panier</button>
