@@ -11,7 +11,7 @@
     <div class="row row-col-3 g-4">
 
         <?php
-            foreach ($figurinesAccueil as $figurine){
+            if ($figurinesAccueil) foreach ($figurinesAccueil as $figurine){
         ?>
             <div class="col-lg-4">
                 <div class="card border-secondary h-100" id="figurine1">
