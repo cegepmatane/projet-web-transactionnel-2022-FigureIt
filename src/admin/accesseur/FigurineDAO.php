@@ -89,6 +89,14 @@
             $demandeModificationFigurine->execute();
         }
 
+        public static function supprimerFigurine($id){
+            FigurineDAO::connexionBDD();
+
+            $demandeSuppressionFigurine = FigurineDAO::$bdd->prepare(FigurineDAO::DELETE_FIGURINE);
+            $demandeSuppressionFigurine->bindParam(':id', $id, PDO::PARAM_INT);
+            $demandeSuppressionFigurine->execute();
+        }
+
     }
     function formater($text){
         $text = html_entity_decode($text, ENT_COMPAT, 'UTF-8');

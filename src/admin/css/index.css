@@ -43,6 +43,7 @@ tbody{
     margin-right: auto;
 }
 .titres{
+    text-align: center;
     width: 100%;
     background-color: #BBBBBB;
     border-bottom: 1px solid black;
