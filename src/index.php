@@ -15,7 +15,7 @@
         ?>
             <div class="col-lg-4">
                 <div class="card border-secondary h-100" id="figurine1">
-                    <img src="images/IronMan.png" class="card-img-top figurine-img-border img-fluid" alt="Placeholder">
+                    <img src="images/<?= formater($figurine->image) ?>" class="card-img-top figurine-img-border img-fluid" alt="Placeholder">
 
                     <div class="card-body">
                         <div class="mb-3" id="titre-figurine">
