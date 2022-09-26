@@ -6,6 +6,7 @@ class Figurine {
         'titre' => FILTER_SANITIZE_ENCODED,
         'vendeur' => FILTER_SANITIZE_ENCODED,
         'prix' => FILTER_VALIDATE_FLOAT,
+        'quantite' => FILTER_VALIDATE_INT,
         'description' => FILTER_SANITIZE_ENCODED
     );
 
@@ -13,6 +14,7 @@ class Figurine {
     protected $titre;
     protected $vendeur;
     protected $prix;
+    protected $quantite;
     protected $description;
 
     /**
@@ -28,6 +30,7 @@ class Figurine {
         $this->titre = $tableau['titre'];
         $this->vendeur = $tableau['vendeur'];
         $this->prix = $tableau['prix'];
+        $this->quantite = $tableau['quantite'];
         $this->description = $tableau['description'];
     }
 
@@ -50,6 +53,9 @@ class Figurine {
                 break;
             case 'prix' :
                 $this->prix = $value;
+                break;
+            case 'quantite' :
+                $this->quantite = $value;
                 break;
             case 'description' :
                 $this->description = $value;

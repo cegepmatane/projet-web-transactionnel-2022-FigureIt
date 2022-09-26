@@ -64,6 +64,31 @@
             return $figurines;
         }
 
+        public static function ajouterFigurine($titre, $prix, $quantite, $description, $image){
+            FigurineDAO::connexionBDD();
+
+            $demandeAjoutFigurine = FigurineDAO::$bdd->prepare(FigurineDAO::INSERT_FIGURINE);
+            $demandeAjoutFigurine->bindParam(':titre', $titre, PDO::PARAM_STR);
+            $demandeAjoutFigurine->bindParam(':prix', $prix, PDO::PARAM_STR);
+            $demandeAjoutFigurine->bindParam(':quantite', $quantite, PDO::PARAM_INT);
+            $demandeAjoutFigurine->bindParam(':description', $description, PDO::PARAM_STR);
+            $demandeAjoutFigurine->bindParam(':image', $image, PDO::PARAM_STR);
+            $demandeAjoutFigurine->execute();
+        }
+
+        public static function modifierFigurine($id, $titre, $prix, $quantite, $description, $image){
+            FigurineDAO::connexionBDD();
+
+            $demandeModificationFigurine = FigurineDAO::$bdd->prepare(FigurineDAO::UPDATE_FIGURINE);
+            $demandeModificationFigurine->bindParam(':id', $id, PDO::PARAM_INT);
+            $demandeModificationFigurine->bindParam(':titre', $titre, PDO::PARAM_STR);
+            $demandeModificationFigurine->bindParam(':prix', $prix, PDO::PARAM_STR);
+            $demandeModificationFigurine->bindParam(':quantite', $quantite, PDO::PARAM_INT);
+            $demandeModificationFigurine->bindParam(':description', $description, PDO::PARAM_STR);
+            $demandeModificationFigurine->bindParam(':image', $image, PDO::PARAM_STR);
+            $demandeModificationFigurine->execute();
+        }
+
     }
     function formater($text){
         $text = html_entity_decode($text, ENT_COMPAT, 'UTF-8');
