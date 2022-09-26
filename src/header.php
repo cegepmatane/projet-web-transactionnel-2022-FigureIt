@@ -25,7 +25,7 @@
                             <a class="nav-link <?php echo ($pageActive == "listeFigurine" ? "active" : "")?>" href="listeFigurine.php">Figurines</a>
                         </li>
                         <li>
-                            <a class="nav-link <?php echo ($pageActive == "mission" ? "active" : "")?>" href="">Mission</a>
+                            <a class="nav-link <?php echo ($pageActive == "mission" ? "active" : "")?>" href="mission.php">Mission</a>
                         </li>
                     </ul>
                 </div>
