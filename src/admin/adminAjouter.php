@@ -7,7 +7,7 @@
             content="width=device-width, initial-scale=1">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link href="../css/admin_ajout.css" rel="stylesheet">
+    <link href="css/admin_ajout.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -33,7 +33,7 @@
                             </select> <br>
                         </div>
                         <div class="col-lg-4">
-                            <img src="../../../images/ImageNotFound.PNG" alt="Image not found" width="128" height="128"> <br>
+                            <img src="../images/ImageNotFound.PNG" alt="Image not found" width="128" height="128"> <br>
                             <input type="file" id="image" name="image" class="mt-3"> <br>
                         </div>
                         <div class="col-lg-4">
