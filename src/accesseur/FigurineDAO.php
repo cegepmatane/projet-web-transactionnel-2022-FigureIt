@@ -48,7 +48,7 @@
             $demandeFigurine->execute();
 
             $figurine = $demandeFigurine->fetch(PDO::FETCH_ASSOC);
-            return $figurine;
+            return new Figurine($figurine);
         }
 
         public static function afficher3PlusRecentesFigurines(){

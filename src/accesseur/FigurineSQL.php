@@ -1,9 +1,9 @@
 <?php
 interface FigurineSQL {
-    public const SELECT_TOUTES_FIGURINES = "SELECT id, titre, client.nom AS vendeur, prix, description 
+    public const SELECT_TOUTES_FIGURINES = "SELECT figurine.id as id, titre, client.nom AS vendeur, prix, description 
                                             FROM figurine
                                             INNER JOIN client ON figurine.vendeur_id = client.id";
-    public const SELECT_FIGURINE_BY_ID = "SELECT id, titre, client.nom AS vendeur, prix, description
+    public const SELECT_FIGURINE_BY_ID = "SELECT figurine.id as id, titre, client.nom AS vendeur, prix, description
                                             FROM figurine 
                                             INNER JOIN client ON figurine.vendeur_id = client.id
                                             WHERE figurine.id = :id
