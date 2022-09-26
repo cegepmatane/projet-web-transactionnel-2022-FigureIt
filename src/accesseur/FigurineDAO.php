@@ -7,8 +7,8 @@
         public static $bdd = null;
 
         public static function connexionBDD(){
-            $user = 'lheidet';
-            $password = '0803';
+            $user = 'site_user';
+            $password = '';
             $host = 'localhost';
             $db = 'figureit';
             $dsn = "mysql:dbname=".$db.";host=".$host;
