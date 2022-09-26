@@ -1,8 +1,17 @@
 <?php
 interface FigurineSQL {
-    public const SELECT_TOUTES_FIGURINES = "SELECT * FROM figurine";
-    public const SELECT_FIGURINE_BY_ID = "SELECT * FROM figurine WHERE id = :id";
-    public const SELECT_3_DERNIERES_FIGURINES = "SELECT * FROM figurine ORDER BY id DESC LIMIT 3";
+    public const SELECT_TOUTES_FIGURINES = "SELECT id, titre, client.nom AS vendeur, prix, description 
+                                            FROM figurine
+                                            INNER JOIN client ON figurine.vendeur_id = client.id";
+    public const SELECT_FIGURINE_BY_ID = "SELECT id, titre, client.nom AS vendeur, prix, description
+                                            FROM figurine 
+                                            INNER JOIN client ON figurine.vendeur_id = client.id
+                                            WHERE figurine.id = :id
+                                            ";
+    public const SELECT_3_DERNIERES_FIGURINES = "SELECT figurine.id as id, titre, client.nom AS vendeur, prix, description
+                                                    FROM figurine 
+                                                    INNER JOIN client ON figurine.vendeur_id = client.id 
+                                                    ORDER BY figurine.id DESC LIMIT 3";
 }
 
 ?>
