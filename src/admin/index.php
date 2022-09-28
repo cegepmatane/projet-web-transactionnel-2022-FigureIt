@@ -40,11 +40,11 @@
                     ?>
                     <tr>
                         <td><?= formater($figurine->vendeur)?></td>
-                        <td><?= formater($figurine->titre)?><td>
+                        <td><?= formater($figurine->titre)?></td>
                         <td><?= formater($figurine->quantite)?></td>
                         <td><?= formater($figurine->prix)?></td>
                         <td>
-                            <a href="admin_liste.html?id={{ user.id }}">Modifier</a>
+                            <a href="adminModifier.php?id={{ user.id }}">Modifier</a>
                             <a href="admin_liste.html?id={{ user.id }}">Supprimer</a>
                         </td>
                         
