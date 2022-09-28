@@ -1,13 +1,13 @@
 <?php
-include_once "../modeles/Figurine.php";
-include "accesseur/FigurineSQL.php";
+include_once "../modeles/Client.php";
+include_once "accesseur/ClientSQL.php";
 
 
-    class Accesseur {
+    class AccesseurClient {
         public static $bdd = null;
 
         public static function connexionBDD(){
-            $user = 'site_user';
+            $user = 'root';
             $password = '';
             $host = 'localhost';
             $db = 'figureit';
@@ -26,13 +26,13 @@ include "accesseur/FigurineSQL.php";
         }
     }
 
-    class ClientDAO extends Accesseur implements ClientSQL{
+    class ClientDAO extends AccesseurClient implements ClientSQL{
         public static function listerClients(){
             ClientDAO::connexionBDD();
 
             $demandeClients = ClientDAO::$bdd->prepare(ClientDAO::SELECT_ALL_CLIENTS);
             $demandeClients->execute();
-            $ClientsTab = $demandeClients->fetchAll(PDO::FETCH_ASSOC);
+            $clientsTab = $demandeClients->fetchAll(PDO::FETCH_ASSOC);
 
             foreach ($clientsTab as $clientTab) {
                 $clients[] = new Client($clientTab);

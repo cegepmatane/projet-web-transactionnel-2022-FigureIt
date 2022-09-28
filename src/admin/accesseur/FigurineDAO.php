@@ -7,7 +7,7 @@
         public static $bdd = null;
 
         public static function connexionBDD(){
-            $user = 'site_user';
+            $user = 'root';
             $password = '';
             $host = 'localhost';
             $db = 'figureit';
