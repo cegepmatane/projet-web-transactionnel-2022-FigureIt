@@ -55,7 +55,7 @@
                         </div>
                         <div class="col-lg-4">
                             <label for="description">Description</label> <br>
-                            <textarea name="description" id="description"><?=formater($figurine->description)?></textarea><br>
+                            <textarea name="description" id="description"><?=formater($figurine->description)?></textarea>
                         </div>
                         
                         <input type="submit" value="Modifier" id="ajouter" class="btn btn-secondary">

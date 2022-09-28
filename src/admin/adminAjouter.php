@@ -41,7 +41,7 @@
                                     ?>
                                     <option value="<?= formater($client->nom)?>"><?= formater($client->nom)?></option>
                                 <?php } } ?>
-                            </select> <br>
+                            </select>
                         </div>
                         <div class="col-lg-4">
                             <img src="../images/ImageNotFound.PNG" alt="Image not found" width="128" height="128"> <br>
