@@ -72,7 +72,13 @@
             $demandeAjoutFigurine->bindParam(':prix', $prix, PDO::PARAM_STR);
             $demandeAjoutFigurine->bindParam(':quantite', $quantite, PDO::PARAM_INT);
             $demandeAjoutFigurine->bindParam(':description', $description, PDO::PARAM_STR);
-            $demandeAjoutFigurine->bindParam(':image', $image, PDO::PARAM_STR);
+            if ($image == null){
+                $demandeAjoutFigurine->bindParam(':image', $image, PDO::PARAM_NULL);
+            }
+            else{
+                //$demandeAjoutFigurine->bindParam(':image', $image, PDO::PARAM_STR);
+                $demandeAjoutFigurine->bindParam(':image', $image, PDO::PARAM_NULL);
+            }
             $demandeAjoutFigurine->execute();
         }
 
