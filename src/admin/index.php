@@ -44,8 +44,8 @@
                         <td><?= formater($figurine->quantite)?></td>
                         <td><?= formater($figurine->prix)?></td>
                         <td>
-                            <a href="adminModifier.php?id={{ user.id }}">Modifier</a>
-                            <a href="admin_liste.html?id={{ user.id }}">Supprimer</a>
+                            <a href="adminModifier.php?id=<?= $figurine->id?>">Modifier</a>
+                            <a href="adminSupprimer.php?id=<?=$figurine->id?>">Supprimer</a>
                         </td>
                         
                     </tr>
