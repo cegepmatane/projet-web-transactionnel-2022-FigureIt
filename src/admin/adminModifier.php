@@ -1,3 +1,10 @@
+<?php
+    $titre = "AdminModifier";
+    $pageActive = "adminModifier";
+
+    include "accesseur/FigurineDAO.php";
+    $figurine = FigurineDAO::findFigurineById($_GET['id']);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,11 +29,11 @@
                     <div class="row row-col-3 g-4">
                         <div class="col-lg-4">
                             <label for="nom">Nom</label> <br>
-                            <input type="text" name="nom" id="nom" value="Ancien nom"> <br>
+                            <input type="text" name="nom" id="nom" value="<?=formater($figurine->titre)?>"> <br>
                             <label for="prix">Prix</label> <br>
-                            <input type="text" name="prix" id="prix" value="Ancien prix"> <br>
+                            <input type="text" name="prix" id="prix" value="<?=formater($figurine->prix)?>"> <br>
                             <label for="quantite">Quantite</label> <br>
-                            <input type="text" name="quantite" id="quantite" value="Ancienne quantité"> <br>
+                            <input type="text" name="quantite" id="quantite" value="<?=formater($figurine->quantite)?>"> <br>
                             <label for="vendeur">Vendeur</label> <br>
                             <select name="vendeur" id="vendeur">
                                 <option value="vendeur1">Vendeur1</option>
@@ -39,10 +46,10 @@
                         </div>
                         <div class="col-lg-4">
                             <label for="description">Description</label> <br>
-                            <input type="text" name="description" id="description" value="Ancienne description"> <br>
+                            <input type="text" name="description" id="description" value="<?=formater($figurine->description)?>"> <br>
                         </div>
                         
-                        <input type="submit" value="Ajouter" id="ajouter" class="btn btn-secondary">
+                        <input type="submit" value="Modifier" id="ajouter" class="btn btn-secondary">
                     </div>
                 </form>
             </div>
