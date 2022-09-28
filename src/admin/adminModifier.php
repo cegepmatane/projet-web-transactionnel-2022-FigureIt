@@ -25,11 +25,11 @@
         </div>
         <div class="content">
             <h2>Modifier produit</h2>
-                <form action="admin_ajout.php" method="post">
+                <form action="admin_modifie.php?id=<?= $figurine->id?>" method="post">
                     <div class="row row-col-3 g-4">
                         <div class="col-lg-4">
                             <label for="nom">Nom</label> <br>
-                            <input type="text" name="nom" id="nom" value="<?=formater($figurine->titre)?>"> <br>
+                            <input type="text" name="titre" id="nom" value="<?=formater($figurine->titre)?>"> <br>
                             <label for="prix">Prix</label> <br>
                             <input type="text" name="prix" id="prix" value="<?=formater($figurine->prix)?>"> <br>
                             <label for="quantite">Quantite</label> <br>
@@ -46,7 +46,7 @@
                         </div>
                         <div class="col-lg-4">
                             <label for="description">Description</label> <br>
-                            <input type="text" name="description" id="description" value="<?=formater($figurine->description)?>"> <br>
+                            <textarea name="description" id="description"><?=formater($figurine->description)?></textarea><br>
                         </div>
                         
                         <input type="submit" value="Modifier" id="ajouter" class="btn btn-secondary">
