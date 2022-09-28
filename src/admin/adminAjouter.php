@@ -1,3 +1,9 @@
+<?php
+    $titre = "AdminAjouter";
+    $pageActive = "adminAjouter";
+
+    include "accesseur/FigurineDAO.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
