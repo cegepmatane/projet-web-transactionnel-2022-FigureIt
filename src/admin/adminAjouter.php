@@ -29,7 +29,7 @@
                     <div class="row row-col-3 g-4">
                         <div class="col-lg-4">
                             <label for="nom">Nom</label> <br>
-                            <input type="text" name="nom" id="nom"> <br>
+                            <input type="text" name="titre" id="nom"> <br>
                             <label for="prix">Prix</label> <br>
                             <input type="text" name="prix" id="prix"> <br>
                             <label for="quantite">Quantite</label> <br>

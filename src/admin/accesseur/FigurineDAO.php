@@ -7,7 +7,7 @@
         public static $bdd = null;
 
         public static function connexionBDD(){
-            $user = 'root';
+            $user = 'site_user';
             $password = '';
             $host = 'localhost';
             $db = 'figureit';
@@ -72,7 +72,13 @@
             $demandeAjoutFigurine->bindParam(':prix', $prix, PDO::PARAM_STR);
             $demandeAjoutFigurine->bindParam(':quantite', $quantite, PDO::PARAM_INT);
             $demandeAjoutFigurine->bindParam(':description', $description, PDO::PARAM_STR);
-            $demandeAjoutFigurine->bindParam(':image', $image, PDO::PARAM_STR);
+            if ($image == null){
+                $demandeAjoutFigurine->bindParam(':image', $image, PDO::PARAM_STR);
+            }
+            else{
+                //$demandeAjoutFigurine->bindParam(':image', $image, PDO::PARAM_STR);
+                $demandeAjoutFigurine->bindParam(':image', $image, PDO::PARAM_STR);
+            }
             $demandeAjoutFigurine->execute();
         }
 

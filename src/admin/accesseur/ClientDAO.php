@@ -7,7 +7,7 @@ include_once "accesseur/ClientSQL.php";
         public static $bdd = null;
 
         public static function connexionBDD(){
-            $user = 'root';
+            $user = 'site_user';
             $password = '';
             $host = 'localhost';
             $db = 'figureit';
