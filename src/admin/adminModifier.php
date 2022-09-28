@@ -2,8 +2,11 @@
     $titre = "AdminModifier";
     $pageActive = "adminModifier";
 
-    include "accesseur/FigurineDAO.php";
+    include_once "accesseur/FigurineDAO.php";
+    include_once "accesseur/ClientDAO.php";
+
     $figurine = FigurineDAO::findFigurineById($_GET['id']);
+    $clients = ClientDAO::listerClients();
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,8 +39,12 @@
                             <input type="text" name="quantite" id="quantite" value="<?=formater($figurine->quantite)?>"> <br>
                             <label for="vendeur">Vendeur</label> <br>
                             <select name="vendeur" id="vendeur">
-                                <option value="vendeur1">Vendeur1</option>
-                                <option value="vendeur2">Vendeur2</option>
+                                <option value="<?=formater($figurine->vendeur)?>" ><?=formater($figurine->vendeur)?></option>
+                                <?php foreach ($clients as $client){ 
+                                    if($client->nom!=$figurine->vendeur) {
+                                ?>
+                                    <option value="<?= formater($client->nom)?>"><?= formater($client->nom)?></option>
+                                <?php } } ?>
                             </select> <br>
                         </div>
                         <div class="col-lg-4">
