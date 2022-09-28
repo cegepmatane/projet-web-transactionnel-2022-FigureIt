@@ -5,7 +5,8 @@
     include_once "accesseur/FigurineDAO.php";
     include_once "accesseur/ClientDAO.php";
 
-    $figurine = FigurineDAO::findFigurineById($_GET['id']);
+    $idFigurine = filter_var($_GET['id'], FILTER_VALIDATE_INT);
+    $figurine = FigurineDAO::findFigurineById($idFigurine);
     $clients = ClientDAO::listerClients();
 ?>
 <!DOCTYPE html>
@@ -44,6 +45,7 @@
                                     if($client->nom!=$figurine->vendeur) {
                                 ?>
                                     <option value="<?= formater($client->nom)?>"><?= formater($client->nom)?></option>
+                                    <input type="hidden" name="vendeurId" value="<?= formater($client->id)?>">
                                 <?php } } ?>
                             </select> <br>
                         </div>
