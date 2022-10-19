@@ -1,11 +1,18 @@
 :root{
     --main-gray-color : #777777;
+    --navlink-gray-color : #a9a9a9;
+    --hover-gray-color : #959595;
 }
 
 .nav-pills .nav-link.active {
     color : #000000;
-    background-color: #a9a9a9;
+    background-color: var(--navlink-gray-color);
     border-radius: 0px;
+    transition: background-color .15s ease-in-out;
+}
+
+.nav-pills .nav-link.active:hover{
+    background-color: var(--hover-gray-color);
 }
 
 hr.navDivider {
@@ -50,4 +57,25 @@ hr.navDivider {
     .hide-button-sm {
         display: none !important;
     }
+}
+
+.login{
+    text-decoration: none;
+    background-color: var(--navlink-gray-color);
+    color: black;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 0.375rem;
+    transition: background-color .2s ease-in-out;
+}
+
+.login:hover{
+    color: black;
+    background-color: var(--main-gray-color);
+}
+
+.login:visited, .login:link{
+    color: black;
 }

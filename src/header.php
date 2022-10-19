@@ -10,7 +10,15 @@
 </head>
 <body class="d-flex flex-column h-100">
 <div class="container">
-    <h1>Figure It</h1>
+    <div class="container-fluid d-flex">
+        <div  class="d-inline-block">
+            <h1>Figure It</h1>
+        </div>
+        <div class="gap-3 d-lg-flex ms-lg-auto mt-1">
+            <a href="#" class="login">Inscription</a>
+            <a href="#" class="login">Connexion</a>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#liensNavbar" aria-controls="liensNavbar" aria-expanded="false" aria-label="Toggle navigation">
