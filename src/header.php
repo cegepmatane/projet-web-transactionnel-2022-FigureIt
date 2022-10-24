@@ -10,13 +10,15 @@
 </head>
 <body class="d-flex flex-column h-100">
 <div class="container">
-    <div class="container-fluid d-flex">
-        <div  class="d-inline-block">
-            <h1>Figure It</h1>
-        </div>
-        <div class="gap-3 d-lg-flex ms-lg-auto mt-1">
-            <a href="#" class="login">Inscription</a>
-            <a href="#" class="login">Connexion</a>
+    <div class="container-fluid">
+        <div class="row row-col-2">
+            <div  class="d-inline-block col-md-6">
+                <h1>Figure It</h1>
+            </div>
+            <div class="gap-3 d-flex ms-auto mt-1 col-md-6 justify-content-md-end">
+                <a href="inscription.php" class="login">Inscription</a>
+                <a href="#" class="login">Connexion</a>
+            </div>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg">
