@@ -17,7 +17,7 @@
             </div>
             <div class="gap-3 d-flex ms-auto mt-1 col-md-6 justify-content-md-end">
                 <a href="inscription.php" class="login">Inscription</a>
-                <a href="#" class="login">Connexion</a>
+                <a href="connexion.php" class="login">Connexion</a>
             </div>
         </div>
     </div>
