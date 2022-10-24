@@ -1,3 +1,6 @@
+<?php
+    require_once 'config.php';
+?>
 <!doctype html>
 <html class="h-100">
 <head>
@@ -16,8 +19,8 @@
                 <h1>Figure It</h1>
             </div>
             <div class="gap-3 d-flex ms-auto mt-1 col-md-6 justify-content-md-end">
-                <a href="inscription.php" class="login">Inscription</a>
-                <a href="connexion.php" class="login">Connexion</a>
+                <a href="<?= SITE_URL.'/'?>inscription.php" class="login">Inscription</a>
+                <a href="<?= SITE_URL.'/'?>connexion.php" class="login">Connexion</a>
             </div>
         </div>
     </div>
@@ -29,13 +32,13 @@
                 <div class="collapse navbar-collapse" id="liensNavbar">
                     <ul class="nav navbar-nav nav-pills nav-justified mb-1 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link <?php echo ($pageActive == "accueil" ? "active" : "")?>" href="index.php">Accueil</a>
+                            <a class="nav-link <?php echo ($pageActive == "accueil" ? "active" : "")?>" href="<?= SITE_URL.'/'?>index.php">Accueil</a>
                         </li>
                         <li>
-                            <a class="nav-link <?php echo ($pageActive == "listeFigurine" ? "active" : "")?>" href="listeFigurine.php">Figurines</a>
+                            <a class="nav-link <?php echo ($pageActive == "listeFigurine" ? "active" : "")?>" href="<?= SITE_URL.'/'?>listeFigurine.php">Figurines</a>
                         </li>
                         <li>
-                            <a class="nav-link <?php echo ($pageActive == "mission" ? "active" : "")?>" href="mission.php">Mission</a>
+                            <a class="nav-link <?php echo ($pageActive == "mission" ? "active" : "")?>" href="<?= SITE_URL.'/'?>mission.php">Mission</a>
                         </li>
                     </ul>
                 </div>
