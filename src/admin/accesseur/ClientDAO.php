@@ -1,7 +1,6 @@
 <?php
-include_once "../modeles/Client.php";
-include_once "accesseur/ClientSQL.php";
-
+include_once "../../src/modeles/Client.php";
+include_once "ClientSQL.php";
 
     class AccesseurClient {
         public static $bdd = null;
@@ -12,7 +11,6 @@ include_once "accesseur/ClientSQL.php";
             $host = 'localhost';
             $db = 'figureit';
             $dsn = "mysql:dbname=".$db.";host=".$host;
-
 
             try {
                 ClientDAO::$bdd = new PDO($dsn, $user, $password);
@@ -49,5 +47,26 @@ include_once "accesseur/ClientSQL.php";
 
             $client = $demandeClient->fetch(PDO::FETCH_ASSOC);
             return new Client($client);
+        }
+
+        public static function findClientByEmail($email){
+            ClientDAO::connexionBDD();
+
+            $demandeClient = ClientDAO::$bdd->prepare(ClientDAO::SELECT_CLIENT_BY_EMAIL);
+            $demandeClient->bindParam(':email', $email, PDO::PARAM_STR);
+            $demandeClient->execute();
+
+            $client = $demandeClient->fetch(PDO::FETCH_ASSOC);
+            return new Client($client);
+        }
+
+        public static function ajouterClient($nom, $email, $motDePasse){
+            ClientDAO::connexionBDD();
+
+            $demandeAjoutClient = ClientDAO::$bdd->prepare(ClientDAO::INSERT_CLIENT);
+            $demandeAjoutClient->bindParam(':nom', $nom, PDO::PARAM_STR);
+            $demandeAjoutClient->bindParam(':email', $email, PDO::PARAM_STR);
+            $demandeAjoutClient->bindParam(':motDePasse', $motDePasse, PDO::PARAM_STR);
+            $demandeAjoutClient->execute();
         }
     }

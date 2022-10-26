@@ -5,7 +5,8 @@ class Client
     public static $filtres = array(
         'id' => FILTER_VALIDATE_INT,
         'nom' => FILTER_SANITIZE_ENCODED,
-        'email' => FILTER_VALIDATE_EMAIL
+        'email' => FILTER_VALIDATE_EMAIL,
+        'motDePasse' => FILTER_SANITIZE_STRING,
     );
 
     protected $id;
@@ -23,6 +24,7 @@ class Client
         $this->id = $tab['id'];
         $this->nom = $tab['nom'];
         $this->email = $tab['email'];
+        $this->motDePasse = $tab['motDePasse'];
     }
 
     /**
@@ -40,6 +42,9 @@ class Client
                 break;
             case 'email' :
                 $this->email = $value;
+                break;
+            case 'motDePasse' :
+                $this->motDePasse = $value;
                 break;
         }
     }
