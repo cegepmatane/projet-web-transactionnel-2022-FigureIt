@@ -1,9 +1,14 @@
 <?php
-    require_once "SQLSessionHandler.php";
-    $sessionHandlerInstance = new SQLSessionHandler();
-    session_set_save_handler($sessionHandlerInstance, true);
     session_start();
-    $_SESSION["userId"] = "1";
-    $_SESSION["truc"] = "bidule";
-?>
+    ?>
+
+<form action="SQLSessionHandler.php" method="post">
+
+    <input type="text" class="form-control" placeholder="Email"  name="email" id="email" required>
+
+    <input type="text" class="form-control" placeholder="Mot de passe" name="motDePasse" id="motDePasse" required>
+
+    <button type="submit">Connexion</button>
+
+</form>
 
