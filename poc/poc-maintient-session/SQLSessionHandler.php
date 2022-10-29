@@ -1,4 +1,6 @@
 <?php
+require_once "../../src/config.php";
+
 class SQLSessionHandler implements SessionHandlerInterface
 {
     private $connection;
@@ -86,9 +88,6 @@ class SQLSessionHandler implements SessionHandlerInterface
 
 }
 
-session_start();
-/**
- * TODO : - Faire un test a chaque session start un test pour voir si la session est remplie avec userId et si le token est encore valide en temps de création
- * Faire l'ajout dans la base de données pour les champs requis (voir ici {@link https://stackoverflow.com/questions/520237/how-do-i-expire-a-php-session-after-30-minutes})
- *
- */
+
+
+

@@ -7,7 +7,7 @@
     $figurines = FigurineDAO::listerFigurines();
 ?>
 <div class="container-fluid px-5">
-    <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 liste-figurine-row">
+    <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 liste-figurine-row justify-content-center">
 
         <?php
             if ($figurines) foreach ($figurines as $figurine){
