@@ -16,7 +16,7 @@ class Client
     /**
      * @param $tableau
      *
-     * Constructeur du modele Figurine, prend un tableau contenant les données du client
+     * Constructeur du modele Client, prend un tableau contenant les données du client
      */
     public function __construct($tab){
         $tab = filter_var_array($tab, Client::$filtres);
