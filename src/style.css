@@ -79,3 +79,10 @@ hr.navDivider {
 .login:visited, .login:link{
     color: white;
 }
+
+.form-errors{
+    color: #d33737;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: .875rem;
+}

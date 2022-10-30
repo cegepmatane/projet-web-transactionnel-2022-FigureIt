@@ -1,14 +1,15 @@
 <?php
+    include "accesseur/ClientDAO.php";
     $titre = "Inscription";
     $pageActive = "inscription";
     include "header.php";
-    include "accesseur/ClientDAO.php";
+
 
     $identifiant = $email = $password = $passwordConfirm = "";
-    $err_identifiant = $err_email = $err_password = $err_passwordConfirm ="";
+    $err_identifiant = $err_email = $err_password = $err_passwordConfirm = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
-
+        //var_dump($_POST);
         $identifiant = trim($_POST["inscription-identifiant"]);
         $email = trim($_POST["inscription-email"]);
         $password = $_POST["inscription-password"];
@@ -16,13 +17,14 @@
 
         // Check si l'identifiant est deja utilise
         if (!empty(ClientDAO::findClientByName($identifiant))){
-            $err_identifiant = "Identifiant d&eactue;j&agrave; utilis&eacute;";
+            $err_identifiant = "Identifiant d&eacute;j&agrave; utilis&eacute;";
         }
 
         // Check si l'email est deja utilise
         if (!empty(ClientDAO::findClientByEmail($email))){
-            $err_email = "Adresse mail d&eactue;j&agrave; utilis&eacute;e";
+            $err_email = "Adresse mail d&eacute;j&agrave; utilis&eacute;e";
         }
+        var_dump($err_email);
 
         // Check si les deux mots de passe sont les memes
         if(strcmp($password, $passwordConfirm) !== 0){
@@ -46,20 +48,20 @@
     </div>
     <form action="#" method="post">
         <div class="row mx-lg-4 mb-3 px-5">
-            <input type="text" class="form-control" placeholder="Identifiant" id="inscription-identifiant" value="<?= $identifiant?>" required>
-            <span class="invalide-feedback"><?= $err_identifiant?></span>
+            <input type="text" class="form-control" placeholder="Identifiant" name="inscription-identifiant" id="inscription-identifiant" value="<?= $identifiant?>" required>
+            <span class="form-errors"><?= $err_identifiant?></span>
         </div>
         <div class="row mx-lg-4 mb-3 px-5">
-            <input type="email" class="form-control" placeholder="email" id="inscription-email" value="<?= $email ?>" required>
-            <span class="invalid-feedback"><?= $err_email ?></span>
+            <input type="email" class="form-control" placeholder="email" name="inscription-email" id="inscription-email" value="<?= $email ?>" required>
+            <span class="form-errors"><?= $err_email ?></span>
         </div>
         <div class="row mx-lg-4 mb-3 px-5">
-            <input type="password" class="form-control" placeholder="Mot de passe" id="inscription-password" required>
-            <span class="invalid-feedback"><?= $err_password ?></span>
+            <input type="password" class="form-control" placeholder="Mot de passe" name="inscription-password" id="inscription-password" required>
+            <span class="form-errors"><?= $err_password ?></span>
         </div>
         <div class="row mx-lg-4 mb-3 px-5">
-            <input type="password" class="form-control" placeholder="Confirmer le mot de passe" id="inscription-confirm-password" required>
-            <span class="invalid-feedback"><?= $err_passwordConfirm ?></span>
+            <input type="password" class="form-control" placeholder="Confirmer le mot de passe" name="inscription-confirm-password" id="inscription-confirm-password" required>
+            <span class="form-errors"><?= $err_passwordConfirm ?></span>
         </div>
         
         <div class="row mt-lg-5 mx-lg-4 px-5 justify-content-center">

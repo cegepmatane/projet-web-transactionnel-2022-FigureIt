@@ -1,5 +1,5 @@
 <?php
-include_once "../modeles/Client.php";
+include_once "modeles/Client.php";
 include_once "ClientSQL.php";
 
     class AccesseurClient {
@@ -57,7 +57,12 @@ include_once "ClientSQL.php";
             $demandeClient->execute();
 
             $client = $demandeClient->fetch(PDO::FETCH_ASSOC);
-            return new Client($client);
+            //var_dump($client);
+            if ($client !== false){
+                return new Client($client);
+            }else{
+                return null;
+            }
         }
         public static function findClientByName($name){
             ClientDAO::connexionBDD();
@@ -67,7 +72,11 @@ include_once "ClientSQL.php";
             $demandeClient->execute();
 
             $client = $demandeClient->fetch(PDO::FETCH_ASSOC);
-            return new Client($client);
+            if ($client){
+                return new Client($client);
+            }else{
+                return null;
+            }
         }
 
         public static function ajouterClient($nom, $email, $motDePasse){
