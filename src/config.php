@@ -1,8 +1,8 @@
 <?php
 
 if($_SERVER['HTTP_HOST'] == "localhost"){// For local
- define('SITE_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/projet-web-transactionnel/projet-web-transactionnel/src');
- define('SITEPATH', $_SERVER['DOCUMENT_ROOT'] . '/projet-web-transactionnel/projet-web-transactionnel/src');
+ define('SITE_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/projet-web-transactionnel/projet-web-transactionnel/src/');
+ define('SITEPATH', $_SERVER['DOCUMENT_ROOT'] . '/projet-web-transactionnel/projet-web-transactionnel/src/');
 }
 else{ // For Web
  define('SITE_URL', "http://" . $_SERVER['HTTP_HOST']);

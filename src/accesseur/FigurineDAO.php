@@ -1,6 +1,7 @@
 <?php
-    include_once "modeles/Figurine.php";
-    include "accesseur/FigurineSQL.php";
+    require_once "../config.php";
+    include_once SITEPATH."modeles/Figurine.php";
+    include SITEPATH."accesseur/FigurineSQL.php";
 
 
     class Accesseur {
@@ -48,7 +49,7 @@
             $demandeFigurine->execute();
 
             $figurine = $demandeFigurine->fetch(PDO::FETCH_ASSOC);
-            FigurineDAO::$bdd->close();
+            
             return new Figurine($figurine);
 
         }
@@ -63,7 +64,7 @@
             for ($i = 0, $size = count($figurinesTab); $i<$size; $i++){
                 $figurines[] = new Figurine($figurinesTab[$i]);
             }
-            FigurineDAO::$bdd->close();
+            
             return $figurines;
         }
 
@@ -83,7 +84,7 @@
                 $demandeAjoutFigurine->bindParam(':image', $image, PDO::PARAM_NULL);
             }
             $demandeAjoutFigurine->execute();
-            FigurineDAO::$bdd->close();
+            
         }
 
         public static function modifierFigurine($id, $titre, $prix, $quantite, $description, $image){
@@ -97,7 +98,7 @@
             $demandeModificationFigurine->bindParam(':description', $description, PDO::PARAM_STR);
             $demandeModificationFigurine->bindParam(':image', $image, PDO::PARAM_STR);
             $demandeModificationFigurine->execute();
-            FigurineDAO::$bdd->close();
+            
         }
 
     }

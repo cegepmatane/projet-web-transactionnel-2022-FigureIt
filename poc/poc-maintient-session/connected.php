@@ -7,10 +7,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: index.php");
     exit;
 }
-if ($_SESSION["lastConnexion"] < (time()-60)){
+if ($_SESSION["lastConnexion"] < (time()-1800)){
     $_SESSION["loggedin"] = null;
     header("location: index.php");
     exit;
+}else{
+    $_SESSION["lastConnexion"] = time();
 }
 ?>
 <! DOCTYPE html>

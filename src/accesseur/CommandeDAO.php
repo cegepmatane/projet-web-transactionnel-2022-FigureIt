@@ -1,6 +1,7 @@
 <?php
-include_once "modeles/Commande.php";
-include_once "CommandeSQL.php";
+require_once "../config.php";
+include_once SITEPATH."modeles/Commande.php";
+include_once SITEPATH."accesseur/CommandeSQL.php";
 
 class Accesseur {
     public static $bdd = null;
@@ -14,9 +15,9 @@ class Accesseur {
 
 
         try {
-            FigurineDAO::$bdd = new PDO($dsn, $user, $password);
+            CommandeDAO::$bdd = new PDO($dsn, $user, $password);
             //print_r(FigurineDAO::$bdd);
-            FigurineDAO::$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            CommandeDAO::$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }catch (PDOException $exception){
             echo ('NTM sale noob : ' . $exception->getMessage());
             exit;
@@ -36,7 +37,7 @@ class CommandeDAO extends Accesseur implements CommandeSQL{
         foreach ($commandesTab as $commandeTab){
             $commandes[] = new Commande($commandeTab);
         }
-        CommandeDAO::$bdd->close();
+        
         return $commandes;
     }
 
@@ -51,7 +52,7 @@ class CommandeDAO extends Accesseur implements CommandeSQL{
         foreach ($commandesTab as $commandeTab) {
             $commandes[] = new Commande($commandeTab);
         }
-        CommandeDAO::$bdd->close();
+        
         return $commandes;
     }
 
@@ -66,7 +67,7 @@ class CommandeDAO extends Accesseur implements CommandeSQL{
         foreach ($commandesTab as $commandeTab) {
             $commandes[] = new Commande($commandeTab);
         }
-        CommandeDAO::$bdd->close();
+        
         return $commandes;
     }
 
@@ -81,7 +82,7 @@ class CommandeDAO extends Accesseur implements CommandeSQL{
         $demandeAjoutCommande->bindParam(':clientId', $clientId, PDO::PARAM_INT);
 
         $demandeAjoutCommande->execute();
-        CommandeDAO::$bdd->close();
+        
     }
 
     function formater($text){
