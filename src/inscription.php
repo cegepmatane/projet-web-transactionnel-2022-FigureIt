@@ -24,7 +24,7 @@
         if (!empty(ClientDAO::findClientByEmail($email))){
             $err_email = "Adresse mail d&eacute;j&agrave; utilis&eacute;e";
         }
-        var_dump($err_email);
+        //var_dump($err_email);
 
         // Check si les deux mots de passe sont les memes
         if(strcmp($password, $passwordConfirm) !== 0){
@@ -38,7 +38,7 @@
 
         if (empty($err_identifiant) && empty($err_email) && empty($err_password) && empty($err_passwordConfirm)){
             ClientDAO::ajouterClient($identifiant, $email, password_hash($passwordConfirm, PASSWORD_DEFAULT));
-            header("location : connexion.php");
+            header("location: connexion.php");
         }
     }
 ?>

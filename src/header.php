@@ -1,5 +1,15 @@
 <?php
     require_once 'config.php';
+    session_start();
+
+if ($_SESSION["lastConnexion"] < (time()-TEMPS_MAINTIENT) && $_SESSION["lastConnexion"] > (time() - UN_JOUR)){
+    $_SESSION["loggedin"] = null;
+    header("location: ".SITE_URL."/connexion.php");
+    exit;
+}else if($_SESSION["lastConnexion"] < (time() - UN_JOUR)){
+    $_SESSION = array();
+    session_destroy();
+}
 ?>
 <!doctype html>
 <html class="h-100">
@@ -19,8 +29,14 @@
                 <h1>Figure It</h1>
             </div>
             <div class="gap-3 d-flex ms-auto mt-1 col-md-6 justify-content-md-end">
-                <a href="<?= SITE_URL.'/'?>inscription.php" class="login">Inscription</a>
-                <a href="<?= SITE_URL.'/'?>connexion.php" class="login">Connexion</a>
+                <?php
+                    if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){ ?>
+                        <a href="<?= SITE_URL."/user/index.php"?>" class="user-profile"><?= $_SESSION["nom"]?></a>
+                        <a href="<?= SITE_URL."/user/logout.php"?>">D&eacute;connexion</a>
+                <?php }else{ ?>
+                        <a href="<?= SITE_URL.'/'?>inscription.php" class="login">Inscription</a>
+                        <a href="<?= SITE_URL.'/'?>connexion.php" class="login">Connexion</a>
+                <?php } ?>
             </div>
         </div>
     </div>

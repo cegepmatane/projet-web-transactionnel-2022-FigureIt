@@ -10,4 +10,5 @@ else{ // For Web
 }
 
 const TEMPS_MAINTIENT = 1800;
+const UN_JOUR = 24*3600;
 ?>
