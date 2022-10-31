@@ -12,6 +12,7 @@ class Client
     protected $id;
     protected $nom;
     protected $email;
+    protected $motDePasse;
 
     /**
      * @param $tableau
