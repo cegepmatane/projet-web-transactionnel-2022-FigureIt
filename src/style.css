@@ -73,7 +73,7 @@ hr.navDivider {
 
 .login:hover{
     color: white;
-    background-color: #0b5ed7;;
+    background-color: #0b5ed7;
 }
 
 .login:visited, .login:link{
@@ -85,4 +85,25 @@ hr.navDivider {
     width: 100%;
     margin-top: .25rem;
     font-size: .875rem;
+}
+
+.user-profile{
+    text-decoration: none;
+    color: black;
+    background-color: var(--main-gray-color);
+    padding: 0.175rem 0.75rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 0.175rem;
+    transition: background-color .2s ease-in-out
+}
+
+.user-profile:hover{
+    color: black;
+    background-color: var(--hover-gray-color);
+}
+
+.user-profile:visited, .user-profile:link{
+    color: black;
 }
