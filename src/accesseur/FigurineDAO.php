@@ -1,5 +1,4 @@
 <?php
-    require_once "../config.php";
     include_once SITEPATH."modeles/Figurine.php";
     include SITEPATH."accesseur/FigurineSQL.php";
 

@@ -2,7 +2,7 @@
     require_once 'config.php';
     session_start();
 
-if ($_SESSION["lastConnexion"] < (time()-TEMPS_MAINTIENT) && $_SESSION["lastConnexion"] > (time() - UN_JOUR)){
+if (isset($_SESSION["loggedin"]) && $_SESSION["lastConnexion"] < (time()-TEMPS_MAINTIENT) && $_SESSION["lastConnexion"] > (time() - UN_JOUR)){
     $_SESSION["loggedin"] = null;
     header("location: ".SITE_URL."connexion.php");
     exit;
