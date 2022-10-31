@@ -50,13 +50,13 @@ if ($_SESSION["lastConnexion"] < (time()-TEMPS_MAINTIENT) && $_SESSION["lastConn
                 <div class="collapse navbar-collapse" id="liensNavbar">
                     <ul class="nav navbar-nav nav-pills nav-justified mb-1 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link <?php echo ($pageActive == "accueil" ? "active" : "")?>" href="<?= SITE_URL.'/'?>index.php">Accueil</a>
+                            <a class="nav-link <?php echo ($pageActive == "accueil" ? "active" : "")?>" href="<?= SITE_URL?>index.php">Accueil</a>
                         </li>
                         <li>
-                            <a class="nav-link <?php echo ($pageActive == "listeFigurine" ? "active" : "")?>" href="<?= SITE_URL.'/'?>listeFigurine.php">Figurines</a>
+                            <a class="nav-link <?php echo ($pageActive == "listeFigurine" ? "active" : "")?>" href="<?= SITE_URL?>listeFigurine.php">Figurines</a>
                         </li>
                         <li>
-                            <a class="nav-link <?php echo ($pageActive == "mission" ? "active" : "")?>" href="<?= SITE_URL.'/'?>mission.php">Mission</a>
+                            <a class="nav-link <?php echo ($pageActive == "mission" ? "active" : "")?>" href="<?= SITE_URL?>mission.php">Mission</a>
                         </li>
                     </ul>
                 </div>
