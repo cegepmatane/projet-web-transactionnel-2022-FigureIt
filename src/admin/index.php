@@ -6,7 +6,7 @@
     $figurines = FigurineDAO::listerFigurines();
 ?>
 <!DOCTYPE html>
-<html class="h-100">
+<html lang="fr" class="h-100">
 <head>
     <meta charset="utf-8">
     <title>Admin</title>
@@ -24,52 +24,51 @@
             <h1>FigureIt</h1>
         </div>
         <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#liensNavbar" aria-controls="liensNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="liensNavbar">
-                    <ul class="nav navbar-nav nav-pills nav-justified mb-1 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.php">Accueil</a>
-                        </li>
-                        <li>
-                            <a class="nav-link " href="adminListeTransaction.php">Liste Transactions</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#liensNavbar" aria-controls="liensNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="liensNavbar">
+                        <ul class="nav navbar-nav nav-pills nav-justified mb-1 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php">Accueil</a>
+                            </li>
+                            <li>
+                                <a class="nav-link " href="adminListeTransaction.php">Liste Transactions</a>
+                            </li>
+                        </ul>
+                    </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+
         <div class="content">
             <button type="button" class="addButton" onclick="window.location.href='adminAjouter.php'">+ Ajouter</button>
             <div class="overflower">
-            <table class="liste">
-                <tr class="titres">
-                    <th>Nom du Vendeur</th>
-                    <th>Nom du produit</th>
-                    <th>Quantité</th>
-                    <th>Prix</th>
-                    <th>Actions</th>
-                    
-                </tr>
-                
-                <?php foreach ($figurines as $figurine){ 
-                    ?>
-                    <tr>
-                        <td><?= formater($figurine->vendeur)?></td>
-                        <td><?= formater($figurine->titre)?></td>
-                        <td><?= formater($figurine->quantite)?></td>
-                        <td><?= formater($figurine->prix)?></td>
-                        <td>
-                            <a href="adminModifier.php?id=<?= $figurine->id?>">Modifier</a>
-                            <a href="adminSupprimer.php?id=<?=$figurine->id?>">Supprimer</a>
-                        </td>
-                        
+                <table class="liste">
+                    <tr class="titres">
+                        <th>Nom du Vendeur</th>
+                        <th>Nom du produit</th>
+                        <th>Quantité</th>
+                        <th>Prix</th>
+                        <th>Actions</th>
+
                     </tr>
-                <?php } ?>
-                
-            </table>
+
+                    <?php foreach ($figurines as $figurine){
+                        ?>
+                        <tr>
+                            <td><?= formater($figurine->vendeur)?></td>
+                            <td><?= formater($figurine->titre)?></td>
+                            <td><?= formater($figurine->quantite)?></td>
+                            <td><?= formater($figurine->prix)?></td>
+                            <td>
+                                <a href="adminModifier.php?id=<?= $figurine->id?>">Modifier</a>
+                                <a href="adminSupprimer.php?id=<?=$figurine->id?>">Supprimer</a>
+                            </td>
+
+                        </tr>
+                    <?php } ?>
+                </table>
             </div>
         </div>
     </div>
