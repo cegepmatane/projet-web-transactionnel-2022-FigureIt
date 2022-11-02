@@ -23,6 +23,24 @@
         <div class="header">
             <h1>FigureIt</h1>
         </div>
+        <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#liensNavbar" aria-controls="liensNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="liensNavbar">
+                    <ul class="nav navbar-nav nav-pills nav-justified mb-1 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php">Accueil</a>
+                        </li>
+                        <li>
+                            <a class="nav-link " href="adminListeTransaction.php">Liste Transactions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
         <div class="content">
             <button type="button" class="addButton" onclick="window.location.href='adminAjouter.php'">+ Ajouter</button>
             <div class="overflower">
