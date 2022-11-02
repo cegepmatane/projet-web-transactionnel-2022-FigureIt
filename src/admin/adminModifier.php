@@ -2,8 +2,9 @@
     $titre = "AdminModifier";
     $pageActive = "adminModifier";
 
-    include_once "accesseur/FigurineDAO.php";
-    include_once "accesseur/ClientDAO.php";
+    require_once  "../config.php";
+    include_once SITEPATH."admin/accesseur/FigurineDAO.php";
+    include_once SITEPATH."admin/accesseur/ClientDAO.php";
 
     $idFigurine = filter_var($_GET['id'], FILTER_VALIDATE_INT);
     $figurine = FigurineDAO::findFigurineById($idFigurine);
@@ -19,7 +20,7 @@
             content="width=device-width, initial-scale=1">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link href="../css/admin_modifier.css" rel="stylesheet">
+    <link href="css/admin_modifier.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
