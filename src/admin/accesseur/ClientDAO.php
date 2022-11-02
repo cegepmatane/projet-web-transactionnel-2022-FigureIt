@@ -1,5 +1,5 @@
 <?php
-include_once "../../src/modeles/Client.php";
+include_once SITEPATH."modeles/Client.php";
 include_once "ClientSQL.php";
 
     class AccesseurClient {

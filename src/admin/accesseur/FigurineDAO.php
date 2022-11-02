@@ -1,6 +1,6 @@
 <?php
-    include_once "../modeles/Figurine.php";
-    include "accesseur/FigurineSQL.php";
+    include_once SITEPATH."modeles/Figurine.php";
+    include "FigurineSQL.php";
 
 
     class Accesseur {

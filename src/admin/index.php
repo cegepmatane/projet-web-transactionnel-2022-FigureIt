@@ -1,8 +1,8 @@
 <?php
     $titre = "AdminListe";
     $pageActive = "adminListe";
-
-    include "accesseur/FigurineDAO.php";
+    require_once "../config.php";
+    include SITEPATH."admin/accesseur/FigurineDAO.php";
     $figurines = FigurineDAO::listerFigurines();
 ?>
 <!DOCTYPE html>
