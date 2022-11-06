@@ -29,8 +29,8 @@
                 <div class="mb-md-4 text-muted"><?= formater($figurine->vendeur)?></div>
                 <div class="fs-1 mb-3"><?= formater($figurine->prix) ?>$</div>
                 <div class="d-grid gap-2 hide-button-lg">
-                    <a href="create-checkout-session.php">
-                    <button type="button" class="btn btn-primary mt-md-6 mt-sm-3 mb-3">Ajouter au panier</button>
+                    <a href="create-checkout-session.php?id=<?= $figurine->id ?>">
+                        <button type="button" class="btn btn-primary mt-md-6 mt-sm-3 mb-3">Ajouter au panier</button>
                     </a>
                 </div>
             </div>
