@@ -22,6 +22,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["lastConnexion"] < (time()-TEMPS_M
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="<?= SITE_URL ?>style.css" rel="stylesheet">
+    <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body class="d-flex flex-column h-100">
 <div class="container">
