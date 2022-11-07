@@ -6,15 +6,18 @@ $panier = array();
 if(isset($_GET['id'])){
   $idFigurine = filter_var($_GET['id'], FILTER_VALIDATE_INT);
   $figurine = FigurineDAO::findFigurineById($idFigurine);
-  $panier[0]['price'] = $figurine->lien_stripe;
+  $panier[0]['price'] = $figurine->__get("lien_stripe");
   $panier[0]['quantity'] = 1;
 } else{
-  //$_SESSION['panier'];
-  for ($i = 0; $i < count($_SESSION['panier']); $i++){
-      $figurine = FigurineDAO::findFigurineById($i);
-      $panier[$i] = $_SESSION['panier'][$i];
-      $panier[$i]['price'] = $figurine->lien_stripe;
+  //var_dump($_SESSION['panier']);
+  foreach ($_SESSION['panier'] as $item){
+      $figurine = FigurineDAO::findFigurineById($item['id']);
+      $array = array();
+      $array['price'] = $figurine->__get("lien_stripe");
+      $array['quantity'] = $item['quantite'];
+      $panier[] = $array;
   }
+  var_dump($panier);
 }
 
 
