@@ -1,17 +1,19 @@
 <?php
     require_once 'config.php';
     session_start();
-
-if (isset($_SESSION["loggedin"]) && $_SESSION["lastConnexion"] < (time()-TEMPS_MAINTIENT) && $_SESSION["lastConnexion"] > (time() - UN_JOUR)){
-    $_SESSION["loggedin"] = null;
-    header("location: ".SITE_URL."connexion.php");
-    exit;
-}else if($_SESSION["lastConnexion"] < (time() - UN_JOUR)){
-    $_SESSION = array();
-    session_destroy();
-}else{
-    $_SESSION["lastConnexion"] = time();
-}
+    if (isset($_SESSION["loggedin"]) && isset($_SESSION["lastConnexion"])){
+        if ($_SESSION["lastConnexion"] < (time()-TEMPS_MAINTIENT) && $_SESSION["lastConnexion"] > (time() - UN_JOUR)){
+            $_SESSION["loggedin"] = null;
+            header("location: ".SITE_URL."connexion.php");
+            exit;
+        }else if($_SESSION["lastConnexion"] < (time() - UN_JOUR)){
+            $_SESSION = array();
+            session_destroy();
+        }else{
+            $_SESSION["lastConnexion"] = time();
+        }
+    }
+    var_dump($_SESSION);
 ?>
 <!doctype html>
 <html class="h-100">
@@ -32,6 +34,9 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["lastConnexion"] < (time()-TEMPS_M
                 <h1>Figure It</h1>
             </div>
             <div class="gap-3 d-flex ms-auto mt-1 col-md-6 justify-content-md-end">
+                <a href="<?= SITE_URL?>panier.php" class="me-2">
+                    <img src="<?= SITE_URL."images/icons8-shopping-cart-30.png"?>" alt="panier" width="30" height="30">
+                </a>
                 <?php
                     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){ ?>
                         <a href="<?= SITE_URL."user/index.php"?>" class="user-profile"><?= $_SESSION["nom"]?></a>

@@ -31,7 +31,11 @@
                         <div class="mb-3 text-muted"><?= formater($figurine->vendeur)?></div>
 
                         <div class="d-flex justify-content-end" id="bouton-ajouter-panier">
-                            <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                            <form action="ajoutPanier.php" method="post">
+                                <input type="hidden" name="idFigurine" value="<?=$figurine->id?>">
+                                <input type="hidden" name="referer" value="index.php">
+                                <button type="submit" class="btn btn-primary mt-md-2 mb-3">Ajouter au panier</button>
+                            </form>
                         </div>
                     </div>
                 </div>
