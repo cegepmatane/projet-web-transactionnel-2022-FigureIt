@@ -25,7 +25,7 @@
                         </div>
 
                         <div id="prix">
-                            <h3 class="mb-2 font-weight-semibold"><?= formater($figurine->prix) ?></h3>
+                            <h3 class="mb-2 font-weight-semibold"><?= formater($figurine->prix) ?>$</h3>
                         </div>
 
                         <div class="mb-3 text-muted"><?= formater($figurine->vendeur)?></div>

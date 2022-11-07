@@ -33,7 +33,7 @@
                 <h1>Figure It</h1>
             </div>
             <div class="gap-3 d-flex ms-auto mt-1 col-md-6 justify-content-md-end">
-                <a href="<?= SITE_URL?>panier.php" class="me-2">
+                <a href="<?= SITE_URL?>panier.php" class="mt-md-1 me-2">
                     <img src="<?= SITE_URL."images/icons8-shopping-cart-30.png"?>" alt="panier" width="30" height="30">
                 </a>
                 <?php

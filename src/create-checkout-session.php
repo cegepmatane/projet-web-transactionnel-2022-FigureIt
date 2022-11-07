@@ -21,7 +21,7 @@ if(isset($_GET['id'])){
 }
 
 
-require '../vendor/stripe/stripe-php/init.php'; 
+require 'vendor/stripe/stripe-php/init.php';
 $montant = $figurine->lien_stripe;//$_POST['montant'];
 echo $montant;
 // This is your test secret API key.
