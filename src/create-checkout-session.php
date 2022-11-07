@@ -36,8 +36,8 @@ $checkout_session = \Stripe\Checkout\Session::create([
     [$panier]
     ],
   'mode' => 'payment',
-  'success_url' => $YOUR_DOMAIN,
-  'cancel_url' => $YOUR_DOMAIN . '/cancel.html',
+  'success_url' => $YOUR_DOMAIN . '/success.php',
+  'cancel_url' => $YOUR_DOMAIN . '/cancel.php',
 ]);
 
 header("HTTP/1.1 303 See Other");
