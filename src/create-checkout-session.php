@@ -3,15 +3,17 @@ session_start();
 require_once 'config.php';
 include "accesseur/FigurineDAO.php";
 $panier = array();
-if(!isset($_SESSION['panier'])){
+if(isset($_GET['id'])){
   $idFigurine = filter_var($_GET['id'], FILTER_VALIDATE_INT);
   $figurine = FigurineDAO::findFigurineById($idFigurine);
   $panier[0]['price'] = $figurine->lien_stripe;
   $panier[0]['quantity'] = 1;
 } else{
-  $_SESSION['panier']; 
+  //$_SESSION['panier'];
   for ($i = 0; $i < count($_SESSION['panier']); $i++){
-    $panier[$i] = $_SESSION['panier'][$i];
+      $figurine = FigurineDAO::findFigurineById($i);
+      $panier[$i] = $_SESSION['panier'][$i];
+      $panier[$i]['price'] = $figurine->lien_stripe;
   }
 }
 
@@ -31,7 +33,7 @@ $checkout_session = \Stripe\Checkout\Session::create([
     [$panier]
     ],
   'mode' => 'payment',
-  'success_url' => $YOUR_DOMAIN . '',
+  'success_url' => $YOUR_DOMAIN,
   'cancel_url' => $YOUR_DOMAIN . '/cancel.html',
 ]);
 

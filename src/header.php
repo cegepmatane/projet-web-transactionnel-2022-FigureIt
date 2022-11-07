@@ -13,7 +13,6 @@
             $_SESSION["lastConnexion"] = time();
         }
     }
-    var_dump($_SESSION);
 ?>
 <!doctype html>
 <html class="h-100">
