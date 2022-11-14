@@ -36,21 +36,32 @@
         }
     </script>
     <style>
+        .panier{
+            width: 30px;
+            height: 30px;
+            background-color: red;
+        }
+
         .preview{
-            display: none;
-            transition: display 1s ease-in-out;
+            border: 1px solid white;
+            opacity : 0;
+            height: 0px;
+            padding: .4em;
+            transition: 1s linear 1s;
+            transition-property: border, opacity, height;
         }
 
         #panier:hover + .preview{
-            display: block;
+            opacity: 1;
+            border: 1px solid black;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <div>
-        <div class="panier" id="panier" style="width: 30px; height: 30px; background-color: red" onmouseover="previewPanier()"></div>
+        <div class="panier" id="panier" onmouseover="previewPanier()"></div>
         <div class="preview" id="panier-preview"></div>
     </div>
-    <h5><?= var_dump($_SESSION['panier'])?></h5>
 </body>
 </html>
