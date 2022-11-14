@@ -43,12 +43,12 @@
         }
 
         .preview{
+            display: inline-block;
             border: 1px solid white;
             opacity : 0;
             height: 0px;
             padding: .4em;
-            transition: 1s linear 1s;
-            transition-property: border, opacity, height;
+            transition: opacity 1s, border 0s, height 0s;
         }
 
         #panier:hover + .preview{
@@ -56,6 +56,7 @@
             border: 1px solid black;
             height: auto;
         }
+
     </style>
 </head>
 <body>
