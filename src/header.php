@@ -24,6 +24,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="<?= SITE_URL ?>style.css" rel="stylesheet">
     <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        function previewPanier(){
+            console.log("imin previewPanier");
+            var previewDiv = document.getElementById("panier-preview");
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function (){
+                if (this.readyState === 4 && this.status === 200){
+                    console.log("imin");
+                    previewDiv.innerHTML = this.responseText;
+                }
+            };
+            xmlhttp.open("GET", "loadPanier.php", true);
+            xmlhttp.send();
+        }
+    </script>
 </head>
 <body class="d-flex flex-column h-100">
 <div class="container">
@@ -33,8 +48,9 @@
                 <h1>Figure It</h1>
             </div>
             <div class="gap-3 d-flex ms-auto mt-1 col-md-6 justify-content-md-end">
-                <a href="<?= SITE_URL?>panier.php" class="mt-md-1 me-2">
-                    <img src="<?= SITE_URL."images/icons8-shopping-cart-30.png"?>" alt="panier" width="30" height="30">
+                <a href="<?= SITE_URL?>panier.php" class="mt-md-1 me-2 panier" onmouseover="previewPanier()">
+                    <img src="<?= SITE_URL."images/icons8-shopping-cart-30.png"?>" alt="panier" id="panier" width="30" height="30">
+                    <div class="preview" id="panier-preview"></div>
                 </a>
                 <?php
                     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){ ?>

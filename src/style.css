@@ -123,3 +123,56 @@ hr.navDivider {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+.panier{
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.preview{
+    margin-top: 10px;
+    width: max-content;
+    max-width: 400px;
+    transform: translateX(-40%);
+    z-index: 9;
+    position: absolute;
+    display: block;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 2px darkgrey;
+    opacity : 0;
+    height: 0px;
+    padding: .4em;
+    transition: opacity 1s, border 0s, height 0s;
+}
+
+.preview:after{
+    position: absolute;
+    z-index: 8;
+    border-top: 2px solid var(--main-gray-color);
+    border-left: 2px solid var(--main-gray-color);
+    width: 20px;
+    height: 20px;
+    bottom: 100%;
+    left: 50%;
+    margin-left : -10px;
+    margin-bottom: -9px;
+    content : "";
+    transform: rotate(45deg);
+    background: white;
+}
+
+#panier:hover + .preview{
+    opacity: 1;
+    border: 2px solid var(--main-gray-color);
+    height: auto;
+}
+
+.panier-preview-prix{
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-top: 2px solid var(--main-gray-color);
+}
+
