@@ -143,14 +143,14 @@ hr.navDivider {
     border-radius: 5px;
     box-shadow: 2px 2px darkgrey;
     opacity : 0;
-    height: 0px;
+    max-height: 0;
     padding: .4em;
-    transition: opacity 1s, border 0s, height 0s;
+    transition: opacity .75s , border 0s , max-height .5s ;
 }
 
 .preview:after{
     position: absolute;
-    z-index: 8;
+    z-index: 9;
     border-top: 2px solid var(--main-gray-color);
     border-left: 2px solid var(--main-gray-color);
     width: 20px;
@@ -164,15 +164,20 @@ hr.navDivider {
     background: white;
 }
 
-#panier:hover + .preview{
+#panier:hover  .preview{
     opacity: 1;
     border: 2px solid var(--main-gray-color);
-    height: auto;
+    max-height: 500px;
 }
 
 .panier-preview-prix{
     font-size: 1.5rem;
     font-weight: bold;
     border-top: 2px solid var(--main-gray-color);
+}
+
+.badge{
+    font-size: 8pt;
+    top: 4px;
 }
 

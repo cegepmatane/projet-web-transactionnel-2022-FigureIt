@@ -13,6 +13,11 @@
             $_SESSION["lastConnexion"] = time();
         }
     }
+
+    $taillePanier = 0;
+    if (isset($_SESSION['panier'])){
+        $taillePanier = count($_SESSION['panier']);
+    }
 ?>
 <!doctype html>
 <html class="h-100">
@@ -26,12 +31,10 @@
     <script src="https://js.stripe.com/v3/"></script>
     <script>
         function previewPanier(){
-            console.log("imin previewPanier");
             var previewDiv = document.getElementById("panier-preview");
             var xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function (){
                 if (this.readyState === 4 && this.status === 200){
-                    console.log("imin");
                     previewDiv.innerHTML = this.responseText;
                 }
             };
@@ -48,10 +51,13 @@
                 <h1>Figure It</h1>
             </div>
             <div class="gap-3 d-flex ms-auto mt-1 col-md-6 justify-content-md-end">
-                <a href="<?= SITE_URL?>panier.php" class="mt-md-1 me-2 panier" onmouseover="previewPanier()">
-                    <img src="<?= SITE_URL."images/icons8-shopping-cart-30.png"?>" alt="panier" id="panier" width="30" height="30">
+                <div id="panier">
+                    <a href="<?= SITE_URL?>panier.php" class="mt-md-1 me-2 panier"  onmouseover="previewPanier()">
+                        <img src="<?= SITE_URL."images/icons8-shopping-cart-30.png"?>" alt="panier" width="30" height="30">
+                        <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger"><?= $taillePanier ?></span>
+                    </a>
                     <div class="preview" id="panier-preview"></div>
-                </a>
+                </div>
                 <?php
                     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){ ?>
                         <a href="<?= SITE_URL."user/index.php"?>" class="user-profile"><?= $_SESSION["nom"]?></a>
