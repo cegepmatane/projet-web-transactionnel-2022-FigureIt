@@ -34,7 +34,7 @@
                             <form action="ajoutPanier.php" method="post">
                                 <input type="hidden" name="idFigurine" value="<?=$figurine->id?>">
                                 <input type="hidden" name="referer" value="index.php">
-                                <button type="submit" class="btn btn-primary mt-md-2 mb-3"><? _('Ajouter au panier') ?></button>
+                                <button type="submit" class="btn btn-primary mt-md-2 mb-3"><?= _('Ajouter au panier') ?></button>
                             </form>
                         </div>
                     </div>

@@ -24,10 +24,10 @@
     </div>
     <div class="resume">
         <span class="resumeListe">
-            <div> Sous total hors taxe : <?= $total ?>$</div>
-            <div> Total après taxe : <?= round($total + ($total * 0.05) + ($total * 0.09975), 2)?>$</div>
+            <div> <?= _('Sous total hors taxe') ?> : <?= $total ?>$</div>
+            <div> <?= _('Total après taxe') ?> : <?= round($total + ($total * 0.05) + ($total * 0.09975), 2)?>$</div>
             <a href="create-checkout-session.php">
-                <button type="button" class="btn btn-primary mt-md-6 mt-sm-3">Acheter maintenant</button>
+                <button type="button" class="btn btn-primary mt-md-6 mt-sm-3"><?= _('Acheter maintenant') ?></button>
             </a>
         </span>
     </div>

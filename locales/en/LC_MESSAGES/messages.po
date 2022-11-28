@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-11-27 22:40-0500\n"
-"PO-Revision-Date: 2022-11-27 22:48-0500\n"
+"POT-Creation-Date: 2022-11-28 08:35-0500\n"
+"PO-Revision-Date: 2022-11-28 08:37-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -30,43 +30,49 @@ msgstr ""
 "X-Poedit-SearchPath-15: admin/adminModifier.php\n"
 "X-Poedit-SearchPath-16: admin/adminSupprimer.php\n"
 "X-Poedit-SearchPath-17: admin/index.php\n"
+"X-Poedit-SearchPath-18: ajoutPanier.php\n"
+"X-Poedit-SearchPath-19: cancel.php\n"
+"X-Poedit-SearchPath-20: payment.php\n"
+"X-Poedit-SearchPath-21: success.php\n"
+"X-Poedit-SearchPath-22: loadPanier.php\n"
+"X-Poedit-SearchPath-23: panier.php\n"
 
-#: admin/adminAjouter.php:13 admin/adminAjouter.php:24
-#: admin/adminListeTransaction.php:28 admin/adminModifier.php:16
-#: admin/adminModifier.php:28 admin/index.php:12
+#: admin/adminAjouter.php:14 admin/adminAjouter.php:25
+#: admin/adminListeTransaction.php:28 admin/adminModifier.php:17
+#: admin/adminModifier.php:29 admin/index.php:12
 msgid "Admin"
 msgstr "Admin"
 
-#: admin/adminAjouter.php:23
+#: admin/adminAjouter.php:24
 msgid "Déconnexion"
 msgstr "Logout"
 
-#: admin/adminAjouter.php:27
+#: admin/adminAjouter.php:28
 msgid "Ajouter produit"
 msgstr "Add product"
 
-#: admin/adminAjouter.php:31 admin/adminModifier.php:35
+#: admin/adminAjouter.php:32 admin/adminModifier.php:36
 msgid "Nom"
 msgstr "Name"
 
-#: admin/adminAjouter.php:33 admin/adminListeTransaction.php:66
-#: admin/adminModifier.php:37 admin/index.php:52 user/index.php:35
+#: admin/adminAjouter.php:34 admin/adminListeTransaction.php:66
+#: admin/adminModifier.php:38 user/index.php:35
 msgid "Prix"
 msgstr "Price"
 
-#: admin/adminAjouter.php:35 admin/adminModifier.php:39
+#: admin/adminAjouter.php:36 admin/adminModifier.php:40
 msgid "Quantite"
 msgstr "Quantity"
 
-#: admin/adminAjouter.php:37 admin/adminModifier.php:41
+#: admin/adminAjouter.php:38 admin/adminModifier.php:42
 msgid "Vendeur"
 msgstr "Seller"
 
-#: admin/adminAjouter.php:51
+#: admin/adminAjouter.php:52
 msgid "Description"
 msgstr "Description"
 
-#: admin/adminListeTransaction.php:50 admin/index.php:34 header.php:53
+#: admin/adminListeTransaction.php:50 admin/index.php:34 header.php:80
 msgid "Accueil"
 msgstr "Home"
 
@@ -90,11 +96,11 @@ msgstr "Number of figures"
 msgid "Etat"
 msgstr "State"
 
-#: admin/adminModifier.php:27
+#: admin/adminModifier.php:28
 msgid "Déconnection"
 msgstr "Disconnection"
 
-#: admin/adminModifier.php:31
+#: admin/adminModifier.php:32
 msgid "Modifier produit"
 msgstr "Modify product"
 
@@ -102,29 +108,13 @@ msgstr "Modify product"
 msgid "+ Ajouter"
 msgstr "+ Add"
 
-#: admin/index.php:49
-msgid "Nom du Vendeur"
-msgstr "Seller's name"
+#: cancel.php:7
+msgid "Votre achat n'as pas pu aboutir"
+msgstr "Your purchase could not be completed"
 
-#: admin/index.php:50
-msgid "Nom du produit"
-msgstr "Product name"
-
-#: admin/index.php:51 user/index.php:34
-msgid "Quantité"
-msgstr "Quantity"
-
-#: admin/index.php:53
-msgid "Actions"
-msgstr "Actions"
-
-#: admin/index.php:65
-msgid "Modifier"
-msgstr "Modify"
-
-#: admin/index.php:66
-msgid "Supprimer"
-msgstr "Delete"
+#: cancel.php:8 success.php:8
+msgid "Retour à l'accueil"
+msgstr "Back to home page"
 
 #: connexion.php:19
 msgid "Entrez un email"
@@ -138,7 +128,7 @@ msgstr "Enter a password"
 msgid "email ou mot de passe incorrect"
 msgstr "incorrect email or password"
 
-#: connexion.php:59 connexion.php:72 header.php:40
+#: connexion.php:59 connexion.php:72 header.php:67
 msgid "Connexion"
 msgstr "Sign in"
 
@@ -150,7 +140,7 @@ msgstr "email"
 msgid "Mot de passe"
 msgstr "Password"
 
-#: details.php:17 details.php:32 index.php:34 listeFigurine.php:34
+#: details.php:17 details.php:38 index.php:37
 msgid "Ajouter au panier"
 msgstr "Add to cart"
 
@@ -158,19 +148,23 @@ msgstr "Add to cart"
 msgid "Description :"
 msgstr "Description:"
 
-#: header.php:37
+#: details.php:33 panier.php:30
+msgid "Acheter maintenant"
+msgstr "Buy Now"
+
+#: header.php:64
 msgid "D&eacute;connexion"
 msgstr "Disconnection"
 
-#: header.php:39 inscription.php:47 inscription.php:68
+#: header.php:66 inscription.php:47 inscription.php:68
 msgid "Inscription"
 msgstr "Sign up"
 
-#: header.php:56
+#: header.php:83
 msgid "Figurines"
 msgstr "Figurines"
 
-#: header.php:59
+#: header.php:86
 msgid "Mission"
 msgstr "Mission"
 
@@ -197,6 +191,10 @@ msgstr "Identifier"
 #: inscription.php:63
 msgid "Confirmer le mot de passe"
 msgstr "Confirm password"
+
+#: loadPanier.php:18
+msgid "panier vide"
+msgstr "empty basket"
 
 #: mission.php:10
 msgid "A propos de nous"
@@ -254,6 +252,18 @@ msgstr ""
 "commission, so we will add a percentage on each sale\n"
 "            to allow us to pay the running costs of the site."
 
+#: panier.php:27
+msgid "Sous total hors taxe"
+msgstr "Subtotal before tax"
+
+#: panier.php:28 user/achat.php:18
+msgid "Total après taxe"
+msgstr "Total after tax"
+
+#: success.php:7
+msgid "Nous vous remercions pour votre achat"
+msgstr "Thank you for your purchase"
+
 #: user/achat.php:11
 msgid "Figurine de 02"
 msgstr "Figurine of 02"
@@ -262,10 +272,6 @@ msgstr "Figurine of 02"
 msgid "Sous total hors taxe : 83,96$"
 msgstr "Subtotal before tax: $83.96"
 
-#: user/achat.php:18
-msgid "Total après taxe"
-msgstr "Total after tax"
-
 #: user/index.php:32
 msgid "Id commande"
 msgstr "Order ID"
@@ -273,3 +279,22 @@ msgstr "Order ID"
 #: user/index.php:33
 msgid "Date d'achat"
 msgstr "Date of purchase"
+
+#: user/index.php:34
+msgid "Quantité"
+msgstr "Quantity"
+
+#~ msgid "Nom du Vendeur"
+#~ msgstr "Seller's name"
+
+#~ msgid "Nom du produit"
+#~ msgstr "Product name"
+
+#~ msgid "Actions"
+#~ msgstr "Actions"
+
+#~ msgid "Modifier"
+#~ msgstr "Modify"
+
+#~ msgid "Supprimer"
+#~ msgstr "Delete"

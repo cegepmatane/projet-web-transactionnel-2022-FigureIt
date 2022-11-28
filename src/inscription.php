@@ -44,28 +44,28 @@
 ?>
 <div class="container justify-content-center">
     <div class="row mb-lg-5">
-        <h2 class="d-inline-block text-center mx-lg-auto mt-lg-5 mt-md-3"><? _('Inscription') ?></h2>
+        <h2 class="d-inline-block text-center mx-lg-auto mt-lg-5 mt-md-3"><?= _('Inscription') ?></h2>
     </div>
     <form action="#" method="post">
         <div class="row mx-lg-4 mb-3 px-5">
-            <input type="text" class="form-control" placeholder=<? _('Identifiant') ?> name="inscription-identifiant" id="inscription-identifiant" value="<?= $identifiant?>" required>
+            <input type="text" class="form-control" placeholder=<?= _('Identifiant') ?> name="inscription-identifiant" id="inscription-identifiant" value="<?= $identifiant?>" required>
             <span class="form-errors"><?= $err_identifiant?></span>
         </div>
         <div class="row mx-lg-4 mb-3 px-5">
-            <input type="email" class="form-control" placeholder=<? _('email') ?> name="inscription-email" id="inscription-email" value="<?= $email ?>" required>
+            <input type="email" class="form-control" placeholder=<?= _('email') ?> name="inscription-email" id="inscription-email" value="<?= $email ?>" required>
             <span class="form-errors"><?= $err_email ?></span>
         </div>
         <div class="row mx-lg-4 mb-3 px-5">
-            <input type="password" class="form-control" placeholder=<? _('Mot de passe') ?> name="inscription-password" id="inscription-password" required>
+            <input type="password" class="form-control" placeholder=<?= _('Mot de passe') ?> name="inscription-password" id="inscription-password" required>
             <span class="form-errors"><?= $err_password ?></span>
         </div>
         <div class="row mx-lg-4 mb-3 px-5">
-            <input type="password" class="form-control" placeholder=<? _('Confirmer le mot de passe') ?> name="inscription-confirm-password" id="inscription-confirm-password" required>
+            <input type="password" class="form-control" placeholder=<?= _('Confirmer le mot de passe') ?> name="inscription-confirm-password" id="inscription-confirm-password" required>
             <span class="form-errors"><?= $err_passwordConfirm ?></span>
         </div>
         
         <div class="row mt-lg-5 mx-lg-4 px-5 justify-content-center">
-            <button class="btn btn-primary col-6" type="submit"><? _('Inscription') ?></button>
+            <button class="btn btn-primary col-6" type="submit"><?= _('Inscription') ?></button>
         </div>
     </form>
 </div>

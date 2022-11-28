@@ -15,4 +15,4 @@ if(!empty($_SESSION['panier'])){
     $panier .= "<div class='panier-preview-prix'>Total : ".$total."$</div>";
     $panier .= "<a href='".SITE_URL."panier.php' class='btn btn-primary bt-sm'>Achetez maintenant</a>";
 }
-echo $panier === "" ? "panier vide" : $panier;
+echo $panier === "" ? _("panier vide") : $panier;
