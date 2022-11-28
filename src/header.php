@@ -34,10 +34,10 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["lastConnexion"] < (time()-TEMPS_M
                 <?php
                     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){ ?>
                         <a href="<?= SITE_URL."user/index.php"?>" class="user-profile"><?= $_SESSION["nom"]?></a>
-                        <a href="<?= SITE_URL."user/logout.php"?>" class="user-profile">D&eacute;connexion</a>
+                        <a href="<?= SITE_URL."user/logout.php"?>" class="user-profile"><? _('D&eacute;connexion') ?></a>
                 <?php }else{ ?>
-                        <a href="<?= SITE_URL?>inscription.php" class="login">Inscription</a>
-                        <a href="<?= SITE_URL?>connexion.php" class="login">Connexion</a>
+                        <a href="<?= SITE_URL?>inscription.php" class="login"><? _('Inscription') ?></a>
+                        <a href="<?= SITE_URL?>connexion.php" class="login"><? _('Connexion') ?></a>
                 <?php } ?>
             </div>
         </div>
@@ -50,13 +50,13 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["lastConnexion"] < (time()-TEMPS_M
                 <div class="collapse navbar-collapse" id="liensNavbar">
                     <ul class="nav navbar-nav nav-pills nav-justified mb-1 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link <?php echo ($pageActive == "accueil" ? "active" : "")?>" href="<?= SITE_URL?>index.php">Accueil</a>
+                            <a class="nav-link <?php echo ($pageActive == "accueil" ? "active" : "")?>" href="<?= SITE_URL?>index.php"><? _('Accueil') ?></a>
                         </li>
                         <li>
-                            <a class="nav-link <?php echo ($pageActive == "listeFigurine" ? "active" : "")?>" href="<?= SITE_URL?>listeFigurine.php">Figurines</a>
+                            <a class="nav-link <?php echo ($pageActive == "listeFigurine" ? "active" : "")?>" href="<?= SITE_URL?>listeFigurine.php"><? _('Figurines') ?></a>
                         </li>
                         <li>
-                            <a class="nav-link <?php echo ($pageActive == "mission" ? "active" : "")?>" href="<?= SITE_URL?>mission.php">Mission</a>
+                            <a class="nav-link <?php echo ($pageActive == "mission" ? "active" : "")?>" href="<?= SITE_URL?>mission.php"><? _('Mission') ?></a>
                         </li>
                     </ul>
                 </div>

@@ -31,7 +31,7 @@
                         <div class="mb-3 text-muted"><?= formater($figurine->vendeur)?></div>
 
                         <div class="d-flex justify-content-end" id="bouton-ajouter-panier">
-                            <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                            <button type="button" class="btn btn-primary"><? _('Ajouter au panier') ?></button>
                         </div>
                     </div>
                 </div>

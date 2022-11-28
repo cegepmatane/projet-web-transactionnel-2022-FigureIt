@@ -14,11 +14,11 @@
                 <img src="images/<?= formater($figurine->image) ?>" class="img-fluid" alt="Placeholder">
             </div>
             <div class="d-grid gap-2 hide-button-sm">
-                <button type="button" class="btn btn-primary mt-md-6 mt-sm-3 mb-3">Ajouter au panier</button>
+                <button type="button" class="btn btn-primary mt-md-6 mt-sm-3 mb-3"><? _('Ajouter au panier') ?></button>
             </div>
             <div class="mb-md-4 ms-sm-3 me-sm-3">
                 <p class="text-justify">
-                    <strong>Description : </strong> <?= formater($figurine->description) ?>
+                    <strong><? _('Description :') ?> </strong> <?= formater($figurine->description) ?>
                 </p>
             </div>
         </div>
@@ -29,7 +29,7 @@
                 <div class="mb-md-4 text-muted"><?= formater($figurine->vendeur)?></div>
                 <div class="fs-1 mb-3"><?= formater($figurine->prix) ?>$</div>
                 <div class="d-grid gap-2 hide-button-lg">
-                    <button type="button" class="btn btn-primary mt-md-6 mt-sm-3 mb-3">Ajouter au panier</button>
+                    <button type="button" class="btn btn-primary mt-md-6 mt-sm-3 mb-3"><? _('Ajouter au panier') ?></button>
                 </div>
             </div>
         </div>

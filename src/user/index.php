@@ -29,11 +29,10 @@
         <div class="overflower">
             <table class="liste">
                 <tr class="titres">
-                    <th>Id commande</th>
-                    <th>Date d'achat</th>
-                    <th>Quantité</th>
-                    <th>Prix</th>
-
+                    <th><? _('Id commande') ?></th>
+                    <th><? _('Date d\'achat') ?></th>
+                    <th><? _('Quantité') ?></th>
+                    <th><? _('Prix') ?></th>
                 </tr>
 
                 <?php foreach ($commandes as $commande){ ?>

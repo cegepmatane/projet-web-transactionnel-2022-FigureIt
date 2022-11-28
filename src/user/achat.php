@@ -8,14 +8,14 @@
 <div class="content mt-lg-4">
     <span class="listeAchat">
         <div class="detailAchat">
-            <div class="test1">Figurine de 02</div>
+            <div class="test1"><? _('Figurine de 02') ?></div>
             <div class="test2">20,99</div>
         </div>    
     </span>
     <div class="resume">
         <span class="resumeListe">
-            <div> Sous total hors taxe : 83,96$</div>
-            <div> Total après taxe : <?php echo(92.35)?></div>
+            <div> <? _('Sous total hors taxe : 83,96$') ?></div>
+            <div> <? _('Total après taxe') ?> : <?php echo(92.35)?></div>
         </span>
         <span class="boutonAchat mt-lg-4">
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post">

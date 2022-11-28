@@ -1,0 +1,275 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-11-27 22:40-0500\n"
+"PO-Revision-Date: 2022-11-27 22:48-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2\n"
+"X-Poedit-Basepath: ../../../src\n"
+"X-Poedit-SearchPath-0: config.php\n"
+"X-Poedit-SearchPath-1: connexion.php\n"
+"X-Poedit-SearchPath-2: details.php\n"
+"X-Poedit-SearchPath-3: footer.php\n"
+"X-Poedit-SearchPath-4: header.php\n"
+"X-Poedit-SearchPath-5: index.php\n"
+"X-Poedit-SearchPath-6: inscription.php\n"
+"X-Poedit-SearchPath-7: ipn.php\n"
+"X-Poedit-SearchPath-8: listeFigurine.php\n"
+"X-Poedit-SearchPath-9: mission.php\n"
+"X-Poedit-SearchPath-10: user/achat.php\n"
+"X-Poedit-SearchPath-11: user/index.php\n"
+"X-Poedit-SearchPath-12: user/logout.php\n"
+"X-Poedit-SearchPath-13: admin/adminAjouter.php\n"
+"X-Poedit-SearchPath-14: admin/adminListeTransaction.php\n"
+"X-Poedit-SearchPath-15: admin/adminModifier.php\n"
+"X-Poedit-SearchPath-16: admin/adminSupprimer.php\n"
+"X-Poedit-SearchPath-17: admin/index.php\n"
+
+#: admin/adminAjouter.php:13 admin/adminAjouter.php:24
+#: admin/adminListeTransaction.php:28 admin/adminModifier.php:16
+#: admin/adminModifier.php:28 admin/index.php:12
+msgid "Admin"
+msgstr "Admin"
+
+#: admin/adminAjouter.php:23
+msgid "Déconnexion"
+msgstr "Logout"
+
+#: admin/adminAjouter.php:27
+msgid "Ajouter produit"
+msgstr "Add product"
+
+#: admin/adminAjouter.php:31 admin/adminModifier.php:35
+msgid "Nom"
+msgstr "Name"
+
+#: admin/adminAjouter.php:33 admin/adminListeTransaction.php:66
+#: admin/adminModifier.php:37 admin/index.php:52 user/index.php:35
+msgid "Prix"
+msgstr "Price"
+
+#: admin/adminAjouter.php:35 admin/adminModifier.php:39
+msgid "Quantite"
+msgstr "Quantity"
+
+#: admin/adminAjouter.php:37 admin/adminModifier.php:41
+msgid "Vendeur"
+msgstr "Seller"
+
+#: admin/adminAjouter.php:51
+msgid "Description"
+msgstr "Description"
+
+#: admin/adminListeTransaction.php:50 admin/index.php:34 header.php:53
+msgid "Accueil"
+msgstr "Home"
+
+#: admin/adminListeTransaction.php:53 admin/index.php:37
+msgid "Liste Transactions"
+msgstr "Transaction list"
+
+#: admin/adminListeTransaction.php:63
+msgid "Id transaction"
+msgstr "Transaction Id"
+
+#: admin/adminListeTransaction.php:64
+msgid "Nom acheteur"
+msgstr "Buyer's name"
+
+#: admin/adminListeTransaction.php:65
+msgid "Nombre figurines"
+msgstr "Number of figures"
+
+#: admin/adminListeTransaction.php:67
+msgid "Etat"
+msgstr "State"
+
+#: admin/adminModifier.php:27
+msgid "Déconnection"
+msgstr "Disconnection"
+
+#: admin/adminModifier.php:31
+msgid "Modifier produit"
+msgstr "Modify product"
+
+#: admin/index.php:45
+msgid "+ Ajouter"
+msgstr "+ Add"
+
+#: admin/index.php:49
+msgid "Nom du Vendeur"
+msgstr "Seller's name"
+
+#: admin/index.php:50
+msgid "Nom du produit"
+msgstr "Product name"
+
+#: admin/index.php:51 user/index.php:34
+msgid "Quantité"
+msgstr "Quantity"
+
+#: admin/index.php:53
+msgid "Actions"
+msgstr "Actions"
+
+#: admin/index.php:65
+msgid "Modifier"
+msgstr "Modify"
+
+#: admin/index.php:66
+msgid "Supprimer"
+msgstr "Delete"
+
+#: connexion.php:19
+msgid "Entrez un email"
+msgstr "Enter an email"
+
+#: connexion.php:28
+msgid "Entrez un mot de passe"
+msgstr "Enter a password"
+
+#: connexion.php:52
+msgid "email ou mot de passe incorrect"
+msgstr "incorrect email or password"
+
+#: connexion.php:59 connexion.php:72 header.php:40
+msgid "Connexion"
+msgstr "Sign in"
+
+#: connexion.php:64 inscription.php:55
+msgid "email"
+msgstr "email"
+
+#: connexion.php:68 inscription.php:59
+msgid "Mot de passe"
+msgstr "Password"
+
+#: details.php:17 details.php:32 index.php:34 listeFigurine.php:34
+msgid "Ajouter au panier"
+msgstr "Add to cart"
+
+#: details.php:21
+msgid "Description :"
+msgstr "Description:"
+
+#: header.php:37
+msgid "D&eacute;connexion"
+msgstr "Disconnection"
+
+#: header.php:39 inscription.php:47 inscription.php:68
+msgid "Inscription"
+msgstr "Sign up"
+
+#: header.php:56
+msgid "Figurines"
+msgstr "Figurines"
+
+#: header.php:59
+msgid "Mission"
+msgstr "Mission"
+
+#: inscription.php:20
+msgid "Identifiant d&eacute;j&agrave; utilis&eacute;"
+msgstr "Username already used"
+
+#: inscription.php:25
+msgid "Adresse mail d&eacute;j&agrave; utilis&eacute;e"
+msgstr "Email address already used"
+
+#: inscription.php:31
+msgid "Les deux mots de passe de correspondent pas"
+msgstr "The two passwords do not match"
+
+#: inscription.php:36
+msgid "Le mot de passe contient des espaces"
+msgstr "Password contains spaces"
+
+#: inscription.php:51
+msgid "Identifiant"
+msgstr "Identifier"
+
+#: inscription.php:63
+msgid "Confirmer le mot de passe"
+msgstr "Confirm password"
+
+#: mission.php:10
+msgid "A propos de nous"
+msgstr "About us"
+
+#: mission.php:12
+msgid ""
+"Nous sommes un groupe de 3 développeurs cherchant à partager notre passion "
+"pour les figurines d'occasion. \n"
+"            Il y a donc Lucas Heidet, Axel Klein et Benjamin Rodot à la tête "
+"de ce projet."
+msgstr ""
+"We are a group of 3 developers looking to share our passion for used "
+"miniatures. \n"
+"            So there is Lucas Heidet, Axel Klein and Benjamin Rodot at the "
+"head of this project."
+
+#: mission.php:17
+msgid "Nos objectifs"
+msgstr "Our goals"
+
+#: mission.php:19
+msgid ""
+"Pour notre part, nous cherchons à élargir le public d'achat des figurines "
+"d'occasion. Car dû aux nombreux collectionneurs,\n"
+"            il est difficile de trouver des figurines d'occasion sans "
+"emballages, en bon état et à un prix raisonnable. \n"
+"            Nous voulons donc créer un site internet qui permettra de "
+"trouver les figurines que vous recherchez, avec ou sans emballages,\n"
+"            dépendant de votre envie et de votre budget."
+msgstr ""
+"For our part, we seek to broaden the audience for the purchase of used "
+"figurines. Because due to the many collectors,\n"
+"            it is difficult to find used figurines without packaging, in "
+"good condition and at a reasonable price. \n"
+"            So we want to create a website that will allow you to find the "
+"figurines you are looking for, with or without packaging,\n"
+"            depending on your desire and your budget."
+
+#: mission.php:26
+msgid "Notre systeme économique"
+msgstr "Our economic system"
+
+#: mission.php:28
+msgid ""
+"Notre système économique est basé sur 2 points. Le premier sera la "
+"publicité, qui permettra de faire connaitre le site,\n"
+"            et assurer une certaine visibilité. Le second point sera la "
+"commission, donc nous ajouterons un pourcentage sur chaque vente\n"
+"            pour nous permettre de payer les frais de fonctionnement du site."
+msgstr ""
+"Our economic system is based on 2 points. The first one will be the "
+"publicity, which will allow to make known the site,\n"
+"            and ensure a certain visibility. The second point will be the "
+"commission, so we will add a percentage on each sale\n"
+"            to allow us to pay the running costs of the site."
+
+#: user/achat.php:11
+msgid "Figurine de 02"
+msgstr "Figurine of 02"
+
+#: user/achat.php:17
+msgid "Sous total hors taxe : 83,96$"
+msgstr "Subtotal before tax: $83.96"
+
+#: user/achat.php:18
+msgid "Total après taxe"
+msgstr "Total after tax"
+
+#: user/index.php:32
+msgid "Id commande"
+msgstr "Order ID"
+
+#: user/index.php:33
+msgid "Date d'achat"
+msgstr "Date of purchase"
