@@ -22,12 +22,12 @@
 	            <input type="hidden" name="charset" value="utf-8"/>
 	            <input type="hidden" name="business" value="figureitquebec@gmail.com"/>
 	            <input type="hidden" name="cmd" value="_xclick"/>
-	            <input type="hidden" name="item_name" value="Commande de figurine sur FigureIt"/>
+	            <input type="hidden" name="item_name" value="<?= _('Commande de figurine sur FigureIt') ?>"/>
 	            <input type="hidden" name="item_number" value="1"/>
 	            <input type="hidden" name="amount" value="<?php echo($amount)?>"/>
 	            <input type="hidden" name="currency_code" value="CAD"/>
                 <input type="hidden" name="return" value="https://www.figureit.fr/"/>
-	            <input type="submit" id="submit" value="Passer la commande"/>
+	            <input type="submit" id="submit" value="<?= _('Passer la commande') ?>"/>
             </form>
         </span>
     </div>

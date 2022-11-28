@@ -11,7 +11,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title><? _('Admin') ?></title>
+    <title><?= _('Admin') ?></title>
     <meta name="viewport"
             content="width=device-width, initial-scale=1">
     <!-- CSS only -->
@@ -53,7 +53,7 @@
                             <input type="text" name="description" id="description"> <br>
                         </div>
                         
-                        <input type="submit" value="Ajouter" id="ajouter" class="btn btn-secondary">
+                        <input type="submit" value="<?= _(Ajouter) ?>" id="ajouter" class="btn btn-secondary">
                     </div>
                 </form>
             </div>

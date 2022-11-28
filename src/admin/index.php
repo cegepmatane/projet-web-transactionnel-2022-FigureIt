@@ -9,7 +9,7 @@
 <html lang="fr" class="h-100">
 <head>
     <meta charset="utf-8">
-    <title><? _('Admin') ?></title>
+    <title><?= _('Admin') ?></title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
