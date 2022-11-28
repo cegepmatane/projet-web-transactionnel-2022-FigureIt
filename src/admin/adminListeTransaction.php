@@ -47,10 +47,10 @@
                 <div class="collapse navbar-collapse" id="liensNavbar">
                     <ul class="nav navbar-nav nav-pills nav-justified mb-1 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php"><? _('Accueil') ?></a>
+                            <a class="nav-link" href="index.php"><?= _('Accueil') ?></a>
                         </li>
                         <li>
-                            <a class="nav-link " href="adminListeTransaction.php"><? _('Liste Transactions') ?></a>
+                            <a class="nav-link " href="adminListeTransaction.php"><?= _('Liste Transactions') ?></a>
                         </li>
                     </ul>
                 </div>
@@ -60,11 +60,11 @@
             <div class="overflower">
             <table class="liste">
                 <tr class="titres">
-                    <th><? _('Id transaction') ?></th>
-                    <th><? _('Nom acheteur') ?></th>
-                    <th><? _('Nombre figurines') ?></th>
-                    <th><? _('Prix') ?></th>
-                    <th><? _('Etat') ?></th>
+                    <th><?= _('Id transaction') ?></th>
+                    <th><?= _('Nom acheteur') ?></th>
+                    <th><?= _('Nombre figurines') ?></th>
+                    <th><?= _('Prix') ?></th>
+                    <th><?= _('Etat') ?></th>
                     
                 </tr>
                 

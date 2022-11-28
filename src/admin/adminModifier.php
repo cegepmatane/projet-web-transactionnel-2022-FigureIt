@@ -14,7 +14,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title><? _('Admin') ?></title>
+    <title><?= _('Admin') ?></title>
     <link rel="stylesheet" href="css/admin_modifier.css">
     <meta name="viewport"
             content="width=device-width, initial-scale=1">
@@ -25,21 +25,21 @@
 <body>
     <div class="container">
         <div class="header">
-            <button type="button" id="disconnect"><? _('Déconnection') ?></button>
-            <h1><? _('Admin') ?></h1>
+            <button type="button" id="disconnect"><?= _('Déconnection') ?></button>
+            <h1><?= _('Admin') ?></h1>
         </div>
         <div class="content">
-            <h2><? _('Modifier produit') ?></h2>
+            <h2><?= _('Modifier produit') ?></h2>
                 <form action="admin_modifie.php?id=<?= $figurine->id?>" method="post">
                     <div class="row row-col-3 g-4">
                         <div class="col-lg-4">
-                            <label for="nom"><? _('Nom') ?></label> <br>
+                            <label for="nom"><?= _('Nom') ?></label> <br>
                             <input type="text" name="titre" id="nom" value="<?=formater($figurine->titre)?>"> <br>
-                            <label for="prix"><? _('Prix') ?></label> <br>
+                            <label for="prix"><?= _('Prix') ?></label> <br>
                             <input type="text" name="prix" id="prix" value="<?=formater($figurine->prix)?>"> <br>
-                            <label for="quantite"><? _('Quantite') ?></label> <br>
+                            <label for="quantite"><?= _('Quantite') ?></label> <br>
                             <input type="text" name="quantite" id="quantite" value="<?=formater($figurine->quantite)?>"> <br>
-                            <label for="vendeur"><? _('Vendeur') ?></label> <br>
+                            <label for="vendeur"><?= _('Vendeur') ?></label> <br>
                             <select name="vendeur" id="vendeur">
                                 <option value="<?=formater($figurine->vendeur)?>" ><?=formater($figurine->vendeur)?></option>
                                 <?php foreach ($clients as $client){ 
@@ -55,11 +55,11 @@
                             <input type="file" id="image" name="image" class="mt-3"> <br>
                         </div>
                         <div class="col-lg-4">
-                            <label for="description">Description</label> <br>
+                            <label for="description"><?= _('Description') ?></label> <br>
                             <textarea name="description" id="description"><?=formater($figurine->description)?></textarea>
                         </div>
                         
-                        <input type="submit" value="Modifier" id="ajouter" class="btn btn-secondary">
+                        <input type="submit" value="<?= _('Modifier') ?>" id="ajouter" class="btn btn-secondary">
                     </div>
                 </form>
             </div>

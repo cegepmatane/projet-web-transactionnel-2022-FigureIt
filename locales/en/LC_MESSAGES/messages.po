@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-11-28 08:35-0500\n"
-"PO-Revision-Date: 2022-11-28 08:37-0500\n"
+"POT-Creation-Date: 2022-11-28 09:04-0500\n"
+"PO-Revision-Date: 2022-11-28 09:04-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -56,7 +56,7 @@ msgid "Nom"
 msgstr "Name"
 
 #: admin/adminAjouter.php:34 admin/adminListeTransaction.php:66
-#: admin/adminModifier.php:38 user/index.php:35
+#: admin/adminModifier.php:38 admin/index.php:52 user/index.php:35
 msgid "Prix"
 msgstr "Price"
 
@@ -68,7 +68,7 @@ msgstr "Quantity"
 msgid "Vendeur"
 msgstr "Seller"
 
-#: admin/adminAjouter.php:52
+#: admin/adminAjouter.php:52 admin/adminModifier.php:58
 msgid "Description"
 msgstr "Description"
 
@@ -104,9 +104,33 @@ msgstr "Disconnection"
 msgid "Modifier produit"
 msgstr "Modify product"
 
+#: admin/adminModifier.php:62 admin/index.php:65
+msgid "Modifier"
+msgstr "Modify"
+
 #: admin/index.php:45
 msgid "+ Ajouter"
 msgstr "+ Add"
+
+#: admin/index.php:49
+msgid "Nom du Vendeur"
+msgstr "Seller's name"
+
+#: admin/index.php:50
+msgid "Nom du produit"
+msgstr "Product name"
+
+#: admin/index.php:51 user/index.php:34
+msgid "Quantité"
+msgstr "Quantity"
+
+#: admin/index.php:53
+msgid "Actions"
+msgstr "Actions"
+
+#: admin/index.php:66
+msgid "Supprimer"
+msgstr "Delete"
 
 #: cancel.php:7
 msgid "Votre achat n'as pas pu aboutir"
@@ -140,7 +164,7 @@ msgstr "email"
 msgid "Mot de passe"
 msgstr "Password"
 
-#: details.php:17 details.php:38 index.php:37
+#: details.php:17 details.php:38 index.php:37 listeFigurine.php:37
 msgid "Ajouter au panier"
 msgstr "Add to cart"
 
@@ -279,22 +303,3 @@ msgstr "Order ID"
 #: user/index.php:33
 msgid "Date d'achat"
 msgstr "Date of purchase"
-
-#: user/index.php:34
-msgid "Quantité"
-msgstr "Quantity"
-
-#~ msgid "Nom du Vendeur"
-#~ msgstr "Seller's name"
-
-#~ msgid "Nom du produit"
-#~ msgstr "Product name"
-
-#~ msgid "Actions"
-#~ msgstr "Actions"
-
-#~ msgid "Modifier"
-#~ msgstr "Modify"
-
-#~ msgid "Supprimer"
-#~ msgstr "Delete"

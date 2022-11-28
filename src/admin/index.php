@@ -31,10 +31,10 @@
                     <div class="collapse navbar-collapse" id="liensNavbar">
                         <ul class="nav navbar-nav nav-pills nav-justified mb-1 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.php"><? _('Accueil') ?></a>
+                                <a class="nav-link" href="index.php"><?= _('Accueil') ?></a>
                             </li>
                             <li>
-                                <a class="nav-link " href="adminListeTransaction.php"><? _('Liste Transactions') ?></a>
+                                <a class="nav-link " href="adminListeTransaction.php"><?= _('Liste Transactions') ?></a>
                             </li>
                         </ul>
                     </div>
@@ -42,15 +42,15 @@
         </nav>
 
         <div class="content">
-            <button type="button" class="addButton" onclick="window.location.href='adminAjouter.php'"><? _('+ Ajouter') ?></button>
+            <button type="button" class="addButton" onclick="window.location.href='adminAjouter.php'"><?= _('+ Ajouter') ?></button>
             <div class="overflower">
             <table class="liste">
                 <tr class="titres">
-                    <th>Nom du Vendeur</th>
-                    <th>Nom du produit</th>
-                    <th>Quantité</th>
-                    <th>Prix</th>
-                    <th>Actions</th>
+                    <th><?= _('Nom du Vendeur') ?></th>
+                    <th><?= _('Nom du produit') ?></th>
+                    <th><?= _('Quantité') ?></th>
+                    <th><?= _('Prix') ?></th>
+                    <th><?= _('Actions') ?></th>
                     
                 </tr>
                 
@@ -62,8 +62,8 @@
                         <td><?= formater($figurine->quantite)?></td>
                         <td><?= formater($figurine->prix)?></td>
                         <td>
-                            <a href="adminModifier.php?id=<?= $figurine->id?>">Modifier</a>
-                            <a href="adminSupprimer.php?id=<?=$figurine->id?>">Supprimer</a>
+                            <a href="adminModifier.php?id=<?= $figurine->id?>"><?= _('Modifier') ?></a>
+                            <a href="adminSupprimer.php?id=<?=$figurine->id?>"><?= _('Supprimer') ?></a>
                         </td>
                         
                     </tr>
