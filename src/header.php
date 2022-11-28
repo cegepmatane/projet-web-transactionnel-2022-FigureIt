@@ -19,12 +19,23 @@
         $taillePanier = count($_SESSION['panier']);
     }
 
-    $locale = "en";
-    putenv("LC_ALL=$locale");
-    $domain = 'messages';
-    textdomain($domain);
-    bindtextdomain($domain, 'C:\xampp\htdocs\projet-web-transactionnel-2022-FigureIt\locales');
-    bind_textdomain_codeset($domain, 'UTF-8');
+    $locale = "fr_FR.utf-8";
+    $pathLocales = "../locales";
+    if (defined('LC_MESSAGES')) {
+        putenv("LANG=$locale");
+        putenv("LANGUAGE=$locale");
+        $domain = 'messages';
+        setlocale(LC_MESSAGES, $locale); // Linux
+        setlocale(LC_ALL, $locale);
+        bindtextdomain($domain, $pathLocales );
+        bind_textdomain_codeset($domain, 'UTF-8');
+    } else {
+        putenv("LC_ALL=$locale"); // windows
+        $domain = 'messages';
+        textdomain($domain);
+        bindtextdomain($domain, $pathLocales);
+        bind_textdomain_codeset($domain, 'UTF-8');
+    }
 ?>
 <!doctype html>
 <html class="h-100">
