@@ -18,6 +18,13 @@
     if (isset($_SESSION['panier'])){
         $taillePanier = count($_SESSION['panier']);
     }
+
+    $locale = "en";
+    putenv("LC_ALL=$locale");
+    $domain = 'messages';
+    textdomain($domain);
+    bindtextdomain($domain, 'C:\xampp\htdocs\projet-web-transactionnel-2022-FigureIt\locales');
+    bind_textdomain_codeset($domain, 'UTF-8');
 ?>
 <!doctype html>
 <html class="h-100">

@@ -1,0 +1,313 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-11-28 09:22-0500\n"
+"PO-Revision-Date: 2022-11-28 15:37-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.2\n"
+"X-Poedit-Basepath: ../../../src\n"
+"X-Poedit-SearchPath-0: config.php\n"
+"X-Poedit-SearchPath-1: connexion.php\n"
+"X-Poedit-SearchPath-2: details.php\n"
+"X-Poedit-SearchPath-3: footer.php\n"
+"X-Poedit-SearchPath-4: header.php\n"
+"X-Poedit-SearchPath-5: index.php\n"
+"X-Poedit-SearchPath-6: inscription.php\n"
+"X-Poedit-SearchPath-7: ipn.php\n"
+"X-Poedit-SearchPath-8: listeFigurine.php\n"
+"X-Poedit-SearchPath-9: mission.php\n"
+"X-Poedit-SearchPath-10: user/achat.php\n"
+"X-Poedit-SearchPath-11: user/index.php\n"
+"X-Poedit-SearchPath-12: user/logout.php\n"
+"X-Poedit-SearchPath-13: admin/adminAjouter.php\n"
+"X-Poedit-SearchPath-14: admin/adminListeTransaction.php\n"
+"X-Poedit-SearchPath-15: admin/adminModifier.php\n"
+"X-Poedit-SearchPath-16: admin/adminSupprimer.php\n"
+"X-Poedit-SearchPath-17: admin/index.php\n"
+"X-Poedit-SearchPath-18: ajoutPanier.php\n"
+"X-Poedit-SearchPath-19: cancel.php\n"
+"X-Poedit-SearchPath-20: payment.php\n"
+"X-Poedit-SearchPath-21: success.php\n"
+"X-Poedit-SearchPath-22: loadPanier.php\n"
+"X-Poedit-SearchPath-23: panier.php\n"
+
+#: admin/adminAjouter.php:14 admin/adminAjouter.php:25
+#: admin/adminListeTransaction.php:28 admin/adminModifier.php:17
+#: admin/adminModifier.php:29 admin/index.php:12
+msgid "Admin"
+msgstr "Admin"
+
+#: admin/adminAjouter.php:24
+msgid "Déconnexion"
+msgstr "Déconnexion"
+
+#: admin/adminAjouter.php:28
+msgid "Ajouter produit"
+msgstr "Ajouter produit"
+
+#: admin/adminAjouter.php:32 admin/adminModifier.php:36
+msgid "Nom"
+msgstr "Nom"
+
+#: admin/adminAjouter.php:34 admin/adminListeTransaction.php:66
+#: admin/adminModifier.php:38 admin/index.php:52 user/index.php:35
+msgid "Prix"
+msgstr "Prix"
+
+#: admin/adminAjouter.php:36 admin/adminModifier.php:40
+msgid "Quantite"
+msgstr "Quantite"
+
+#: admin/adminAjouter.php:38 admin/adminModifier.php:42
+msgid "Vendeur"
+msgstr "Vendeur"
+
+#: admin/adminAjouter.php:52 admin/adminModifier.php:58
+msgid "Description"
+msgstr "Description"
+
+#: admin/adminListeTransaction.php:50 admin/index.php:34 header.php:80
+msgid "Accueil"
+msgstr "Accueil"
+
+#: admin/adminListeTransaction.php:53 admin/index.php:37
+msgid "Liste Transactions"
+msgstr "Liste Transactions"
+
+#: admin/adminListeTransaction.php:63
+msgid "Id transaction"
+msgstr "Id transaction"
+
+#: admin/adminListeTransaction.php:64
+msgid "Nom acheteur"
+msgstr "Nom acheteur"
+
+#: admin/adminListeTransaction.php:65
+msgid "Nombre figurines"
+msgstr "Nombre figurines"
+
+#: admin/adminListeTransaction.php:67
+msgid "Etat"
+msgstr "Etat"
+
+#: admin/adminModifier.php:28
+msgid "Déconnection"
+msgstr "Déconnection"
+
+#: admin/adminModifier.php:32
+msgid "Modifier produit"
+msgstr "Modifier produit"
+
+#: admin/adminModifier.php:62 admin/index.php:65
+msgid "Modifier"
+msgstr "Modifier"
+
+#: admin/index.php:45
+msgid "+ Ajouter"
+msgstr "+ Ajouter"
+
+#: admin/index.php:49
+msgid "Nom du Vendeur"
+msgstr "Nom du Vendeur"
+
+#: admin/index.php:50
+msgid "Nom du produit"
+msgstr "Nom du produit"
+
+#: admin/index.php:51 user/index.php:34
+msgid "Quantité"
+msgstr "Quantité"
+
+#: admin/index.php:53
+msgid "Actions"
+msgstr "Actions"
+
+#: admin/index.php:66
+msgid "Supprimer"
+msgstr "Supprimer"
+
+#: cancel.php:7
+msgid "Votre achat n'as pas pu aboutir"
+msgstr "Votre achat n'as pas pu aboutir"
+
+#: cancel.php:8 success.php:8
+msgid "Retour à l'accueil"
+msgstr "Retour à l'accueil"
+
+#: connexion.php:19
+msgid "Entrez un email"
+msgstr "Entrez un email"
+
+#: connexion.php:28
+msgid "Entrez un mot de passe"
+msgstr "Entrez un mot de passe"
+
+#: connexion.php:52
+msgid "email ou mot de passe incorrect"
+msgstr "email ou mot de passe incorrect"
+
+#: connexion.php:59 connexion.php:72 header.php:67
+msgid "Connexion"
+msgstr "Connexion"
+
+#: connexion.php:64 inscription.php:55
+msgid "email"
+msgstr "email"
+
+#: connexion.php:68 inscription.php:59
+msgid "Mot de passe"
+msgstr "Mot de passe"
+
+#: details.php:17 details.php:38 index.php:37 listeFigurine.php:37
+msgid "Ajouter au panier"
+msgstr "Ajouter au panier"
+
+#: details.php:21
+msgid "Description :"
+msgstr "Description :"
+
+#: details.php:33 panier.php:30
+msgid "Acheter maintenant"
+msgstr "Acheter maintenant"
+
+#: header.php:64
+msgid "D&eacute;connexion"
+msgstr "D&eacute;connexion"
+
+#: header.php:66 inscription.php:47 inscription.php:68
+msgid "Inscription"
+msgstr "Inscription"
+
+#: header.php:83
+msgid "Figurines"
+msgstr "Figurines"
+
+#: header.php:86
+msgid "Mission"
+msgstr "Mission"
+
+#: inscription.php:20
+msgid "Identifiant d&eacute;j&agrave; utilis&eacute;"
+msgstr "Identifiant d&eacute;j&agrave; utilis&eacute;"
+
+#: inscription.php:25
+msgid "Adresse mail d&eacute;j&agrave; utilis&eacute;e"
+msgstr "Adresse mail d&eacute;j&agrave; utilis&eacute;e"
+
+#: inscription.php:31
+msgid "Les deux mots de passe de correspondent pas"
+msgstr "Les deux mots de passe de correspondent pas"
+
+#: inscription.php:36
+msgid "Le mot de passe contient des espaces"
+msgstr "Le mot de passe contient des espaces"
+
+#: inscription.php:51
+msgid "Identifiant"
+msgstr "Identifiant"
+
+#: inscription.php:63
+msgid "Confirmer le mot de passe"
+msgstr "Confirmer le mot de passe"
+
+#: loadPanier.php:18
+msgid "panier vide"
+msgstr "panier vide"
+
+#: mission.php:10
+msgid "A propos de nous"
+msgstr "A propos de nous"
+
+#: mission.php:12
+msgid ""
+"Nous sommes un groupe de 3 développeurs cherchant à partager notre passion "
+"pour les figurines d'occasion. \n"
+"            Il y a donc Lucas Heidet, Axel Klein et Benjamin Rodot à la tête "
+"de ce projet."
+msgstr ""
+"Nous sommes un groupe de 3 développeurs cherchant à partager notre passion "
+"pour les figurines d'occasion. \n"
+"            Il y a donc Lucas Heidet, Axel Klein et Benjamin Rodot à la tête "
+"de ce projet."
+
+#: mission.php:17
+msgid "Nos objectifs"
+msgstr "Nos objectifs"
+
+#: mission.php:19
+msgid ""
+"Pour notre part, nous cherchons à élargir le public d'achat des figurines "
+"d'occasion. Car dû aux nombreux collectionneurs,\n"
+"            il est difficile de trouver des figurines d'occasion sans "
+"emballages, en bon état et à un prix raisonnable. \n"
+"            Nous voulons donc créer un site internet qui permettra de "
+"trouver les figurines que vous recherchez, avec ou sans emballages,\n"
+"            dépendant de votre envie et de votre budget."
+msgstr ""
+"Pour notre part, nous cherchons à élargir le public d'achat des figurines "
+"d'occasion. Car dû aux nombreux collectionneurs,\n"
+"            il est difficile de trouver des figurines d'occasion sans "
+"emballages, en bon état et à un prix raisonnable. \n"
+"            Nous voulons donc créer un site internet qui permettra de "
+"trouver les figurines que vous recherchez, avec ou sans emballages,\n"
+"            dépendant de votre envie et de votre budget."
+
+#: mission.php:26
+msgid "Notre systeme économique"
+msgstr "Notre systeme économique"
+
+#: mission.php:28
+msgid ""
+"Notre système économique est basé sur 2 points. Le premier sera la "
+"publicité, qui permettra de faire connaitre le site,\n"
+"            et assurer une certaine visibilité. Le second point sera la "
+"commission, donc nous ajouterons un pourcentage sur chaque vente\n"
+"            pour nous permettre de payer les frais de fonctionnement du site."
+msgstr ""
+"Notre système économique est basé sur 2 points. Le premier sera la "
+"publicité, qui permettra de faire connaitre le site,\n"
+"            et assurer une certaine visibilité. Le second point sera la "
+"commission, donc nous ajouterons un pourcentage sur chaque vente\n"
+"            pour nous permettre de payer les frais de fonctionnement du site."
+
+#: panier.php:27
+msgid "Sous total hors taxe"
+msgstr "Sous total hors taxe"
+
+#: panier.php:28 user/achat.php:18
+msgid "Total après taxe"
+msgstr "Total après taxe"
+
+#: success.php:7
+msgid "Nous vous remercions pour votre achat"
+msgstr "Nous vous remercions pour votre achat"
+
+#: user/achat.php:11
+msgid "Figurine de 02"
+msgstr "Figurine de 02"
+
+#: user/achat.php:17
+msgid "Sous total hors taxe : 83,96$"
+msgstr "Sous total hors taxe : 83,96$"
+
+#: user/achat.php:25
+msgid "Commande de figurine sur FigureIt"
+msgstr "Commande de figurine sur FigureIt"
+
+#: user/achat.php:30
+msgid "Passer la commande"
+msgstr "Passer la commande"
+
+#: user/index.php:32
+msgid "Id commande"
+msgstr "Id commande"
+
+#: user/index.php:33
+msgid "Date d'achat"
+msgstr "Date d'achat"
