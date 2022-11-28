@@ -2,8 +2,9 @@
     $titre = "AdminAjouter";
     $pageActive = "adminAjouter";
 
-    include_once "accesseur/ClientDAO.php";
-    include "accesseur/FigurineDAO.php";
+    require_once "../config.php";
+    include_once SITEPATH."admin/accesseur/ClientDAO.php";
+    include SITEPATH."admin/accesseur/FigurineDAO.php";
     $clients = ClientDAO::listerClients();
 ?>
 <!DOCTYPE html>

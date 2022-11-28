@@ -5,8 +5,8 @@ if($_SERVER['HTTP_HOST'] == "localhost:8080"){// For local
  define('SITEPATH', $_SERVER['DOCUMENT_ROOT'] . '/projet-web-transactionnel-2022-FigureIt/src/');
 }
 else{ // For Web
- define('SITE_URL', "https://" . $_SERVER['HTTP_HOST']);
- define('SITEPATH', $_SERVER['DOCUMENT_ROOT']);
+ define('SITE_URL', "https://" . $_SERVER['HTTP_HOST'].'/');
+ define('SITEPATH', $_SERVER['DOCUMENT_ROOT'].'/');
 }
 
 const TEMPS_MAINTIENT = 1800;

@@ -8,7 +8,8 @@ class Figurine {
         'prix' => FILTER_VALIDATE_FLOAT,
         'quantite' => FILTER_VALIDATE_INT,
         'description' => FILTER_SANITIZE_ENCODED,
-        'image' => FILTER_SANITIZE_ENCODED
+        'image' => FILTER_SANITIZE_ENCODED,
+        'lien_stripe' => FILTER_SANITIZE_ENCODED
     );
 
     protected $id;
@@ -18,6 +19,7 @@ class Figurine {
     protected $quantite;
     protected $description;
     protected $image;
+    protected $lien_stripe;
 
     /**
      * @param $tableau
@@ -35,6 +37,7 @@ class Figurine {
         $this->quantite = $tableau['quantite'];
         $this->description = $tableau['description'];
         $this->image = $tableau['image'];
+        $this->lien_stripe = $tableau['lien_stripe'];
     }
 
     /**
@@ -65,6 +68,9 @@ class Figurine {
                 break;
             case 'image' :
                 $this->image = $value;
+                break;
+            case 'lien_stripe' :
+                $this->lien_stripe = $value;
                 break;
         }
     }

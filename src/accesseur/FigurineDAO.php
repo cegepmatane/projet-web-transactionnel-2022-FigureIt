@@ -86,7 +86,7 @@
             
         }
 
-        public static function modifierFigurine($id, $titre, $prix, $quantite, $description, $image){
+        public static function modifierFigurine($id, $titre, $prix, $quantite, $description, $image, $lien_stripe){
             FigurineDAO::connexionBDD();
 
             $demandeModificationFigurine = FigurineDAO::$bdd->prepare(FigurineDAO::UPDATE_FIGURINE);
@@ -96,6 +96,7 @@
             $demandeModificationFigurine->bindParam(':quantite', $quantite, PDO::PARAM_INT);
             $demandeModificationFigurine->bindParam(':description', $description, PDO::PARAM_STR);
             $demandeModificationFigurine->bindParam(':image', $image, PDO::PARAM_STR);
+            $demandeModificationFigurine->bindParam(':lien_stripe', $lien_stripe, PDO::PARAM_STR);
             $demandeModificationFigurine->execute();
             
         }
