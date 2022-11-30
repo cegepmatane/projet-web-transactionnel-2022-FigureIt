@@ -19,8 +19,12 @@
         $taillePanier = count($_SESSION['panier']);
     }
 
-    $locale = "fr_FR.utf-8";
-    $pathLocales = "../locales";
+    //$locale = "fr_FR.utf-8";
+    //$pathLocales = "../locales";
+
+    $locale = "fr";
+    $pathLocales = "C:\xampp\htdocs\projet-web-transactionnel-2022-FigureIt\locales";
+
     if (defined('LC_MESSAGES')) {
         putenv("LANG=$locale");
         putenv("LANGUAGE=$locale");
@@ -30,10 +34,10 @@
         bindtextdomain($domain, $pathLocales );
         bind_textdomain_codeset($domain, 'UTF-8');
     } else {
-        putenv("LC_ALL=$locale"); // windows
+        putenv("LC_ALL=$locale"); // windows 
         $domain = 'messages';
         textdomain($domain);
-        bindtextdomain($domain, $pathLocales);
+        echo bindtextdomain($domain, $pathLocales);
         bind_textdomain_codeset($domain, 'UTF-8');
     }
 ?>
@@ -59,6 +63,15 @@
             xmlhttp.open("GET", "loadPanier.php", true);
             xmlhttp.send();
         }
+
+        function changeLangue(obj) {
+            if (obj.id == 'radio1') {
+                console.log(obj.value);
+            } else {
+                console.log(obj.value);
+            }
+            document.getElementById('test').innerHTML = obj.value;
+        }
     </script>
 </head>
 <body class="d-flex flex-column h-100">
@@ -66,6 +79,7 @@
     <div class="container-fluid">
         <div class="row row-col-2">
             <div  class="d-inline-block col-md-6">
+                <a id="test">Coucou</a>
                 <h1>Figure It</h1>
             </div>
             <div class="gap-3 d-flex ms-auto mt-1 col-md-6 justify-content-md-end">
@@ -84,6 +98,17 @@
                         <a href="<?= SITE_URL?>inscription.php" class="login"><?= _('Inscription') ?></a>
                         <a href="<?= SITE_URL?>connexion.php" class="login"><?= _('Connexion') ?></a>
                 <?php } ?>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioLangue" id="radio1" value="fr_FR.utf-8" onchange="changeLangue(this)" checked>
+                    <label class="form-check-label" for="radioFR">
+                        fr
+                    </label>
+                    </br>
+                    <input class="form-check-input" type="radio" name="radioLangue" id="radio2" value="en_CA.utf-8" onchange="changeLangue(this)">
+                    <label class="form-check-label" for="radioEN">
+                        en
+                    </label>
+                </div>
             </div>
         </div>
     </div>

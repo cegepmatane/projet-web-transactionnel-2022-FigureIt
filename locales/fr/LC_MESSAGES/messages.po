@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2022-11-28 09:22-0500\n"
-"PO-Revision-Date: 2022-11-28 15:37-0500\n"
+"PO-Revision-Date: 2022-11-29 23:20-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -74,7 +74,7 @@ msgstr "Description"
 
 #: admin/adminListeTransaction.php:50 admin/index.php:34 header.php:80
 msgid "Accueil"
-msgstr "Accueil"
+msgstr "AccueilV2"
 
 #: admin/adminListeTransaction.php:53 admin/index.php:37
 msgid "Liste Transactions"
