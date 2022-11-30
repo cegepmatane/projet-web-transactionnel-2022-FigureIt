@@ -24,6 +24,10 @@
     }else{
         $langue = 'fr_FR.utf-8';
     }
+    
+    if (isset($_POST["radioLangue"])) {
+        $langue = $_POST["radioLangue"];
+    }
 
     //$locale = "fr_FR.utf-8";
     //$pathLocales = "../locales";
@@ -70,15 +74,11 @@
             xmlhttp.send();
         }
 
-        function changeLangue(obj) {
-            if (obj.id == 'radio1') {
-                console.log(obj.value);
-            } else {
-                console.log(obj.value);
+        function autoSubmit()
+            {
+                var formObject = document.forms['langueForm'];
+                formObject.submit();
             }
-            //document.getElementById('test').innerHTML = obj.value;
-            //location.reload();
-        }
     </script>
 </head>
 <body class="d-flex flex-column h-100">
@@ -106,15 +106,17 @@
                         <a href="<?= SITE_URL?>connexion.php" class="login"><?= _('Connexion') ?></a>
                 <?php } ?>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="radioLangue" id="radio1" value="fr_FR.utf-8" onchange="changeLangue(this)" <?= ($langue == "fr_FR.utf-8" ? "checked":"") ?>>
-                    <label class="form-check-label" for="radioFR">
-                        fr
-                    </label>
-                    </br>
-                    <input class="form-check-input" type="radio" name="radioLangue" id="radio2" value="en_CA.utf-8" onchange="changeLangue(this)" <?= ($langue == "en_CA.utf-8" ? "checked":"") ?>>
-                    <label class="form-check-label" for="radioEN">
-                        en
-                    </label>
+                    <form name='langueForm' id='langueForm' method="post">
+                        <input class="form-check-input" type="radio" name="radioLangue" id="radio1" value="fr_FR.utf-8" onchange="autoSubmit();" <?= ($langue == "fr_FR.utf-8" ? "checked":"") ?>>
+                        <label class="form-check-label" for="radioFR">
+                            fr
+                        </label>
+                        </br>
+                        <input class="form-check-input" type="radio" name="radioLangue" id="radio2" value="en_CA.utf-8" onchange="autoSubmit();" <?= ($langue == "en_CA.utf-8" ? "checked":"") ?>>
+                        <label class="form-check-label" for="radioEN">
+                            en
+                        </label>
+                    </form>
                 </div>
             </div>
         </div>
