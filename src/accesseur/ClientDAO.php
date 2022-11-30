@@ -1,6 +1,6 @@
 <?php
-include_once "modeles/Client.php";
-include_once "ClientSQL.php";
+include_once SITEPATH."modeles/Client.php";
+include_once SITEPATH."accesseur/ClientSQL.php";
 
     class AccesseurClient {
         public static $bdd = null;
@@ -87,6 +87,12 @@ include_once "ClientSQL.php";
             $demandeAjoutClient->bindParam(':email', $email, PDO::PARAM_STR);
             $demandeAjoutClient->bindParam(':motDePasse', $motDePasse, PDO::PARAM_STR);
             $demandeAjoutClient->execute();
+        }
+
+        public static function formater($text){
+            $text = html_entity_decode($text, ENT_COMPAT, 'UTF-8');
+            $text = rawurldecode($text);
+            return $text;
         }
 
     }
