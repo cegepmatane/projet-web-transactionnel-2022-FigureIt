@@ -90,7 +90,6 @@
     <div class="container-fluid">
         <div class="row row-col-2">
             <div  class="d-inline-block col-md-6">
-                <a id="test"><?= $locale ?></a>
                 <h1>Figure It</h1>
             </div>
             <div class="gap-3 d-flex ms-auto mt-1 col-md-6 justify-content-md-end">

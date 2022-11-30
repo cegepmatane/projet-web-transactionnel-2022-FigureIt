@@ -37,7 +37,10 @@ if(!empty($_POST['stripeToken'])){
       case "checkout.session.completed" :
         $session = $event->data->object;
         echo 'session' . $session;
-        //TransactionDAO::ajouterTransaction($session);
+        foreach($_SESSION[$panier] as $item)
+        {
+          CommandeDAO::ajouterCommande(time(),date("d-m-Y", strtotime($str)), $item["quantite"],$item["id"],$_SESSION["id"]);
+        }
       break;
       default :
         echo 'Received unknown event type ' . $event->type;
