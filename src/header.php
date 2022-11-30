@@ -34,10 +34,10 @@
     
 
     //$locale = "fr_FR.utf-8";
-    //$pathLocales = "../locales";
+    //$pathLocales = "./locales";
 
     //$locale = "fr";
-    $pathLocales = "C:\xampp\htdocs\projet-web-transactionnel-2022-FigureIt\locales";
+    $pathLocales = "C:\xampp\htdocs\projet-web-transactionnel-2022-FigureIt\src\locales";
 
     if (defined('LC_MESSAGES')) {
         putenv("LANG=$locale");
