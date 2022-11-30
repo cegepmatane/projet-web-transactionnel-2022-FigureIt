@@ -19,6 +19,12 @@
         $taillePanier = count($_SESSION['panier']);
     }
 
+    if(isset($_SESSION['langue'])){
+        $langue = $_SESSION['langue'];
+    }else{
+        $langue = 'fr_FR.utf-8';
+    }
+
     //$locale = "fr_FR.utf-8";
     //$pathLocales = "../locales";
 
@@ -70,7 +76,8 @@
             } else {
                 console.log(obj.value);
             }
-            document.getElementById('test').innerHTML = obj.value;
+            //document.getElementById('test').innerHTML = obj.value;
+            //location.reload();
         }
     </script>
 </head>
@@ -79,7 +86,7 @@
     <div class="container-fluid">
         <div class="row row-col-2">
             <div  class="d-inline-block col-md-6">
-                <a id="test">Coucou</a>
+                <a id="test"><?= $langue ?></a>
                 <h1>Figure It</h1>
             </div>
             <div class="gap-3 d-flex ms-auto mt-1 col-md-6 justify-content-md-end">
@@ -99,12 +106,12 @@
                         <a href="<?= SITE_URL?>connexion.php" class="login"><?= _('Connexion') ?></a>
                 <?php } ?>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="radioLangue" id="radio1" value="fr_FR.utf-8" onchange="changeLangue(this)" checked>
+                    <input class="form-check-input" type="radio" name="radioLangue" id="radio1" value="fr_FR.utf-8" onchange="changeLangue(this)" <?= ($langue == "fr_FR.utf-8" ? "checked":"") ?>>
                     <label class="form-check-label" for="radioFR">
                         fr
                     </label>
                     </br>
-                    <input class="form-check-input" type="radio" name="radioLangue" id="radio2" value="en_CA.utf-8" onchange="changeLangue(this)">
+                    <input class="form-check-input" type="radio" name="radioLangue" id="radio2" value="en_CA.utf-8" onchange="changeLangue(this)" <?= ($langue == "en_CA.utf-8" ? "checked":"") ?>>
                     <label class="form-check-label" for="radioEN">
                         en
                     </label>
