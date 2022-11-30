@@ -20,19 +20,23 @@
     }
 
     if(isset($_SESSION['langue'])){
-        $langue = $_SESSION['langue'];
-    }else{
-        $langue = 'fr_FR.utf-8';
+        $locale = $_SESSION['langue'];
     }
-    
+
     if (isset($_POST["radioLangue"])) {
-        $langue = $_POST["radioLangue"];
+        $_SESSION['langue'] = $_POST["radioLangue"];
+        $locale = $_POST["radioLangue"];
+    }else{
+        $_SESSION['langue'] = "fr_FR.utf-8";
+        $locale = "fr_FR.utf-8";
     }
+
+    
 
     //$locale = "fr_FR.utf-8";
     //$pathLocales = "../locales";
 
-    $locale = "fr";
+    //$locale = "fr";
     $pathLocales = "C:\xampp\htdocs\projet-web-transactionnel-2022-FigureIt\locales";
 
     if (defined('LC_MESSAGES')) {
@@ -86,7 +90,7 @@
     <div class="container-fluid">
         <div class="row row-col-2">
             <div  class="d-inline-block col-md-6">
-                <a id="test"><?= $langue ?></a>
+                <a id="test"><?= $locale ?></a>
                 <h1>Figure It</h1>
             </div>
             <div class="gap-3 d-flex ms-auto mt-1 col-md-6 justify-content-md-end">
@@ -107,12 +111,12 @@
                 <?php } ?>
                 <div class="form-check">
                     <form name='langueForm' id='langueForm' method="post">
-                        <input class="form-check-input" type="radio" name="radioLangue" id="radio1" value="fr_FR.utf-8" onchange="autoSubmit();" <?= ($langue == "fr_FR.utf-8" ? "checked":"") ?>>
+                        <input class="form-check-input" type="radio" name="radioLangue" id="radio1" value="fr_FR.utf-8" onchange="autoSubmit();" <?= ($locale == "fr_FR.utf-8" ? "checked":"") ?>>
                         <label class="form-check-label" for="radioFR">
                             fr
                         </label>
                         </br>
-                        <input class="form-check-input" type="radio" name="radioLangue" id="radio2" value="en_CA.utf-8" onchange="autoSubmit();" <?= ($langue == "en_CA.utf-8" ? "checked":"") ?>>
+                        <input class="form-check-input" type="radio" name="radioLangue" id="radio2" value="en_CA.utf-8" onchange="autoSubmit();" <?= ($locale == "en_CA.utf-8" ? "checked":"") ?>>
                         <label class="form-check-label" for="radioEN">
                             en
                         </label>
