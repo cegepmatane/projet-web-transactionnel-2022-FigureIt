@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-11-28 09:22-0500\n"
-"PO-Revision-Date: 2022-12-05 16:33-0500\n"
+"POT-Creation-Date: 2022-12-05 17:57-0500\n"
+"PO-Revision-Date: 2022-12-05 17:57-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 3.2.2\n"
-"X-Poedit-Basepath: ../../../src\n"
+"X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SearchPath-0: config.php\n"
 "X-Poedit-SearchPath-1: connexion.php\n"
 "X-Poedit-SearchPath-2: details.php\n"
@@ -56,7 +56,7 @@ msgid "Nom"
 msgstr "Nom"
 
 #: admin/adminAjouter.php:34 admin/adminListeTransaction.php:66
-#: admin/adminModifier.php:38 admin/index.php:52 user/index.php:35
+#: admin/adminModifier.php:38 admin/index.php:52 user/index.php:81
 msgid "Prix"
 msgstr "Prix"
 
@@ -72,7 +72,7 @@ msgstr "Vendeur"
 msgid "Description"
 msgstr "Description"
 
-#: admin/adminListeTransaction.php:50 admin/index.php:34 header.php:80
+#: admin/adminListeTransaction.php:50 admin/index.php:34 header.php:132
 msgid "Accueil"
 msgstr "Accueil"
 
@@ -120,7 +120,7 @@ msgstr "Nom du Vendeur"
 msgid "Nom du produit"
 msgstr "Nom du produit"
 
-#: admin/index.php:51 user/index.php:34
+#: admin/index.php:51 user/index.php:80
 msgid "Quantité"
 msgstr "Quantité"
 
@@ -152,7 +152,7 @@ msgstr "Entrez un mot de passe"
 msgid "email ou mot de passe incorrect"
 msgstr "email ou mot de passe incorrect"
 
-#: connexion.php:59 connexion.php:72 header.php:67
+#: connexion.php:59 connexion.php:75 header.php:106
 msgid "Connexion"
 msgstr "Connexion"
 
@@ -176,19 +176,19 @@ msgstr "Description :"
 msgid "Acheter maintenant"
 msgstr "Acheter maintenant"
 
-#: header.php:64
+#: header.php:103
 msgid "D&eacute;connexion"
 msgstr "D&eacute;connexion"
 
-#: header.php:66 inscription.php:47 inscription.php:68
+#: header.php:105 inscription.php:47 inscription.php:72
 msgid "Inscription"
 msgstr "Inscription"
 
-#: header.php:83
+#: header.php:135
 msgid "Figurines"
 msgstr "Figurines"
 
-#: header.php:86
+#: header.php:138
 msgid "Mission"
 msgstr "Mission"
 
@@ -227,54 +227,50 @@ msgstr "A propos de nous"
 #: mission.php:12
 msgid ""
 "Nous sommes un groupe de 3 développeurs cherchant à partager notre passion "
-"pour les figurines d'occasion. \n"
-"            Il y a donc Lucas Heidet, Axel Klein et Benjamin Rodot à la tête "
-"de ce projet."
+"pour les figurines d'occasion. Il y a donc Lucas Heidet, Axel Klein et "
+"Benjamin Rodot à la tête de ce projet."
 msgstr ""
 "Nous sommes un groupe de 3 développeurs cherchant à partager notre passion "
-"pour les figurines d'occasion. \n"
-"            Il y a donc Lucas Heidet, Axel Klein et Benjamin Rodot à la tête "
-"de ce projet."
+"pour les figurines d'occasion. Il y a donc Lucas Heidet, Axel Klein et "
+"Benjamin Rodot à la tête de ce projet."
 
-#: mission.php:17
+#: mission.php:16
 msgid "Nos objectifs"
 msgstr "Nos objectifs"
 
-#: mission.php:19
+#: mission.php:18
 msgid ""
 "Pour notre part, nous cherchons à élargir le public d'achat des figurines "
-"d'occasion. Car dû aux nombreux collectionneurs,\n"
-"            il est difficile de trouver des figurines d'occasion sans "
-"emballages, en bon état et à un prix raisonnable. \n"
-"            Nous voulons donc créer un site internet qui permettra de "
-"trouver les figurines que vous recherchez, avec ou sans emballages,\n"
-"            dépendant de votre envie et de votre budget."
+"d'occasion. Car dû aux nombreux collectionneurs, il est difficile de trouver "
+"des figurines d'occasion sans emballages, en bon état et à un prix "
+"raisonnable.  Nous voulons donc créer un site internet qui permettra de "
+"trouver les figurines que vous recherchez, avec ou sans emballages, "
+"dépendant de votre envie et de votre budget."
 msgstr ""
 "Pour notre part, nous cherchons à élargir le public d'achat des figurines "
-"d'occasion. Car dû aux nombreux collectionneurs,\n"
-"            il est difficile de trouver des figurines d'occasion sans "
-"emballages, en bon état et à un prix raisonnable. \n"
-"            Nous voulons donc créer un site internet qui permettra de "
-"trouver les figurines que vous recherchez, avec ou sans emballages,\n"
-"            dépendant de votre envie et de votre budget."
+"d'occasion. Car dû aux nombreux collectionneurs, il est difficile de trouver "
+"des figurines d'occasion sans emballages, en bon état et à un prix "
+"raisonnable. Nous voulons donc créer un site internet qui permettra de "
+"trouver les figurines que vous recherchez, avec ou sans emballages, "
+"dépendant de votre envie et de votre budget."
 
-#: mission.php:26
+#: mission.php:22
 msgid "Notre systeme économique"
 msgstr "Notre systeme économique"
 
-#: mission.php:28
+#: mission.php:24
 msgid ""
 "Notre système économique est basé sur 2 points. Le premier sera la "
-"publicité, qui permettra de faire connaitre le site,\n"
-"            et assurer une certaine visibilité. Le second point sera la "
-"commission, donc nous ajouterons un pourcentage sur chaque vente\n"
-"            pour nous permettre de payer les frais de fonctionnement du site."
+"publicité, qui permettra de faire connaitre le site, et assurer une certaine "
+"visibilité. Le second point sera la commission, donc nous ajouterons un "
+"pourcentage sur chaque vente pour nous permettre de payer les frais de "
+"fonctionnement du site."
 msgstr ""
 "Notre système économique est basé sur 2 points. Le premier sera la "
-"publicité, qui permettra de faire connaitre le site,\n"
-"            et assurer une certaine visibilité. Le second point sera la "
-"commission, donc nous ajouterons un pourcentage sur chaque vente\n"
-"            pour nous permettre de payer les frais de fonctionnement du site."
+"publicité, qui permettra de faire connaitre le site, et assurer une certaine "
+"visibilité. Le second point sera la commission, donc nous ajouterons un "
+"pourcentage sur chaque vente pour nous permettre de payer les frais de "
+"fonctionnement du site."
 
 #: panier.php:27
 msgid "Sous total hors taxe"
@@ -304,10 +300,14 @@ msgstr "Commande de figurine sur FigureIt"
 msgid "Passer la commande"
 msgstr "Passer la commande"
 
-#: user/index.php:32
+#: user/index.php:34
+msgid "Modifier vos données"
+msgstr ""
+
+#: user/index.php:78
 msgid "Id commande"
 msgstr "Id commande"
 
-#: user/index.php:33
+#: user/index.php:79
 msgid "Date d'achat"
 msgstr "Date d'achat"

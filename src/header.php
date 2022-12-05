@@ -27,7 +27,7 @@
             $locale = $_SESSION['langue'];
         }else{
             $_SESSION['langue'] = "fr_FR.utf-8";
-        $locale = "fr_FR.utf-8";
+            $locale = "fr_FR.utf-8";
         }
         
     }
