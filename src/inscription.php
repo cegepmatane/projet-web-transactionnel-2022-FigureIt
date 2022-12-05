@@ -1,9 +1,9 @@
 <?php
-    include "accesseur/ClientDAO.php";
+    
     $titre = "Inscription";
     $pageActive = "inscription";
     include "header.php";
-
+    include "accesseur/ClientDAO.php";
 
     $identifiant = $email = $password = $passwordConfirm = "";
     $err_identifiant = $err_email = $err_password = $err_passwordConfirm = "";
