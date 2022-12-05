@@ -12,7 +12,7 @@
     $email = $password = "";
     $email_err = $password_err = $login_err = "";
 
-    if($_SERVER["REQUEST_METHOD"] == "POST")
+    if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"]))
     {
         if(empty(trim($_POST["connexion-email"])))
         {
@@ -67,6 +67,9 @@
         <div class="row mx-lg-4 mb-3 px-5">
             <input type="password" class="form-control" placeholder="<?= _('Mot de passe') ?>" name="connexion-password" id="connexion-password" value="<?= $password ?>" required>
             <span class="form-errors"><?= $password_err ?></span>
+        </div>
+        <div class="row mx-lg-4 mb-3 px-5">
+            <input type="text" class="form-control" placeholder="submit" name="submit" id="submit" >
         </div>
         <div class="row mt-lg-5 mx-lg-4 px-5 justify-content-center">
             <button class="btn btn-primary col-6" type="submit"><?= _('Connexion') ?></button>

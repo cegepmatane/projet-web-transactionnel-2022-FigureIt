@@ -8,7 +8,7 @@
     $identifiant = $email = $password = $passwordConfirm = "";
     $err_identifiant = $err_email = $err_password = $err_passwordConfirm = "";
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST"){
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
         //var_dump($_POST);
         $identifiant = trim($_POST["inscription-identifiant"]);
         $email = trim($_POST["inscription-email"]);
@@ -63,9 +63,13 @@
             <input type="password" class="form-control" placeholder=<?= _('Confirmer le mot de passe') ?> name="inscription-confirm-password" id="inscription-confirm-password" required>
             <span class="form-errors"><?= $err_passwordConfirm ?></span>
         </div>
+        <div class="row mx-lg-4 mb-3 px-5">
+            <input type="text" class="form-control" placeholder="submit" name="submit" id="submit" >
+        </div>
+        
         
         <div class="row mt-lg-5 mx-lg-4 px-5 justify-content-center">
-            <button class="btn btn-primary col-6" type="submit"><?= _('Inscription') ?></button>
+            <button class="btn btn-primary col-6" type="submit" name="submit"><?= _('Inscription') ?></button>
         </div>
     </form>
 </div>
