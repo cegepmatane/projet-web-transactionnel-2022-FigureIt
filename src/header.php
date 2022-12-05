@@ -21,15 +21,17 @@
 
     if(isset($_SESSION['langue'])){
         $locale = $_SESSION['langue'];
+    }else{
+        if (isset($_POST["radioLangue"])) {
+            $_SESSION['langue'] = $_POST["radioLangue"];
+            $locale = $_POST["radioLangue"];
+        }else{
+            $_SESSION['langue'] = "fr_FR.utf-8";
+            $locale = "fr_FR.utf-8";
+        }
     }
 
-    if (isset($_POST["radioLangue"])) {
-        $_SESSION['langue'] = $_POST["radioLangue"];
-        $locale = $_POST["radioLangue"];
-    }else{
-        $_SESSION['langue'] = "fr_FR.utf-8";
-        $locale = "fr_FR.utf-8";
-    }
+    
 
     $pathLocales = "./locales";
 
