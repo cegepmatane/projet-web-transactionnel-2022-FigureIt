@@ -19,19 +19,18 @@
         $taillePanier = count($_SESSION['panier']);
     }
 
-    if(isset($_SESSION['langue'])){
-        $locale = $_SESSION['langue'];
+    if (isset($_POST["radioLangue"])) {
+        $_SESSION['langue'] = $_POST["radioLangue"];
+        $locale = $_POST["radioLangue"];
     }else{
-        if (isset($_POST["radioLangue"])) {
-            $_SESSION['langue'] = $_POST["radioLangue"];
-            $locale = $_POST["radioLangue"];
+        if(isset($_SESSION['langue'])){
+            $locale = $_SESSION['langue'];
         }else{
             $_SESSION['langue'] = "fr_FR.utf-8";
-            $locale = "fr_FR.utf-8";
+        $locale = "fr_FR.utf-8";
         }
+        
     }
-
-    
 
     $pathLocales = "./locales";
 
