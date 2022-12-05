@@ -31,8 +31,7 @@
         $locale = "fr_FR.utf-8";
     }
 
-    $locale = "fr_FR.utf-8";
-    $pathLocales = "../locales";
+    $pathLocales = "./locales";
 
 //    $locale = "fr";
 //    $pathLocales = "C:\xampp\htdocs\projet-web-transactionnel-2022-FigureIt\locales";
@@ -79,7 +78,6 @@
         function autoSubmit()
             {
                 var formObject = document.forms['langueForm'];
-
                 formObject.submit();
             }
     </script>
@@ -89,7 +87,6 @@
     <div class="container-fluid">
         <div class="row row-col-2">
             <div  class="d-inline-block col-md-6">
-                <a id="test"><?= $_SESSION['langue'] ?></a>
                 <h1>Figure It</h1>
             </div>
             <div class="gap-3 d-flex ms-auto mt-1 col-md-6 justify-content-md-end">
@@ -110,12 +107,12 @@
                 <?php } ?>
                 <div class="form-check">
                     <form name='langueForm' id='langueForm' method="post">
-                        <input class="form-check-input" type="radio" name="radioLangue" id="radio1" value="fr_FR.utf-8" onchange="autoSubmit();" <?= ($_SESSION['langue'] == "fr_FR.utf-8" ? "checked":"") ?>>
+                        <input class="form-check-input" type="radio" name="radioLangue" id="radio1" value="fr_FR.utf-8" onchange="autoSubmit();" <?= $_SESSION['langue'] == "fr_FR.utf-8" ? "checked":"" ?>>
                         <label class="form-check-label" for="radioFR">
                             fr
                         </label>
                         </br>
-                        <input class="form-check-input" type="radio" name="radioLangue" id="radio2" value="en_CA.utf-8" onchange="autoSubmit();" <?= ($_SESSION['langue'] == "en_CA.utf-8" ? "checked":"") ?>>
+                        <input class="form-check-input" type="radio" name="radioLangue" id="radio2" value="en_CA.utf-8" onchange="autoSubmit();" <?= $_SESSION['langue'] == "en_CA.utf-8" ? "checked":"" ?>>
                         <label class="form-check-label" for="radioEN">
                             en
                         </label>
