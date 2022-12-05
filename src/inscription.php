@@ -64,7 +64,7 @@
             <span class="form-errors"><?= $err_passwordConfirm ?></span>
         </div>
         <div class="row mx-lg-4 mb-3 px-5">
-            <input type="text" class="form-control" placeholder="submit" name="submit" id="submit" >
+            <input type="hidden" class="form-control" placeholder="submit" name="submit" id="submit">
         </div>
         
         
