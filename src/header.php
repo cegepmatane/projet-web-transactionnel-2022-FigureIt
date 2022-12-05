@@ -48,7 +48,6 @@
         putenv("LC_ALL=$locale"); // windows 
         $domain = 'messages';
         textdomain($domain);
-        echo bindtextdomain($domain, $pathLocales);
         bind_textdomain_codeset($domain, 'UTF-8');
     }
 ?>
