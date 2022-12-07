@@ -32,7 +32,7 @@ $password = $receivedDATA["password"];
 $passwordConfirm = $receivedDATA["confirmpassword"];
 error_log(print_r($receivedDATA, true));
 if (empty($receivedDATA['name'])) {
-    $errors['name'] = _('Name is required.');
+    $errors['name'] = _('Identifiant requis.');
 
 }else{
     // Check si l'identifiant est deja utilise
@@ -42,7 +42,7 @@ if (empty($receivedDATA['name'])) {
 }
 
 if (empty($receivedDATA['email'])) {
-    $errors['email'] = _('Identifiant requis');
+    $errors['email'] = _('Email requis');
     
 }else{
     // Check si l'email est deja utilise
