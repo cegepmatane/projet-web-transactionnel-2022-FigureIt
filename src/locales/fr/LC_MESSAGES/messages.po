@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-12-07 14:51-0500\n"
-"PO-Revision-Date: 2022-12-07 14:52-0500\n"
+"POT-Creation-Date: 2022-12-07 15:17-0500\n"
+"PO-Revision-Date: 2022-12-07 15:17-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -73,7 +73,7 @@ msgstr "Vendeur"
 msgid "Description"
 msgstr "Description"
 
-#: admin/adminListeTransaction.php:50 admin/index.php:34 header.php:132
+#: admin/adminListeTransaction.php:50 admin/index.php:34 header.php:130
 msgid "Accueil"
 msgstr "Accueil"
 
@@ -141,31 +141,19 @@ msgstr "Votre achat n'as pas pu aboutir"
 msgid "Retour à l'accueil"
 msgstr "Retour à l'accueil"
 
-#: connexion.php:19
-msgid "Entrez un email"
-msgstr "Entrez un email"
-
-#: connexion.php:28
-msgid "Entrez un mot de passe"
-msgstr "Entrez un mot de passe"
-
-#: connexion.php:52
-msgid "email ou mot de passe incorrect"
-msgstr "email ou mot de passe incorrect"
-
-#: connexion.php:59 connexion.php:75 header.php:106
+#: connexion.php:18 connexion.php:34 header.php:104
 msgid "Connexion"
 msgstr "Connexion"
 
-#: connexion.php:64
+#: connexion.php:23
 msgid "email"
 msgstr "email"
 
-#: connexion.php:68 inscription.php:156
+#: connexion.php:27 inscription.php:155
 msgid "Mot de passe"
 msgstr "Mot de passe"
 
-#: connexion.php:72 inscription.php:172
+#: connexion.php:31 inscription.php:171
 msgid "submit"
 msgstr "valider"
 
@@ -181,31 +169,31 @@ msgstr "Description :"
 msgid "Acheter maintenant"
 msgstr "Acheter maintenant"
 
-#: header.php:103
+#: header.php:101
 msgid "D&eacute;connexion"
 msgstr "D&eacute;connexion"
 
-#: header.php:105 inscription.php:47 inscription.php:177
+#: header.php:103 inscription.php:47 inscription.php:176
 msgid "Inscription"
 msgstr "Inscription"
 
-#: header.php:135
+#: header.php:133
 msgid "Figurines"
 msgstr "Figurines"
 
-#: header.php:138
+#: header.php:136
 msgid "Mission"
 msgstr "Mission"
 
-#: inscription.php:133
+#: inscription.php:132
 msgid "Identifiant"
 msgstr "Identifiant"
 
-#: inscription.php:144
+#: inscription.php:143
 msgid "Email"
 msgstr "Email"
 
-#: inscription.php:166
+#: inscription.php:165
 msgid "Confirmez le mot de passe"
 msgstr "Confirmez le mot de passe"
 
@@ -273,35 +261,35 @@ msgstr "Sous total hors taxe"
 msgid "Total après taxe"
 msgstr "Total après taxe"
 
-#: process.php:16
+#: process.php:35
 msgid "Name is required."
 msgstr "Identifiant requis."
 
-#: process.php:21
+#: process.php:40
 msgid "Identifiant d&eacute;j&agrave; utilis&eacute;"
 msgstr "Identifiant d&eacute;j&agrave; utilis&eacute;"
 
-#: process.php:26
-msgid "Email is required."
-msgstr "Email requis."
+#: process.php:45
+msgid "Identifiant requis"
+msgstr "Identifiant requis"
 
-#: process.php:31
+#: process.php:50
 msgid "Adresse mail d&eacute;j&agrave; utilis&eacute;e"
 msgstr "Adresse mail d&eacute;j&agrave; utilis&eacute;e"
 
-#: process.php:36
-msgid "Password is required."
-msgstr "Mot de passe requis."
+#: process.php:55
+msgid "Mot de passe requis"
+msgstr "Mot de passe requis"
 
-#: process.php:40
-msgid "Confirmed password is required."
-msgstr "Confirmation du mot de passe requise."
+#: process.php:59
+msgid "Confirmation du mot de passe requise"
+msgstr "Confirmation du mot de passe requise"
 
-#: process.php:44
-msgid "Confirmed password is not the same as password."
-msgstr "La confirmation du mot de passe n'est pas la même que le mot de passe."
+#: process.php:63
+msgid "Confirmation du mot de passe différente du mot de passe"
+msgstr "Confirmation du mot de passe différente du mot de passe"
 
-#: process.php:51
+#: process.php:70
 msgid "Le mot de passe contient des espaces"
 msgstr "Le mot de passe contient des espaces"
 
@@ -336,6 +324,28 @@ msgstr "Id commande"
 #: user/index.php:79
 msgid "Date d'achat"
 msgstr "Date d'achat"
+
+#~ msgid "Entrez un email"
+#~ msgstr "Entrez un email"
+
+#~ msgid "Entrez un mot de passe"
+#~ msgstr "Entrez un mot de passe"
+
+#~ msgid "email ou mot de passe incorrect"
+#~ msgstr "email ou mot de passe incorrect"
+
+#~ msgid "Email is required."
+#~ msgstr "Email requis."
+
+#~ msgid "Password is required."
+#~ msgstr "Mot de passe requis."
+
+#~ msgid "Confirmed password is required."
+#~ msgstr "Confirmation du mot de passe requise."
+
+#~ msgid "Confirmed password is not the same as password."
+#~ msgstr ""
+#~ "La confirmation du mot de passe n'est pas la même que le mot de passe."
 
 #~ msgid "Les deux mots de passe de correspondent pas"
 #~ msgstr "Les deux mots de passe de correspondent pas"
