@@ -1,6 +1,25 @@
 <?php
 require_once 'config.php';
 include "accesseur/ClientDAO.php";
+
+session_start();
+
+$locale = $_SESSION['langue'];
+if (defined('LC_MESSAGES')) {
+    putenv("LANG=$locale");
+    putenv("LANGUAGE=$locale");
+    $domain = 'messages';
+    setlocale(LC_MESSAGES, $locale); // Linux
+    setlocale(LC_ALL, $locale);
+    bindtextdomain($domain, PATHLOCALE );
+    bind_textdomain_codeset($domain, 'UTF-8');
+} else {
+    putenv("LC_ALL=$locale"); // windows
+    $domain = 'messages';
+    textdomain($domain);
+    bind_textdomain_codeset($domain, 'UTF-8');
+}
+
 $errors = [];
 $data = [];
 $receivedDATA = json_decode(file_get_contents('php://input'), true);
@@ -23,7 +42,7 @@ if (empty($receivedDATA['name'])) {
 }
 
 if (empty($receivedDATA['email'])) {
-    $errors['email'] = _('Email is required.');
+    $errors['email'] = _('Identifiant requis');
     
 }else{
     // Check si l'email est deja utilise
@@ -33,15 +52,15 @@ if (empty($receivedDATA['email'])) {
 }
 
 if (empty($receivedDATA['password'])) {
-    $errors['password'] = _('Password is required.');
+    $errors['password'] = _('Mot de passe requis');
 }
 
 if(empty($receivedDATA['confirmpassword'])){
-    $errors['confirmedPassword'] = _('Confirmed password is required.');
+    $errors['confirmedPassword'] = _('Confirmation du mot de passe requise');
 }
 if(!empty($receivedDATA['name'])&&!empty($receivedDATA['email'])&&!empty($receivedDATA['password'])&&!empty($receivedDATA['confirmpassword'])){
     if($receivedDATA['password'] != $receivedDATA['confirmpassword']){
-        $errors['confirmedPassword'] = _('Confirmed password is not the same as password.');
+        $errors['confirmedPassword'] = _('Confirmation du mot de passe différente du mot de passe');
     }
     
         //var_dump($err_email);

@@ -32,8 +32,6 @@
         
     }
 
-    $pathLocales = "./locales";
-
 //    $locale = "fr";
 //    $pathLocales = "C:\xampp\htdocs\projet-web-transactionnel-2022-FigureIt\locales";
 
@@ -43,7 +41,7 @@
         $domain = 'messages';
         setlocale(LC_MESSAGES, $locale); // Linux
         setlocale(LC_ALL, $locale);
-        bindtextdomain($domain, $pathLocales );
+        bindtextdomain($domain, PATHLOCALE );
         bind_textdomain_codeset($domain, 'UTF-8');
     } else {
         putenv("LC_ALL=$locale"); // windows 

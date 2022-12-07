@@ -76,7 +76,6 @@
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
 
 <?php
-    
     $titre = "Inscription";
     $pageActive = "inscription";
     include "header.php";
@@ -130,7 +129,7 @@
 
             type="text" 
             class="form-control" 
-            placeholder=<? _("Identifiant" ) ?>
+            placeholder=<?= _("Identifiant" ) ?>
             name="name" 
             id="name" 
             value="<?= $identifiant?>" >
@@ -141,7 +140,7 @@
             <input type="email" 
 
             class="form-control" 
-            placeholder=<? _("Email" ) ?>
+            placeholder=<?= _("Email" ) ?>
             name="email" 
             id="email" 
             value="<?= $email ?>" >
@@ -153,7 +152,7 @@
 
             type="password" 
             class="form-control" 
-            placeholder=<? _("Mot de passe" ) ?>
+            placeholder="<?= _('Mot de passe') ?>"
             name="password" 
             id="password" >
             <span class="form-errors" id="password-error"><?= $err_password ?></span>
@@ -163,18 +162,18 @@
             <input 
             type="password" 
             class="form-control" 
-            placeholder=<? _("Confirmez le mot de passe" ) ?>
+            placeholder="<?= _('Confirmez le mot de passe') ?>"
             name="confirmpassword" 
             id="confirmpassword" >
             <span class="form-errors" id="confirmedpassword-error"><?= $err_passwordConfirm ?></span>
         </div>
         <div class="row mx-lg-4 mb-3 px-5">
-            <input type="hidden" class="form-control" placeholder=<? _("submit") ?> name="submit" id="submit">
+            <input type="hidden" class="form-control" placeholder=<?= _("submit") ?> name="submit" id="submit">
         </div>
         
         
         <div class="row mt-lg-5 mx-lg-4 px-5 justify-content-center">
-            <input class="btn btn-primary col-6" type="submit" name="<?= _('Inscription') ?>"></input>
+            <input class="btn btn-primary col-6" type="submit" value="<?= _('Inscription') ?>" name="Inscription"></input>
         </div>
     </form>
 </div>
