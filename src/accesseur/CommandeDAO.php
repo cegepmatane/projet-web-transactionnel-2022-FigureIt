@@ -1,5 +1,4 @@
 <?php
-require_once "../config.php";
 include_once SITEPATH."modeles/Commande.php";
 include_once SITEPATH."accesseur/CommandeSQL.php";
 
