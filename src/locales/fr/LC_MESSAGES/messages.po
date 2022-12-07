@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-12-07 15:17-0500\n"
-"PO-Revision-Date: 2022-12-07 15:17-0500\n"
+"POT-Creation-Date: 2022-12-07 16:49-0500\n"
+"PO-Revision-Date: 2022-12-07 16:50-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -262,7 +262,7 @@ msgid "Total après taxe"
 msgstr "Total après taxe"
 
 #: process.php:35
-msgid "Name is required."
+msgid "Identifiant requis."
 msgstr "Identifiant requis."
 
 #: process.php:40
@@ -270,8 +270,8 @@ msgid "Identifiant d&eacute;j&agrave; utilis&eacute;"
 msgstr "Identifiant d&eacute;j&agrave; utilis&eacute;"
 
 #: process.php:45
-msgid "Identifiant requis"
-msgstr "Identifiant requis"
+msgid "Email requis"
+msgstr "Email requis"
 
 #: process.php:50
 msgid "Adresse mail d&eacute;j&agrave; utilis&eacute;e"
@@ -325,6 +325,9 @@ msgstr "Id commande"
 msgid "Date d'achat"
 msgstr "Date d'achat"
 
+#~ msgid "Name is required."
+#~ msgstr "Identifiant requis."
+
 #~ msgid "Entrez un email"
 #~ msgstr "Entrez un email"
 
@@ -333,9 +336,6 @@ msgstr "Date d'achat"
 
 #~ msgid "email ou mot de passe incorrect"
 #~ msgstr "email ou mot de passe incorrect"
-
-#~ msgid "Email is required."
-#~ msgstr "Email requis."
 
 #~ msgid "Password is required."
 #~ msgstr "Mot de passe requis."
