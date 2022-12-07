@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-12-07 16:49-0500\n"
-"PO-Revision-Date: 2022-12-07 16:49-0500\n"
+"POT-Creation-Date: 2022-12-07 17:07-0500\n"
+"PO-Revision-Date: 2022-12-07 17:08-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -197,6 +197,14 @@ msgstr "Email"
 msgid "Confirmez le mot de passe"
 msgstr "Confirm password"
 
+#: loadPanier.php:15
+msgid "Total : "
+msgstr "Total : "
+
+#: loadPanier.php:16
+msgid "Achetez maintenant"
+msgstr "Buy Now"
+
 #: loadPanier.php:18
 msgid "panier vide"
 msgstr "empty basket"
@@ -251,6 +259,10 @@ msgstr ""
 "publicity, which will allow to make known the site, and ensure a certain "
 "visibility. The second point will be the commission, so we will add a "
 "percentage on each sale to allow us to pay the running costs of the site."
+
+#: panier.php:9
+msgid "Panier"
+msgstr "Cart"
 
 #: panier.php:27
 msgid "Sous total hors taxe"
@@ -315,6 +327,10 @@ msgstr "Take order"
 #: user/index.php:34
 msgid "Modifier vos données"
 msgstr "Modify your data"
+
+#: user/index.php:73
+msgid "Liste de vos transactions"
+msgstr "Transaction list"
 
 #: user/index.php:78
 msgid "Id commande"

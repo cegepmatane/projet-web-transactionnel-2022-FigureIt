@@ -12,7 +12,7 @@ if(!empty($_SESSION['panier'])){
         $total += $figurine->prix;
         $panier.= "<div>".formater($figurine->titre)." - ".$item['quantite']."</div>";
     }
-    $panier .= "<div class='panier-preview-prix'>Total : ".$total."$</div>";
-    $panier .= "<a href='".SITE_URL."panier.php' class='btn btn-primary bt-sm'>Achetez maintenant</a>";
+    $panier .= "<div class='panier-preview-prix'>"._("Total : ").$total."$</div>";
+    $panier .= "<a href='".SITE_URL."panier.php' class='btn btn-primary bt-sm'>"._("Achetez maintenant")."</a>";
 }
 echo $panier === "" ? _("panier vide") : $panier;

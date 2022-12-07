@@ -6,7 +6,7 @@
     $panier = $_SESSION['panier'];
     $total = 0;
 ?>
-<h1 class="px-md-5">Panier</h1>
+<h1 class="px-md-5"><?= _("Panier") ?></h1>
 <div class="content mt-lg-4 px-md-5">
     <div class="listeAchat">
         <?php if(!empty($panier)){

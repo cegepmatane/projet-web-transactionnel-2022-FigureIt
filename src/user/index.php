@@ -70,7 +70,7 @@
             </form>
         </div>
     </div>
-    <h2>Liste de vos transactions</h2>
+    <h2><?= _('Liste de vos transactions') ?></h2>
     <div class="content">
         <div class="overflower">
             <table class="liste">
