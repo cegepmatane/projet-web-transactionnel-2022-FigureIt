@@ -130,7 +130,7 @@
 
             type="text" 
             class="form-control" 
-            placeholder="Identifiant" 
+            placeholder=<? _("Identifiant" ) ?>
             name="name" 
             id="name" 
             value="<?= $identifiant?>" >
@@ -141,7 +141,7 @@
             <input type="email" 
 
             class="form-control" 
-            placeholder="Email" 
+            placeholder=<? _("Email" ) ?>
             name="email" 
             id="email" 
             value="<?= $email ?>" >
@@ -153,7 +153,7 @@
 
             type="password" 
             class="form-control" 
-            placeholder="Mot de passe" 
+            placeholder=<? _("Mot de passe" ) ?>
             name="password" 
             id="password" >
             <span class="form-errors" id="password-error"><?= $err_password ?></span>
@@ -163,13 +163,13 @@
             <input 
             type="password" 
             class="form-control" 
-            placeholder="Confirmez le mot de passe" 
+            placeholder=<? _("Confirmez le mot de passe" ) ?>
             name="confirmpassword" 
             id="confirmpassword" >
             <span class="form-errors" id="confirmedpassword-error"><?= $err_passwordConfirm ?></span>
         </div>
         <div class="row mx-lg-4 mb-3 px-5">
-            <input type="hidden" class="form-control" placeholder="submit" name="submit" id="submit">
+            <input type="hidden" class="form-control" placeholder=<? _("submit") ?> name="submit" id="submit">
         </div>
         
         

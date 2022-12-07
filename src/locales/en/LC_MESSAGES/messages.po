@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-12-07 14:40-0500\n"
-"PO-Revision-Date: 2022-12-07 14:42-0500\n"
+"POT-Creation-Date: 2022-12-07 14:47-0500\n"
+"PO-Revision-Date: 2022-12-07 14:49-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -161,9 +161,13 @@ msgstr "Sign in"
 msgid "email"
 msgstr "email"
 
-#: connexion.php:68
+#: connexion.php:68 inscription.php:156
 msgid "Mot de passe"
 msgstr "Password"
+
+#: connexion.php:72 inscription.php:172
+msgid "submit"
+msgstr "submit"
 
 #: details.php:17 details.php:38 index.php:37 listeFigurine.php:37
 msgid "Ajouter au panier"
@@ -192,6 +196,18 @@ msgstr "Figurines"
 #: header.php:138
 msgid "Mission"
 msgstr "Mission"
+
+#: inscription.php:133
+msgid "Identifiant"
+msgstr "Identifier"
+
+#: inscription.php:144
+msgid "Email"
+msgstr "Email"
+
+#: inscription.php:166
+msgid "Confirmez le mot de passe"
+msgstr "Confirm password"
 
 #: loadPanier.php:18
 msgid "panier vide"
@@ -322,9 +338,3 @@ msgstr "Date of purchase"
 
 #~ msgid "Les deux mots de passe de correspondent pas"
 #~ msgstr "The two passwords do not match"
-
-#~ msgid "Identifiant"
-#~ msgstr "Identifier"
-
-#~ msgid "Confirmer le mot de passe"
-#~ msgstr "Confirm password"
