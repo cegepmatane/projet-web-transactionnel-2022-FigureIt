@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-12-05 17:57-0500\n"
-"PO-Revision-Date: 2022-12-05 17:57-0500\n"
+"POT-Creation-Date: 2022-12-07 14:42-0500\n"
+"PO-Revision-Date: 2022-12-07 14:43-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -36,6 +36,7 @@ msgstr ""
 "X-Poedit-SearchPath-21: success.php\n"
 "X-Poedit-SearchPath-22: loadPanier.php\n"
 "X-Poedit-SearchPath-23: panier.php\n"
+"X-Poedit-SearchPath-24: process.php\n"
 
 #: admin/adminAjouter.php:14 admin/adminAjouter.php:25
 #: admin/adminListeTransaction.php:28 admin/adminModifier.php:17
@@ -136,7 +137,7 @@ msgstr "Supprimer"
 msgid "Votre achat n'as pas pu aboutir"
 msgstr "Votre achat n'as pas pu aboutir"
 
-#: cancel.php:8 success.php:8
+#: cancel.php:8 success.php:15
 msgid "Retour à l'accueil"
 msgstr "Retour à l'accueil"
 
@@ -156,11 +157,11 @@ msgstr "email ou mot de passe incorrect"
 msgid "Connexion"
 msgstr "Connexion"
 
-#: connexion.php:64 inscription.php:55
+#: connexion.php:64
 msgid "email"
 msgstr "email"
 
-#: connexion.php:68 inscription.php:59
+#: connexion.php:68
 msgid "Mot de passe"
 msgstr "Mot de passe"
 
@@ -180,7 +181,7 @@ msgstr "Acheter maintenant"
 msgid "D&eacute;connexion"
 msgstr "D&eacute;connexion"
 
-#: header.php:105 inscription.php:47 inscription.php:72
+#: header.php:105 inscription.php:47 inscription.php:177
 msgid "Inscription"
 msgstr "Inscription"
 
@@ -191,30 +192,6 @@ msgstr "Figurines"
 #: header.php:138
 msgid "Mission"
 msgstr "Mission"
-
-#: inscription.php:20
-msgid "Identifiant d&eacute;j&agrave; utilis&eacute;"
-msgstr "Identifiant d&eacute;j&agrave; utilis&eacute;"
-
-#: inscription.php:25
-msgid "Adresse mail d&eacute;j&agrave; utilis&eacute;e"
-msgstr "Adresse mail d&eacute;j&agrave; utilis&eacute;e"
-
-#: inscription.php:31
-msgid "Les deux mots de passe de correspondent pas"
-msgstr "Les deux mots de passe de correspondent pas"
-
-#: inscription.php:36
-msgid "Le mot de passe contient des espaces"
-msgstr "Le mot de passe contient des espaces"
-
-#: inscription.php:51
-msgid "Identifiant"
-msgstr "Identifiant"
-
-#: inscription.php:63
-msgid "Confirmer le mot de passe"
-msgstr "Confirmer le mot de passe"
 
 #: loadPanier.php:18
 msgid "panier vide"
@@ -280,7 +257,39 @@ msgstr "Sous total hors taxe"
 msgid "Total après taxe"
 msgstr "Total après taxe"
 
-#: success.php:7
+#: process.php:16
+msgid "Name is required."
+msgstr "Identifiant requis."
+
+#: process.php:21
+msgid "Identifiant d&eacute;j&agrave; utilis&eacute;"
+msgstr "Identifiant d&eacute;j&agrave; utilis&eacute;"
+
+#: process.php:26
+msgid "Email is required."
+msgstr "Email requis."
+
+#: process.php:31
+msgid "Adresse mail d&eacute;j&agrave; utilis&eacute;e"
+msgstr "Adresse mail d&eacute;j&agrave; utilis&eacute;e"
+
+#: process.php:36
+msgid "Password is required."
+msgstr "Mot de passe requis."
+
+#: process.php:40
+msgid "Confirmed password is required."
+msgstr "Confirmation du mot de passe requise."
+
+#: process.php:44
+msgid "Confirmed password is not the same as password."
+msgstr "La confirmation du mot de passe n'est pas la même que le mot de passe."
+
+#: process.php:51
+msgid "Le mot de passe contient des espaces"
+msgstr "Le mot de passe contient des espaces"
+
+#: success.php:14
 msgid "Nous vous remercions pour votre achat"
 msgstr "Nous vous remercions pour votre achat"
 
@@ -302,7 +311,7 @@ msgstr "Passer la commande"
 
 #: user/index.php:34
 msgid "Modifier vos données"
-msgstr ""
+msgstr "Modifier vos données"
 
 #: user/index.php:78
 msgid "Id commande"
@@ -311,3 +320,12 @@ msgstr "Id commande"
 #: user/index.php:79
 msgid "Date d'achat"
 msgstr "Date d'achat"
+
+#~ msgid "Les deux mots de passe de correspondent pas"
+#~ msgstr "Les deux mots de passe de correspondent pas"
+
+#~ msgid "Identifiant"
+#~ msgstr "Identifiant"
+
+#~ msgid "Confirmer le mot de passe"
+#~ msgstr "Confirmer le mot de passe"
