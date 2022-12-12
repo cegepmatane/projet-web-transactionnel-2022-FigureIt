@@ -5,6 +5,33 @@ include "accesseur/FigurineDAO.php";
 $panier = "";
 $total = 0;
 
+if (isset($_POST["radioLangue"])) {
+    $_SESSION['langue'] = $_POST["radioLangue"];
+    $locale = $_POST["radioLangue"];
+}else{
+    if(isset($_SESSION['langue'])){
+        $locale = $_SESSION['langue'];
+    }else{
+        $_SESSION['langue'] = "fr_FR.utf-8";
+        $locale = "fr_FR.utf-8";
+    }
+}
+
+if (defined('LC_MESSAGES')) {
+    putenv("LANG=$locale");
+    putenv("LANGUAGE=$locale");
+    $domain = 'messages';
+    setlocale(LC_MESSAGES, $locale); // Linux
+    setlocale(LC_ALL, $locale);
+    bindtextdomain($domain, PATHLOCALE );
+    bind_textdomain_codeset($domain, 'UTF-8');
+} else {
+    putenv("LC_ALL=$locale"); // windows 
+    $domain = 'messages';
+    textdomain($domain);
+    bind_textdomain_codeset($domain, 'UTF-8');
+}
+
 if(!empty($_SESSION['panier'])){
     foreach ($_SESSION['panier'] as $item){
         $figurine = FigurineDAO::findFigurineById($item['id']);

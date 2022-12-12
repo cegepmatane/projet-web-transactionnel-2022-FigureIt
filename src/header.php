@@ -29,7 +29,6 @@
             $_SESSION['langue'] = "fr_FR.utf-8";
             $locale = "fr_FR.utf-8";
         }
-        
     }
 
 //    $locale = "fr";
