@@ -29,12 +29,22 @@
     }
 ?>
 <link rel="stylesheet" href="css/index.css">
+<script>
+    function toggleFormDonnees() {
+        var divForm = document.getElementById("zone-modification-donnees");
+        if (divForm.style.display === "none"){
+            divForm.style.display = "block";
+        }else{
+            divForm.style.display = "none";
+        }
+    }
+</script>
 <div class="container">
     <div>
-        <button class="btn btn-secondary" id="btn-modifier-donnees"><?= _("Modifier vos données")?></button>
-        <div id="zone-modification-donnees">
+        <button class="btn btn-secondary" id="btn-modifier-donnees" onclick="toggleFormDonnees()"><?= _("Modifier vos données")?></button>
+        <div id="zone-modification-donnees" style="display: none;">
             <form class="row row-cols-lg-auto align-items-center g-3 mt-3" action="#" method="post" id="form-identifiant">
-                <div class="col-auto">
+                <div class="col-auto" style="width: 126px;">
                     <label for="identifiant">Identifiant :</label>
                 </div>
                 <div class="col-auto">
@@ -46,7 +56,7 @@
             </form>
 
             <form class="row g-3 mt-3" action="#" method="post" id="form-email">
-                <div class="col-auto">
+                <div class="col-auto" style="width: 126px;">
                     <label for="email">Email :</label>
                 </div>
                 <div class="col-auto">
@@ -58,7 +68,7 @@
             </form>
 
             <form class="row g-3 mt-3" action="#" method="post" id="form-password">
-                <div class="col-auto">
+                <div class="col-auto" style="width: 126px;">
                     <label for="password">Mot de passe :</label>
                 </div>
                 <div class="col-auto">
