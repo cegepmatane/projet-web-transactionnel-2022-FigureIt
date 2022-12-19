@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-12-07 17:07-0500\n"
-"PO-Revision-Date: 2022-12-07 17:08-0500\n"
+"POT-Creation-Date: 2022-12-19 12:39-0500\n"
+"PO-Revision-Date: 2022-12-19 12:41-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -37,6 +37,7 @@ msgstr ""
 "X-Poedit-SearchPath-22: loadPanier.php\n"
 "X-Poedit-SearchPath-23: panier.php\n"
 "X-Poedit-SearchPath-24: process.php\n"
+"X-Poedit-SearchPath-25: user/modifierDonnees.php\n"
 
 #: admin/adminAjouter.php:14 admin/adminAjouter.php:25
 #: admin/adminListeTransaction.php:28 admin/adminModifier.php:17
@@ -57,7 +58,7 @@ msgid "Nom"
 msgstr "Name"
 
 #: admin/adminAjouter.php:34 admin/adminListeTransaction.php:66
-#: admin/adminModifier.php:38 admin/index.php:52 user/index.php:81
+#: admin/adminModifier.php:38 admin/index.php:52 user/index.php:160
 msgid "Prix"
 msgstr "Price"
 
@@ -73,7 +74,7 @@ msgstr "Seller"
 msgid "Description"
 msgstr "Description"
 
-#: admin/adminListeTransaction.php:50 admin/index.php:34 header.php:130
+#: admin/adminListeTransaction.php:50 admin/index.php:34 header.php:129
 msgid "Accueil"
 msgstr "Home"
 
@@ -121,7 +122,7 @@ msgstr "Seller's name"
 msgid "Nom du produit"
 msgstr "Product name"
 
-#: admin/index.php:51 user/index.php:80
+#: admin/index.php:51 user/index.php:159
 msgid "Quantité"
 msgstr "Quantity"
 
@@ -141,7 +142,7 @@ msgstr "Your purchase could not be completed"
 msgid "Retour à l'accueil"
 msgstr "Back to home page"
 
-#: connexion.php:18 connexion.php:34 header.php:104
+#: connexion.php:18 connexion.php:34 header.php:103
 msgid "Connexion"
 msgstr "Sign in"
 
@@ -169,19 +170,19 @@ msgstr "Description:"
 msgid "Acheter maintenant"
 msgstr "Buy Now"
 
-#: header.php:101
+#: header.php:100
 msgid "D&eacute;connexion"
 msgstr "Disconnection"
 
-#: header.php:103 inscription.php:47 inscription.php:176
+#: header.php:102 inscription.php:47 inscription.php:176
 msgid "Inscription"
 msgstr "Sign up"
 
-#: header.php:133
+#: header.php:132
 msgid "Figurines"
 msgstr "Figurines"
 
-#: header.php:136
+#: header.php:135
 msgid "Mission"
 msgstr "Mission"
 
@@ -197,15 +198,15 @@ msgstr "Email"
 msgid "Confirmez le mot de passe"
 msgstr "Confirm password"
 
-#: loadPanier.php:15
+#: loadPanier.php:42
 msgid "Total : "
 msgstr "Total : "
 
-#: loadPanier.php:16
+#: loadPanier.php:43
 msgid "Achetez maintenant"
 msgstr "Buy Now"
 
-#: loadPanier.php:18
+#: loadPanier.php:45
 msgid "panier vide"
 msgstr "empty basket"
 
@@ -272,23 +273,23 @@ msgstr "Subtotal before tax"
 msgid "Total après taxe"
 msgstr "Total after tax"
 
-#: process.php:35
+#: process.php:35 user/modifierDonnees.php:29
 msgid "Identifiant requis."
 msgstr "Name required."
 
-#: process.php:40
+#: process.php:40 user/modifierDonnees.php:34
 msgid "Identifiant d&eacute;j&agrave; utilis&eacute;"
 msgstr "Username already used"
 
-#: process.php:45
+#: process.php:45 user/modifierDonnees.php:48
 msgid "Email requis"
 msgstr "Email is required."
 
-#: process.php:50
+#: process.php:50 user/modifierDonnees.php:53
 msgid "Adresse mail d&eacute;j&agrave; utilis&eacute;e"
 msgstr "Email address already used"
 
-#: process.php:55
+#: process.php:55 user/modifierDonnees.php:67
 msgid "Mot de passe requis"
 msgstr "Password required"
 
@@ -300,7 +301,7 @@ msgstr "Confirm password required"
 msgid "Confirmation du mot de passe différente du mot de passe"
 msgstr "Confirmation is different from password"
 
-#: process.php:70
+#: process.php:70 user/modifierDonnees.php:71
 msgid "Le mot de passe contient des espaces"
 msgstr "Password contains spaces"
 
@@ -324,21 +325,49 @@ msgstr "Ordering a figure on FigureIt"
 msgid "Passer la commande"
 msgstr "Take order"
 
-#: user/index.php:34
+#: user/index.php:104
 msgid "Modifier vos données"
 msgstr "Modify your data"
 
-#: user/index.php:73
+#: user/index.php:152
 msgid "Liste de vos transactions"
 msgstr "Transaction list"
 
-#: user/index.php:78
+#: user/index.php:157
 msgid "Id commande"
 msgstr "Order ID"
 
-#: user/index.php:79
+#: user/index.php:158
 msgid "Date d'achat"
 msgstr "Date of purchase"
+
+#: user/modifierDonnees.php:38
+msgid "Mauvais format d'identifiant"
+msgstr "Wrong ID format"
+
+#: user/modifierDonnees.php:42
+msgid "Identifiant modifié"
+msgstr "Modified identifier"
+
+#: user/modifierDonnees.php:57
+msgid "Mauvais format d'email"
+msgstr "Wrong email format"
+
+#: user/modifierDonnees.php:60
+msgid "Email modifié"
+msgstr "Modified email"
+
+#: user/modifierDonnees.php:74
+msgid "Mauvais format de mot de passe"
+msgstr "Wrong password format"
+
+#: user/modifierDonnees.php:77
+msgid "Mot de passe modifié"
+msgstr "Password changed"
+
+#: user/modifierDonnees.php:82
+msgid "Un problème est survenu"
+msgstr "A problem has occurred"
 
 #~ msgid "Name is required."
 #~ msgstr "Name is required."
