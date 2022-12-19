@@ -111,7 +111,7 @@
                     <input class="form-control" type="text" name="identifiant" id="identifiant" value="<?= ClientDAO::formater($infosClient->nom)?>">
                 </div>
                 <div class="col-auto">
-                    <input class="btn btn-primary" id="1" type="button" value="Confirmer" onclick="modifierDonnees(this.id)">
+                    <input class="btn btn-primary" id="1" type="button" value=<?= _("Confirmer")?> onclick="modifierDonnees(this.id)">
                 </div>
                 <div class="col-auto">
                     <span id="messages-identifiant"></span>
@@ -126,7 +126,7 @@
                     <input class="form-control" type="email" name="email" id="email" value="<?= ClientDAO::formater($infosClient->email)?>">
                 </div>
                 <div class="col-auto">
-                    <input class="btn btn-primary" id="2" type="button" value="Confirmer" onclick="modifierDonnees(this.id)">
+                    <input class="btn btn-primary" id="2" type="button" value=<?= _("Confirmer")?> onclick="modifierDonnees(this.id)">
                 </div>
                 <div class="col-auto">
                     <span id="messages-mail"></span>
@@ -141,7 +141,7 @@
                     <input class="form-control" type="password" name="password" id="password" value="">
                 </div>
                 <div class="col-auto">
-                    <input class="col-auto btn btn-primary" id="3" type="button" value="Confirmer" onclick="modifierDonnees(this.id)">
+                    <input class="col-auto btn btn-primary" id="3" type="button" value=<?= _("Confirmer")?> onclick="modifierDonnees(this.id)">
                 </div>
                 <div class="col-auto">
                     <span id="messages-mdp"></span>

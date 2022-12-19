@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-12-19 12:39-0500\n"
-"PO-Revision-Date: 2022-12-19 12:41-0500\n"
+"POT-Creation-Date: 2022-12-19 13:16-0500\n"
+"PO-Revision-Date: 2022-12-19 13:17-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -328,6 +328,10 @@ msgstr "Take order"
 #: user/index.php:104
 msgid "Modifier vos données"
 msgstr "Modify your data"
+
+#: user/index.php:114 user/index.php:129 user/index.php:144
+msgid "Confirmer"
+msgstr "Submit"
 
 #: user/index.php:152
 msgid "Liste de vos transactions"
