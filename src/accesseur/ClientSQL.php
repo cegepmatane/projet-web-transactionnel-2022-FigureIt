@@ -10,4 +10,5 @@
 
         public const INSERT_CLIENT = "INSERT INTO client (nom, email, motDePasse) VALUES (:nom, :email, :motDePasse)";
 
+        public const UPDATE_CLIENT = "UPDATE client SET nom = :nom, email = :email, motDePasse = :motDePasse WHERE id = :id";
     }

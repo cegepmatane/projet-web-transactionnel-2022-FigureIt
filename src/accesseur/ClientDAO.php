@@ -89,6 +89,18 @@ include_once SITEPATH."accesseur/ClientSQL.php";
             $demandeAjoutClient->execute();
         }
 
+        public static function updateClient($id, $nom, $email, $motDePasse){
+            ClientDAO::connexionBDD();
+
+            $demandeModifClient = ClientDAO::$bdd->prepare(ClientDAO::UPDATE_CLIENT);
+            $demandeModifClient->bindParam(':nom', $nom, PDO::PARAM_STR);
+            $demandeModifClient->bindParam(':email', $email, PDO::PARAM_STR);
+            $demandeModifClient->bindParam(':motDePasse', $motDePasse, PDO::PARAM_STR);
+            $demandeModifClient->bindParam(':id', $id, PDO::PARAM_INT);
+            $demandeModifClient->execute();
+        }
+
+
         public static function formater($text){
             $text = html_entity_decode($text, ENT_COMPAT, 'UTF-8');
             $text = rawurldecode($text);
