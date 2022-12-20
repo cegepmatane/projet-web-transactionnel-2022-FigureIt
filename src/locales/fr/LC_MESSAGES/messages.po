@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-12-19 13:16-0500\n"
-"PO-Revision-Date: 2022-12-19 13:16-0500\n"
+"POT-Creation-Date: 2022-12-20 09:33-0500\n"
+"PO-Revision-Date: 2022-12-20 09:33-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -38,6 +38,7 @@ msgstr ""
 "X-Poedit-SearchPath-23: panier.php\n"
 "X-Poedit-SearchPath-24: process.php\n"
 "X-Poedit-SearchPath-25: user/modifierDonnees.php\n"
+"X-Poedit-SearchPath-26: processConnexion.php\n"
 
 #: admin/adminAjouter.php:14 admin/adminAjouter.php:25
 #: admin/adminListeTransaction.php:28 admin/adminModifier.php:17
@@ -142,19 +143,19 @@ msgstr "Votre achat n'as pas pu aboutir"
 msgid "Retour à l'accueil"
 msgstr "Retour à l'accueil"
 
-#: connexion.php:18 connexion.php:34 header.php:103
+#: connexion.php:19 connexion.php:36 header.php:103
 msgid "Connexion"
 msgstr "Connexion"
 
-#: connexion.php:23
+#: connexion.php:24 inscription.php:143
 msgid "Email"
 msgstr "Email"
 
-#: connexion.php:27 inscription.php:155
+#: connexion.php:28 inscription.php:155
 msgid "Mot de passe"
 msgstr "Mot de passe"
 
-#: connexion.php:31 inscription.php:171
+#: connexion.php:32 inscription.php:171
 msgid "submit"
 msgstr "valider"
 
@@ -189,10 +190,6 @@ msgstr "Mission"
 #: inscription.php:132
 msgid "Identifiant"
 msgstr "Identifiant"
-
-#: inscription.php:143
-msgid "Email"
-msgstr "Email"
 
 #: inscription.php:165
 msgid "Confirmez le mot de passe"
@@ -282,7 +279,7 @@ msgstr "Identifiant requis."
 msgid "Identifiant d&eacute;j&agrave; utilis&eacute;"
 msgstr "Identifiant d&eacute;j&agrave; utilis&eacute;"
 
-#: process.php:45 user/modifierDonnees.php:48
+#: process.php:45 processConnexion.php:34 user/modifierDonnees.php:48
 msgid "Email requis"
 msgstr "Email requis"
 
@@ -290,7 +287,7 @@ msgstr "Email requis"
 msgid "Adresse mail d&eacute;j&agrave; utilis&eacute;e"
 msgstr "Adresse mail d&eacute;j&agrave; utilis&eacute;e"
 
-#: process.php:55 user/modifierDonnees.php:67
+#: process.php:55 processConnexion.php:38 user/modifierDonnees.php:67
 msgid "Mot de passe requis"
 msgstr "Mot de passe requis"
 
@@ -302,9 +299,13 @@ msgstr "Confirmation du mot de passe requise"
 msgid "Confirmation du mot de passe différente du mot de passe"
 msgstr "Confirmation du mot de passe différente du mot de passe"
 
-#: process.php:70 user/modifierDonnees.php:71
+#: process.php:70 processConnexion.php:45 user/modifierDonnees.php:71
 msgid "Le mot de passe contient des espaces"
 msgstr "Le mot de passe contient des espaces"
+
+#: processConnexion.php:64
+msgid "email ou mot de passe incorrect"
+msgstr "email ou mot de passe incorrect"
 
 #: success.php:14
 msgid "Nous vous remercions pour votre achat"
@@ -382,9 +383,6 @@ msgstr "Un problème est survenu"
 
 #~ msgid "Entrez un mot de passe"
 #~ msgstr "Entrez un mot de passe"
-
-#~ msgid "email ou mot de passe incorrect"
-#~ msgstr "email ou mot de passe incorrect"
 
 #~ msgid "Password is required."
 #~ msgstr "Mot de passe requis."
