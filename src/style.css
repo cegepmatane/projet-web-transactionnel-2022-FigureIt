@@ -181,3 +181,7 @@ hr.navDivider {
     top: 4px;
 }
 
+#connexion-error{
+    display: flex;
+    justify-content: center;
+}
