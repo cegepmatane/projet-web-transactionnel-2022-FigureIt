@@ -147,8 +147,8 @@ msgid "Connexion"
 msgstr "Connexion"
 
 #: connexion.php:23
-msgid "email"
-msgstr "email"
+msgid "Email"
+msgstr "Email"
 
 #: connexion.php:27 inscription.php:155
 msgid "Mot de passe"
