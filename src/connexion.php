@@ -30,9 +30,9 @@
         </div>
         <div class="row mx-lg-4 mb-3 px-5">
             <input type="hidden" class="form-control" placeholder="<?= _("submit") ?>" name="submit" id="submit">
+            <span class="form-errors col-6" id="connexion-error"><?= $login_err?></span>
         </div>
         <div class="row mt-lg-5 mx-lg-4 px-5 justify-content-center">
-            <span class="form-errors col-6" id="connexion-error"><?= $login_err?></span>
             <input class="btn btn-primary col-6" type="submit" value="<?= _('Connexion') ?>"></input>
         </div>
     </form>
